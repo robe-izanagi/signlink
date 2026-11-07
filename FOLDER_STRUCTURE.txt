@@ -1,0 +1,27 @@
+SIGNLINK_React_Website_Starter/
+├── COPILOT_PROMPT.md
+├── README_START_HERE.md
+├── FOLDER_STRUCTURE.txt
+├── package.json
+├── vite.config.js
+├── index.html
+├── .gitignore
+├── .vscode/
+│   └── extensions.json
+├── public/
+│   ├── SIGNLINK_Landing_Page_Concept_Claude.html
+│   └── SIGNLINK_3D_Concepts_v2/
+│       ├── models/                 # 6 GLB assets (3 assembled + 3 exploded)
+│       ├── previews/               # Product renders and overview
+│       ├── reference/               # Component JSON, MD docs, explode manifest
+│       ├── source/                  # Procedural model source generator
+│       ├── README.md
+│       └── GLB_AND_THREEJS_GUIDE.md
+└── src/
+    ├── App.jsx                      # Temporary screen for Copilot to replace
+    ├── main.jsx
+    ├── components/
+    ├── data/
+    ├── hooks/
+    ├── utils/
+    └── styles/

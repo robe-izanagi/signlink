@@ -1,0 +1,1392 @@
+{
+  "units": "meters",
+  "authoring_units": "millimeters",
+  "products": {
+    "Smart": {
+      "Left Front Frame Rim": {
+        "componentId": "01",
+        "role": "frame",
+        "explodedOffsetMeters": [
+          -0.014,
+          0.0,
+          0.0
+        ],
+        "description": "Primary structural rim surrounding the left optical lens."
+      },
+      "Left Optical Lens": {
+        "componentId": "02",
+        "role": "lens",
+        "explodedOffsetMeters": [
+          0.0,
+          0.0,
+          -0.02
+        ],
+        "description": "Transparent lens insert; final prescription and optical specifications are not defined in this concept model."
+      },
+      "Left Silicone Nose Pad": {
+        "componentId": "03",
+        "role": "nose_pad",
+        "explodedOffsetMeters": [
+          -0.009,
+          -0.009,
+          0.008
+        ],
+        "description": "Soft nose-contact pad for fit and comfort."
+      },
+      "Left Nose Pad Support": {
+        "componentId": "04",
+        "role": "nose_support",
+        "explodedOffsetMeters": [
+          -0.012,
+          -0.006,
+          0.004
+        ],
+        "description": "Connected bridge bracket and vertical support stem attaching the nose pad to the frame."
+      },
+      "Right Front Frame Rim": {
+        "componentId": "05",
+        "role": "frame",
+        "explodedOffsetMeters": [
+          0.014,
+          0.0,
+          0.0
+        ],
+        "description": "Primary structural rim surrounding the right optical lens."
+      },
+      "Right Optical Lens": {
+        "componentId": "06",
+        "role": "lens",
+        "explodedOffsetMeters": [
+          0.0,
+          0.0,
+          -0.02
+        ],
+        "description": "Transparent lens insert; final prescription and optical specifications are not defined in this concept model."
+      },
+      "Right Silicone Nose Pad": {
+        "componentId": "07",
+        "role": "nose_pad",
+        "explodedOffsetMeters": [
+          0.009,
+          -0.009,
+          0.008
+        ],
+        "description": "Soft nose-contact pad for fit and comfort."
+      },
+      "Right Nose Pad Support": {
+        "componentId": "08",
+        "role": "nose_support",
+        "explodedOffsetMeters": [
+          0.012,
+          -0.006,
+          0.004
+        ],
+        "description": "Connected bridge bracket and vertical support stem attaching the nose pad to the frame."
+      },
+      "Central Nose Bridge": {
+        "componentId": "09",
+        "role": "bridge",
+        "explodedOffsetMeters": [
+          0.0,
+          -0.01,
+          -0.008
+        ],
+        "description": "Structural bridge connecting left and right front rims."
+      },
+      "Left Temple Arm": {
+        "componentId": "10",
+        "role": "temple",
+        "explodedOffsetMeters": [
+          -0.018,
+          0.0,
+          0.014
+        ],
+        "description": "Left side structural temple housing carrying internal electronics and routing."
+      },
+      "Left Temple Tip / Earpiece": {
+        "componentId": "11",
+        "role": "temple_tip",
+        "explodedOffsetMeters": [
+          -0.022,
+          -0.008,
+          0.028
+        ],
+        "description": "Soft-touch rear temple tip for comfort and retention behind the ear."
+      },
+      "Left Rechargeable Battery Cell": {
+        "componentId": "12",
+        "role": "battery",
+        "explodedOffsetMeters": [
+          -0.013,
+          0.007,
+          0.002
+        ],
+        "description": "Internal rechargeable battery cell housed inside the left temple."
+      },
+      "Left Control PCB": {
+        "componentId": "13",
+        "role": "pcb",
+        "explodedOffsetMeters": [
+          -0.016,
+          0.01,
+          0.008
+        ],
+        "description": "Miniature control and power-management circuit board for the left temple."
+      },
+      "Left Main Control IC": {
+        "componentId": "14",
+        "role": "chip",
+        "explodedOffsetMeters": [
+          -0.019,
+          0.005,
+          0.01
+        ],
+        "description": "Illustrative controller package mounted on the temple PCB."
+      },
+      "Left Metal Hinge Assembly": {
+        "componentId": "15",
+        "role": "hinge",
+        "explodedOffsetMeters": [
+          -0.012,
+          0.0,
+          -0.007
+        ],
+        "description": "Metal hinge joining the front frame to the left temple."
+      },
+      "Right Temple Arm": {
+        "componentId": "16",
+        "role": "temple",
+        "explodedOffsetMeters": [
+          0.018,
+          0.0,
+          0.014
+        ],
+        "description": "Right side structural temple housing carrying internal electronics and routing."
+      },
+      "Right Temple Tip / Earpiece": {
+        "componentId": "17",
+        "role": "temple_tip",
+        "explodedOffsetMeters": [
+          0.022,
+          -0.008,
+          0.028
+        ],
+        "description": "Soft-touch rear temple tip for comfort and retention behind the ear."
+      },
+      "Right Rechargeable Battery Cell": {
+        "componentId": "18",
+        "role": "battery",
+        "explodedOffsetMeters": [
+          0.013,
+          0.007,
+          0.002
+        ],
+        "description": "Internal rechargeable battery cell housed inside the right temple."
+      },
+      "Right Control PCB": {
+        "componentId": "19",
+        "role": "pcb",
+        "explodedOffsetMeters": [
+          0.016,
+          0.01,
+          0.008
+        ],
+        "description": "Miniature control and power-management circuit board for the right temple."
+      },
+      "Right Main Control IC": {
+        "componentId": "20",
+        "role": "chip",
+        "explodedOffsetMeters": [
+          0.019,
+          0.005,
+          0.01
+        ],
+        "description": "Illustrative controller package mounted on the temple PCB."
+      },
+      "Right Metal Hinge Assembly": {
+        "componentId": "21",
+        "role": "hinge",
+        "explodedOffsetMeters": [
+          0.012,
+          0.0,
+          -0.007
+        ],
+        "description": "Metal hinge joining the front frame to the right temple."
+      },
+      "Primary Wide-Angle Camera Housing": {
+        "componentId": "22",
+        "role": "camera_housing",
+        "explodedOffsetMeters": [
+          0.0,
+          0.0,
+          -0.015
+        ],
+        "description": "Camera module enclosure for forward-facing visual capture."
+      },
+      "Primary Wide-Angle Camera Bezel": {
+        "componentId": "23",
+        "role": "camera_bezel",
+        "explodedOffsetMeters": [
+          0.0,
+          0.0,
+          -0.023
+        ],
+        "description": "Metal retaining ring around the camera optics."
+      },
+      "Primary Wide-Angle Camera Lens Glass": {
+        "componentId": "24",
+        "role": "camera_lens",
+        "explodedOffsetMeters": [
+          0.0,
+          0.0,
+          -0.031
+        ],
+        "description": "Front optical cover and dark lens element."
+      },
+      "Primary Wide-Angle Optical Core": {
+        "componentId": "25",
+        "role": "camera_core",
+        "explodedOffsetMeters": [
+          0.0,
+          0.0,
+          -0.039
+        ],
+        "description": "Illustrative inner optical element of the camera module."
+      },
+      "Front Voice Microphone Port": {
+        "componentId": "26",
+        "role": "microphone",
+        "explodedOffsetMeters": [
+          0.0,
+          -0.011,
+          -0.003
+        ],
+        "description": "Acoustic inlet for the microphone array."
+      },
+      "Ambient Voice Microphone Port": {
+        "componentId": "27",
+        "role": "microphone",
+        "explodedOffsetMeters": [
+          0.0,
+          -0.011,
+          -0.003
+        ],
+        "description": "Acoustic inlet for the microphone array."
+      },
+      "Secondary Voice Microphone Port": {
+        "componentId": "28",
+        "role": "microphone",
+        "explodedOffsetMeters": [
+          0.0,
+          -0.011,
+          -0.003
+        ],
+        "description": "Acoustic inlet for the microphone array."
+      },
+      "Left Open-Ear Speaker Housing": {
+        "componentId": "29",
+        "role": "speaker",
+        "explodedOffsetMeters": [
+          -0.013,
+          0.0,
+          0.0
+        ],
+        "description": "Compact open-ear audio module mounted along the temple."
+      },
+      "Left Speaker Grille": {
+        "componentId": "30",
+        "role": "speaker_grille",
+        "explodedOffsetMeters": [
+          -0.021,
+          0.0,
+          0.0
+        ],
+        "description": "Protective acoustic grille for the open-ear speaker."
+      },
+      "Left Speaker Driver": {
+        "componentId": "31",
+        "role": "speaker_driver",
+        "explodedOffsetMeters": [
+          -0.029,
+          0.0,
+          0.0
+        ],
+        "description": "Illustrative acoustic driver behind the grille."
+      },
+      "Right Open-Ear Speaker Housing": {
+        "componentId": "32",
+        "role": "speaker",
+        "explodedOffsetMeters": [
+          0.013,
+          0.0,
+          0.0
+        ],
+        "description": "Compact open-ear audio module mounted along the temple."
+      },
+      "Right Speaker Grille": {
+        "componentId": "33",
+        "role": "speaker_grille",
+        "explodedOffsetMeters": [
+          0.021,
+          0.0,
+          0.0
+        ],
+        "description": "Protective acoustic grille for the open-ear speaker."
+      },
+      "Right Speaker Driver": {
+        "componentId": "34",
+        "role": "speaker_driver",
+        "explodedOffsetMeters": [
+          0.029,
+          0.0,
+          0.0
+        ],
+        "description": "Illustrative acoustic driver behind the grille."
+      },
+      "Power / Assistant Button": {
+        "componentId": "35",
+        "role": "button",
+        "explodedOffsetMeters": [
+          0.012,
+          0.005,
+          0.0
+        ],
+        "description": "Tactile control for power, capture, assistant activation, or supported shortcuts."
+      },
+      "Power / Assistant Button Accent Cap": {
+        "componentId": "36",
+        "role": "button_cap",
+        "explodedOffsetMeters": [
+          0.018,
+          0.007,
+          -0.002
+        ],
+        "description": "Colored tactile button cap."
+      },
+      "Status LED": {
+        "componentId": "37",
+        "role": "status_led",
+        "explodedOffsetMeters": [
+          0.014,
+          0.007,
+          -0.003
+        ],
+        "description": "Small device status indicator light."
+      },
+      "USB-C Charging Port": {
+        "componentId": "38",
+        "role": "port",
+        "explodedOffsetMeters": [
+          0.013,
+          -0.006,
+          0.006
+        ],
+        "description": "Charging/data connector opening near the rear underside of the temple."
+      },
+      "USB-C Charging Port Metal Surround": {
+        "componentId": "39",
+        "role": "port_trim",
+        "explodedOffsetMeters": [
+          0.018,
+          -0.008,
+          0.008
+        ],
+        "description": "Metallic surround for the charging port."
+      },
+      "Right Temple Touch Strip": {
+        "componentId": "40",
+        "role": "touch_strip",
+        "explodedOffsetMeters": [
+          0.016,
+          0.005,
+          0.012
+        ],
+        "description": "Touch-sensitive control zone for the general-purpose assistant."
+      },
+      "Front Sensor Interface PCB": {
+        "componentId": "41",
+        "role": "pcb",
+        "explodedOffsetMeters": [
+          -0.016,
+          0.01,
+          0.008
+        ],
+        "description": "Illustrative front sensor interconnect board housed inside the left temple."
+      }
+    },
+    "Connect": {
+      "Left Front Frame Rim": {
+        "componentId": "01",
+        "role": "frame",
+        "explodedOffsetMeters": [
+          -0.014,
+          0.0,
+          0.0
+        ],
+        "description": "Primary structural rim surrounding the left optical lens."
+      },
+      "Left Optical Lens": {
+        "componentId": "02",
+        "role": "lens",
+        "explodedOffsetMeters": [
+          0.0,
+          0.0,
+          -0.02
+        ],
+        "description": "Transparent lens insert; final prescription and optical specifications are not defined in this concept model."
+      },
+      "Left Silicone Nose Pad": {
+        "componentId": "03",
+        "role": "nose_pad",
+        "explodedOffsetMeters": [
+          -0.009,
+          -0.009,
+          0.008
+        ],
+        "description": "Soft nose-contact pad for fit and comfort."
+      },
+      "Left Nose Pad Support": {
+        "componentId": "04",
+        "role": "nose_support",
+        "explodedOffsetMeters": [
+          -0.012,
+          -0.006,
+          0.004
+        ],
+        "description": "Connected bridge bracket and vertical support stem attaching the nose pad to the frame."
+      },
+      "Right Front Frame Rim": {
+        "componentId": "05",
+        "role": "frame",
+        "explodedOffsetMeters": [
+          0.014,
+          0.0,
+          0.0
+        ],
+        "description": "Primary structural rim surrounding the right optical lens."
+      },
+      "Right Optical Lens": {
+        "componentId": "06",
+        "role": "lens",
+        "explodedOffsetMeters": [
+          0.0,
+          0.0,
+          -0.02
+        ],
+        "description": "Transparent lens insert; final prescription and optical specifications are not defined in this concept model."
+      },
+      "Right Silicone Nose Pad": {
+        "componentId": "07",
+        "role": "nose_pad",
+        "explodedOffsetMeters": [
+          0.009,
+          -0.009,
+          0.008
+        ],
+        "description": "Soft nose-contact pad for fit and comfort."
+      },
+      "Right Nose Pad Support": {
+        "componentId": "08",
+        "role": "nose_support",
+        "explodedOffsetMeters": [
+          0.012,
+          -0.006,
+          0.004
+        ],
+        "description": "Connected bridge bracket and vertical support stem attaching the nose pad to the frame."
+      },
+      "Central Nose Bridge": {
+        "componentId": "09",
+        "role": "bridge",
+        "explodedOffsetMeters": [
+          0.0,
+          -0.01,
+          -0.008
+        ],
+        "description": "Structural bridge connecting left and right front rims."
+      },
+      "Left Temple Arm": {
+        "componentId": "10",
+        "role": "temple",
+        "explodedOffsetMeters": [
+          -0.018,
+          0.0,
+          0.014
+        ],
+        "description": "Left side structural temple housing carrying internal electronics and routing."
+      },
+      "Left Temple Tip / Earpiece": {
+        "componentId": "11",
+        "role": "temple_tip",
+        "explodedOffsetMeters": [
+          -0.022,
+          -0.008,
+          0.028
+        ],
+        "description": "Soft-touch rear temple tip for comfort and retention behind the ear."
+      },
+      "Left Rechargeable Battery Cell": {
+        "componentId": "12",
+        "role": "battery",
+        "explodedOffsetMeters": [
+          -0.013,
+          0.007,
+          0.002
+        ],
+        "description": "Internal rechargeable battery cell housed inside the left temple."
+      },
+      "Left Control PCB": {
+        "componentId": "13",
+        "role": "pcb",
+        "explodedOffsetMeters": [
+          -0.016,
+          0.01,
+          0.008
+        ],
+        "description": "Miniature control and power-management circuit board for the left temple."
+      },
+      "Left Main Control IC": {
+        "componentId": "14",
+        "role": "chip",
+        "explodedOffsetMeters": [
+          -0.019,
+          0.005,
+          0.01
+        ],
+        "description": "Illustrative controller package mounted on the temple PCB."
+      },
+      "Left Metal Hinge Assembly": {
+        "componentId": "15",
+        "role": "hinge",
+        "explodedOffsetMeters": [
+          -0.012,
+          0.0,
+          -0.007
+        ],
+        "description": "Metal hinge joining the front frame to the left temple."
+      },
+      "Right Temple Arm": {
+        "componentId": "16",
+        "role": "temple",
+        "explodedOffsetMeters": [
+          0.018,
+          0.0,
+          0.014
+        ],
+        "description": "Right side structural temple housing carrying internal electronics and routing."
+      },
+      "Right Temple Tip / Earpiece": {
+        "componentId": "17",
+        "role": "temple_tip",
+        "explodedOffsetMeters": [
+          0.022,
+          -0.008,
+          0.028
+        ],
+        "description": "Soft-touch rear temple tip for comfort and retention behind the ear."
+      },
+      "Right Rechargeable Battery Cell": {
+        "componentId": "18",
+        "role": "battery",
+        "explodedOffsetMeters": [
+          0.013,
+          0.007,
+          0.002
+        ],
+        "description": "Internal rechargeable battery cell housed inside the right temple."
+      },
+      "Right Control PCB": {
+        "componentId": "19",
+        "role": "pcb",
+        "explodedOffsetMeters": [
+          0.016,
+          0.01,
+          0.008
+        ],
+        "description": "Miniature control and power-management circuit board for the right temple."
+      },
+      "Right Main Control IC": {
+        "componentId": "20",
+        "role": "chip",
+        "explodedOffsetMeters": [
+          0.019,
+          0.005,
+          0.01
+        ],
+        "description": "Illustrative controller package mounted on the temple PCB."
+      },
+      "Right Metal Hinge Assembly": {
+        "componentId": "21",
+        "role": "hinge",
+        "explodedOffsetMeters": [
+          0.012,
+          0.0,
+          -0.007
+        ],
+        "description": "Metal hinge joining the front frame to the right temple."
+      },
+      "Left AR Waveguide / Combiner": {
+        "componentId": "22",
+        "role": "waveguide",
+        "explodedOffsetMeters": [
+          0.0,
+          0.0,
+          0.018
+        ],
+        "description": "Transparent optical layer intended to guide virtual display imagery into the left eye box."
+      },
+      "Right AR Waveguide / Combiner": {
+        "componentId": "23",
+        "role": "waveguide",
+        "explodedOffsetMeters": [
+          0.0,
+          0.0,
+          0.018
+        ],
+        "description": "Transparent optical layer intended to guide virtual display imagery into the right eye box."
+      },
+      "AR Microdisplay Projector Housing": {
+        "componentId": "24",
+        "role": "projector_housing",
+        "explodedOffsetMeters": [
+          0.014,
+          0.008,
+          -0.012
+        ],
+        "description": "Enclosure for the miniature AR display/projector assembly."
+      },
+      "AR Projector Optical Window": {
+        "componentId": "25",
+        "role": "projector_window",
+        "explodedOffsetMeters": [
+          0.014,
+          0.008,
+          -0.02
+        ],
+        "description": "Optical output window of the microdisplay assembly."
+      },
+      "AR Display Driver PCB": {
+        "componentId": "26",
+        "role": "display_pcb",
+        "explodedOffsetMeters": [
+          0.016,
+          0.01,
+          0.008
+        ],
+        "description": "Driver electronics for the AR microdisplay, housed inside the right temple."
+      },
+      "Sign Recognition Front Camera Camera Housing": {
+        "componentId": "27",
+        "role": "camera_housing",
+        "explodedOffsetMeters": [
+          0.0,
+          0.0,
+          -0.015
+        ],
+        "description": "Camera module enclosure for forward-facing visual capture."
+      },
+      "Sign Recognition Front Camera Camera Bezel": {
+        "componentId": "28",
+        "role": "camera_bezel",
+        "explodedOffsetMeters": [
+          0.0,
+          0.0,
+          -0.023
+        ],
+        "description": "Metal retaining ring around the camera optics."
+      },
+      "Sign Recognition Front Camera Camera Lens Glass": {
+        "componentId": "29",
+        "role": "camera_lens",
+        "explodedOffsetMeters": [
+          0.0,
+          0.0,
+          -0.031
+        ],
+        "description": "Front optical cover and dark lens element."
+      },
+      "Sign Recognition Front Camera Optical Core": {
+        "componentId": "30",
+        "role": "camera_core",
+        "explodedOffsetMeters": [
+          0.0,
+          0.0,
+          -0.039
+        ],
+        "description": "Illustrative inner optical element of the camera module."
+      },
+      "Wearer Hand-Sign Camera Housing": {
+        "componentId": "31",
+        "role": "hand_camera_housing",
+        "explodedOffsetMeters": [
+          0.0,
+          -0.012,
+          0.0
+        ],
+        "description": "Small downward-facing camera enclosure intended to observe the wearer\u2019s signing area; exact field of view requires ergonomic testing."
+      },
+      "Wearer Hand-Sign Camera Bezel": {
+        "componentId": "32",
+        "role": "hand_camera_bezel",
+        "explodedOffsetMeters": [
+          0.0,
+          -0.018,
+          0.0
+        ],
+        "description": "Metal retaining ring for the downward-facing hand-sign camera."
+      },
+      "Wearer Hand-Sign Camera Lens": {
+        "componentId": "33",
+        "role": "hand_camera_lens",
+        "explodedOffsetMeters": [
+          0.0,
+          -0.023,
+          0.0
+        ],
+        "description": "Optical cover for the auxiliary hand-sign camera."
+      },
+      "Speech Capture Left Microphone Port": {
+        "componentId": "34",
+        "role": "microphone",
+        "explodedOffsetMeters": [
+          0.0,
+          -0.011,
+          -0.003
+        ],
+        "description": "Acoustic inlet for the microphone array."
+      },
+      "Speech Capture Right Microphone Port": {
+        "componentId": "35",
+        "role": "microphone",
+        "explodedOffsetMeters": [
+          0.0,
+          -0.011,
+          -0.003
+        ],
+        "description": "Acoustic inlet for the microphone array."
+      },
+      "Left Open-Ear Speaker Housing": {
+        "componentId": "36",
+        "role": "speaker",
+        "explodedOffsetMeters": [
+          -0.013,
+          0.0,
+          0.0
+        ],
+        "description": "Compact open-ear audio module mounted along the temple."
+      },
+      "Left Speaker Grille": {
+        "componentId": "37",
+        "role": "speaker_grille",
+        "explodedOffsetMeters": [
+          -0.021,
+          0.0,
+          0.0
+        ],
+        "description": "Protective acoustic grille for the open-ear speaker."
+      },
+      "Left Speaker Driver": {
+        "componentId": "38",
+        "role": "speaker_driver",
+        "explodedOffsetMeters": [
+          -0.029,
+          0.0,
+          0.0
+        ],
+        "description": "Illustrative acoustic driver behind the grille."
+      },
+      "Right Open-Ear Speaker Housing": {
+        "componentId": "39",
+        "role": "speaker",
+        "explodedOffsetMeters": [
+          0.013,
+          0.0,
+          0.0
+        ],
+        "description": "Compact open-ear audio module mounted along the temple."
+      },
+      "Right Speaker Grille": {
+        "componentId": "40",
+        "role": "speaker_grille",
+        "explodedOffsetMeters": [
+          0.021,
+          0.0,
+          0.0
+        ],
+        "description": "Protective acoustic grille for the open-ear speaker."
+      },
+      "Right Speaker Driver": {
+        "componentId": "41",
+        "role": "speaker_driver",
+        "explodedOffsetMeters": [
+          0.029,
+          0.0,
+          0.0
+        ],
+        "description": "Illustrative acoustic driver behind the grille."
+      },
+      "Communication Mode Button": {
+        "componentId": "42",
+        "role": "button",
+        "explodedOffsetMeters": [
+          0.012,
+          0.005,
+          0.0
+        ],
+        "description": "Tactile control for power, capture, assistant activation, or supported shortcuts."
+      },
+      "Communication Mode Button Accent Cap": {
+        "componentId": "43",
+        "role": "button_cap",
+        "explodedOffsetMeters": [
+          0.018,
+          0.007,
+          -0.002
+        ],
+        "description": "Colored tactile button cap."
+      },
+      "Communication Status LED": {
+        "componentId": "44",
+        "role": "status_led",
+        "explodedOffsetMeters": [
+          0.014,
+          0.007,
+          -0.003
+        ],
+        "description": "Small device status indicator light."
+      },
+      "USB-C Charging Port": {
+        "componentId": "45",
+        "role": "port",
+        "explodedOffsetMeters": [
+          0.013,
+          -0.006,
+          0.006
+        ],
+        "description": "Charging/data connector opening near the rear underside of the temple."
+      },
+      "USB-C Charging Port Metal Surround": {
+        "componentId": "46",
+        "role": "port_trim",
+        "explodedOffsetMeters": [
+          0.018,
+          -0.008,
+          0.008
+        ],
+        "description": "Metallic surround for the charging port."
+      },
+      "Ambient Light Sensor": {
+        "componentId": "47",
+        "role": "ambient_sensor",
+        "explodedOffsetMeters": [
+          0.0,
+          0.012,
+          -0.005
+        ],
+        "description": "Measures ambient brightness for display adjustment."
+      },
+      "Right Temple Communication Control Strip": {
+        "componentId": "48",
+        "role": "touch_strip",
+        "explodedOffsetMeters": [
+          0.025,
+          0.009,
+          0.035
+        ],
+        "description": "Touch surface for caption, sign output, and volume controls."
+      }
+    },
+    "Vision": {
+      "Left Front Frame Rim": {
+        "componentId": "01",
+        "role": "frame",
+        "explodedOffsetMeters": [
+          -0.014,
+          0.0,
+          0.0
+        ],
+        "description": "Primary structural rim surrounding the left optical lens."
+      },
+      "Left Optical Lens": {
+        "componentId": "02",
+        "role": "lens",
+        "explodedOffsetMeters": [
+          0.0,
+          0.0,
+          -0.02
+        ],
+        "description": "Transparent lens insert; final prescription and optical specifications are not defined in this concept model."
+      },
+      "Left Silicone Nose Pad": {
+        "componentId": "03",
+        "role": "nose_pad",
+        "explodedOffsetMeters": [
+          -0.009,
+          -0.009,
+          0.008
+        ],
+        "description": "Soft nose-contact pad for fit and comfort."
+      },
+      "Left Nose Pad Support": {
+        "componentId": "04",
+        "role": "nose_support",
+        "explodedOffsetMeters": [
+          -0.012,
+          -0.006,
+          0.004
+        ],
+        "description": "Connected bridge bracket and vertical support stem attaching the nose pad to the frame."
+      },
+      "Right Front Frame Rim": {
+        "componentId": "05",
+        "role": "frame",
+        "explodedOffsetMeters": [
+          0.014,
+          0.0,
+          0.0
+        ],
+        "description": "Primary structural rim surrounding the right optical lens."
+      },
+      "Right Optical Lens": {
+        "componentId": "06",
+        "role": "lens",
+        "explodedOffsetMeters": [
+          0.0,
+          0.0,
+          -0.02
+        ],
+        "description": "Transparent lens insert; final prescription and optical specifications are not defined in this concept model."
+      },
+      "Right Silicone Nose Pad": {
+        "componentId": "07",
+        "role": "nose_pad",
+        "explodedOffsetMeters": [
+          0.009,
+          -0.009,
+          0.008
+        ],
+        "description": "Soft nose-contact pad for fit and comfort."
+      },
+      "Right Nose Pad Support": {
+        "componentId": "08",
+        "role": "nose_support",
+        "explodedOffsetMeters": [
+          0.012,
+          -0.006,
+          0.004
+        ],
+        "description": "Connected bridge bracket and vertical support stem attaching the nose pad to the frame."
+      },
+      "Central Nose Bridge": {
+        "componentId": "09",
+        "role": "bridge",
+        "explodedOffsetMeters": [
+          0.0,
+          -0.01,
+          -0.008
+        ],
+        "description": "Structural bridge connecting left and right front rims."
+      },
+      "Left Temple Arm": {
+        "componentId": "10",
+        "role": "temple",
+        "explodedOffsetMeters": [
+          -0.018,
+          0.0,
+          0.014
+        ],
+        "description": "Left side structural temple housing carrying internal electronics and routing."
+      },
+      "Left Temple Tip / Earpiece": {
+        "componentId": "11",
+        "role": "temple_tip",
+        "explodedOffsetMeters": [
+          -0.022,
+          -0.008,
+          0.028
+        ],
+        "description": "Soft-touch rear temple tip for comfort and retention behind the ear."
+      },
+      "Left Rechargeable Battery Cell": {
+        "componentId": "12",
+        "role": "battery",
+        "explodedOffsetMeters": [
+          -0.013,
+          0.007,
+          0.002
+        ],
+        "description": "Internal rechargeable battery cell housed inside the left temple."
+      },
+      "Left Control PCB": {
+        "componentId": "13",
+        "role": "pcb",
+        "explodedOffsetMeters": [
+          -0.016,
+          0.01,
+          0.008
+        ],
+        "description": "Miniature control and power-management circuit board for the left temple."
+      },
+      "Left Main Control IC": {
+        "componentId": "14",
+        "role": "chip",
+        "explodedOffsetMeters": [
+          -0.019,
+          0.005,
+          0.01
+        ],
+        "description": "Illustrative controller package mounted on the temple PCB."
+      },
+      "Left Metal Hinge Assembly": {
+        "componentId": "15",
+        "role": "hinge",
+        "explodedOffsetMeters": [
+          -0.012,
+          0.0,
+          -0.007
+        ],
+        "description": "Metal hinge joining the front frame to the left temple."
+      },
+      "Right Temple Arm": {
+        "componentId": "16",
+        "role": "temple",
+        "explodedOffsetMeters": [
+          0.018,
+          0.0,
+          0.014
+        ],
+        "description": "Right side structural temple housing carrying internal electronics and routing."
+      },
+      "Right Temple Tip / Earpiece": {
+        "componentId": "17",
+        "role": "temple_tip",
+        "explodedOffsetMeters": [
+          0.022,
+          -0.008,
+          0.028
+        ],
+        "description": "Soft-touch rear temple tip for comfort and retention behind the ear."
+      },
+      "Right Rechargeable Battery Cell": {
+        "componentId": "18",
+        "role": "battery",
+        "explodedOffsetMeters": [
+          0.013,
+          0.007,
+          0.002
+        ],
+        "description": "Internal rechargeable battery cell housed inside the right temple."
+      },
+      "Right Control PCB": {
+        "componentId": "19",
+        "role": "pcb",
+        "explodedOffsetMeters": [
+          0.016,
+          0.01,
+          0.008
+        ],
+        "description": "Miniature control and power-management circuit board for the right temple."
+      },
+      "Right Main Control IC": {
+        "componentId": "20",
+        "role": "chip",
+        "explodedOffsetMeters": [
+          0.019,
+          0.005,
+          0.01
+        ],
+        "description": "Illustrative controller package mounted on the temple PCB."
+      },
+      "Right Metal Hinge Assembly": {
+        "componentId": "21",
+        "role": "hinge",
+        "explodedOffsetMeters": [
+          0.012,
+          0.0,
+          -0.007
+        ],
+        "description": "Metal hinge joining the front frame to the right temple."
+      },
+      "Primary Wide-Angle Scene Camera Camera Housing": {
+        "componentId": "22",
+        "role": "camera_housing",
+        "explodedOffsetMeters": [
+          0.0,
+          0.0,
+          -0.015
+        ],
+        "description": "Camera module enclosure for forward-facing visual capture."
+      },
+      "Primary Wide-Angle Scene Camera Camera Bezel": {
+        "componentId": "23",
+        "role": "camera_bezel",
+        "explodedOffsetMeters": [
+          0.0,
+          0.0,
+          -0.023
+        ],
+        "description": "Metal retaining ring around the camera optics."
+      },
+      "Primary Wide-Angle Scene Camera Camera Lens Glass": {
+        "componentId": "24",
+        "role": "camera_lens",
+        "explodedOffsetMeters": [
+          0.0,
+          0.0,
+          -0.031
+        ],
+        "description": "Front optical cover and dark lens element."
+      },
+      "Primary Wide-Angle Scene Camera Optical Core": {
+        "componentId": "25",
+        "role": "camera_core",
+        "explodedOffsetMeters": [
+          0.0,
+          0.0,
+          -0.039
+        ],
+        "description": "Illustrative inner optical element of the camera module."
+      },
+      "Secondary Stereo Camera Camera Housing": {
+        "componentId": "26",
+        "role": "camera_housing",
+        "explodedOffsetMeters": [
+          0.0,
+          0.0,
+          -0.015
+        ],
+        "description": "Camera module enclosure for forward-facing visual capture."
+      },
+      "Secondary Stereo Camera Camera Bezel": {
+        "componentId": "27",
+        "role": "camera_bezel",
+        "explodedOffsetMeters": [
+          0.0,
+          0.0,
+          -0.023
+        ],
+        "description": "Metal retaining ring around the camera optics."
+      },
+      "Secondary Stereo Camera Camera Lens Glass": {
+        "componentId": "28",
+        "role": "camera_lens",
+        "explodedOffsetMeters": [
+          0.0,
+          0.0,
+          -0.031
+        ],
+        "description": "Front optical cover and dark lens element."
+      },
+      "Secondary Stereo Camera Optical Core": {
+        "componentId": "29",
+        "role": "camera_core",
+        "explodedOffsetMeters": [
+          0.0,
+          0.0,
+          -0.039
+        ],
+        "description": "Illustrative inner optical element of the camera module."
+      },
+      "Time-of-Flight Depth Sensor": {
+        "componentId": "30",
+        "role": "depth_sensor",
+        "explodedOffsetMeters": [
+          0.0,
+          -0.01,
+          -0.012
+        ],
+        "description": "Optional depth-sensing module for improved distance estimation; final sensor selection is not fixed."
+      },
+      "Depth Sensor Optical Window": {
+        "componentId": "31",
+        "role": "depth_window",
+        "explodedOffsetMeters": [
+          0.0,
+          -0.01,
+          -0.02
+        ],
+        "description": "Protective optical window for the depth sensor."
+      },
+      "Voice Input Left Microphone Port": {
+        "componentId": "32",
+        "role": "microphone",
+        "explodedOffsetMeters": [
+          0.0,
+          -0.011,
+          -0.003
+        ],
+        "description": "Acoustic inlet for the microphone array."
+      },
+      "Voice Input Right Microphone Port": {
+        "componentId": "33",
+        "role": "microphone",
+        "explodedOffsetMeters": [
+          0.0,
+          -0.011,
+          -0.003
+        ],
+        "description": "Acoustic inlet for the microphone array."
+      },
+      "Environmental Audio Microphone Port": {
+        "componentId": "34",
+        "role": "microphone",
+        "explodedOffsetMeters": [
+          0.0,
+          -0.011,
+          -0.003
+        ],
+        "description": "Acoustic inlet for the microphone array."
+      },
+      "Left Open-Ear Speaker Housing": {
+        "componentId": "35",
+        "role": "speaker",
+        "explodedOffsetMeters": [
+          -0.013,
+          0.0,
+          0.0
+        ],
+        "description": "Compact open-ear audio module mounted along the temple."
+      },
+      "Left Speaker Grille": {
+        "componentId": "36",
+        "role": "speaker_grille",
+        "explodedOffsetMeters": [
+          -0.021,
+          0.0,
+          0.0
+        ],
+        "description": "Protective acoustic grille for the open-ear speaker."
+      },
+      "Left Speaker Driver": {
+        "componentId": "37",
+        "role": "speaker_driver",
+        "explodedOffsetMeters": [
+          -0.029,
+          0.0,
+          0.0
+        ],
+        "description": "Illustrative acoustic driver behind the grille."
+      },
+      "Right Open-Ear Speaker Housing": {
+        "componentId": "38",
+        "role": "speaker",
+        "explodedOffsetMeters": [
+          0.013,
+          0.0,
+          0.0
+        ],
+        "description": "Compact open-ear audio module mounted along the temple."
+      },
+      "Right Speaker Grille": {
+        "componentId": "39",
+        "role": "speaker_grille",
+        "explodedOffsetMeters": [
+          0.021,
+          0.0,
+          0.0
+        ],
+        "description": "Protective acoustic grille for the open-ear speaker."
+      },
+      "Right Speaker Driver": {
+        "componentId": "40",
+        "role": "speaker_driver",
+        "explodedOffsetMeters": [
+          0.029,
+          0.0,
+          0.0
+        ],
+        "description": "Illustrative acoustic driver behind the grille."
+      },
+      "Voice Assistant Button": {
+        "componentId": "41",
+        "role": "button",
+        "explodedOffsetMeters": [
+          -0.012,
+          0.005,
+          0.0
+        ],
+        "description": "Tactile control for power, capture, assistant activation, or supported shortcuts."
+      },
+      "Voice Assistant Button Accent Cap": {
+        "componentId": "42",
+        "role": "button_cap",
+        "explodedOffsetMeters": [
+          -0.018,
+          0.007,
+          -0.002
+        ],
+        "description": "Colored tactile button cap."
+      },
+      "Hazard Alert / Control Button": {
+        "componentId": "43",
+        "role": "button",
+        "explodedOffsetMeters": [
+          0.012,
+          0.005,
+          0.0
+        ],
+        "description": "Tactile control for power, capture, assistant activation, or supported shortcuts."
+      },
+      "Hazard Alert / Control Button Accent Cap": {
+        "componentId": "44",
+        "role": "button_cap",
+        "explodedOffsetMeters": [
+          0.018,
+          0.007,
+          -0.002
+        ],
+        "description": "Colored tactile button cap."
+      },
+      "Vision Status LED": {
+        "componentId": "45",
+        "role": "status_led",
+        "explodedOffsetMeters": [
+          0.014,
+          0.007,
+          -0.003
+        ],
+        "description": "Small device status indicator light."
+      },
+      "USB-C Charging Port": {
+        "componentId": "46",
+        "role": "port",
+        "explodedOffsetMeters": [
+          0.013,
+          -0.006,
+          0.006
+        ],
+        "description": "Charging/data connector opening near the rear underside of the temple."
+      },
+      "USB-C Charging Port Metal Surround": {
+        "componentId": "47",
+        "role": "port_trim",
+        "explodedOffsetMeters": [
+          0.018,
+          -0.008,
+          0.008
+        ],
+        "description": "Metallic surround for the charging port."
+      },
+      "Left Temple Haptic Motor": {
+        "componentId": "48",
+        "role": "haptic_motor",
+        "explodedOffsetMeters": [
+          -0.014,
+          -0.005,
+          0.008
+        ],
+        "description": "Optional vibration motor for discreet tactile notifications."
+      },
+      "Vision Sensor Interface PCB": {
+        "componentId": "49",
+        "role": "pcb",
+        "explodedOffsetMeters": [
+          0.016,
+          0.01,
+          0.008
+        ],
+        "description": "Illustrative interface board for camera, depth and audio components, housed inside the right temple."
+      }
+    }
+  }
+}

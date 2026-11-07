@@ -1,0 +1,688 @@
+[
+  {
+    "id": "01",
+    "name": "Left Front Frame Rim",
+    "description": "Primary structural rim surrounding the left optical lens.",
+    "role": "frame",
+    "material": "black",
+    "exploded_offset_mm": [
+      -14.0,
+      0.0,
+      0.0
+    ],
+    "mesh_vertices": 208,
+    "mesh_faces": 416
+  },
+  {
+    "id": "02",
+    "name": "Left Optical Lens",
+    "description": "Transparent lens insert; final prescription and optical specifications are not defined in this concept model.",
+    "role": "lens",
+    "material": "lens_smoke",
+    "exploded_offset_mm": [
+      0.0,
+      0.0,
+      -20.0
+    ],
+    "mesh_vertices": 106,
+    "mesh_faces": 208
+  },
+  {
+    "id": "03",
+    "name": "Left Silicone Nose Pad",
+    "description": "Soft nose-contact pad for fit and comfort.",
+    "role": "nose_pad",
+    "material": "rubber",
+    "exploded_offset_mm": [
+      -9.0,
+      -9.0,
+      8.0
+    ],
+    "mesh_vertices": 162,
+    "mesh_faces": 320
+  },
+  {
+    "id": "04",
+    "name": "Left Nose Pad Support",
+    "description": "Connected bridge bracket and vertical support stem attaching the nose pad to the frame.",
+    "role": "nose_support",
+    "material": "titanium",
+    "exploded_offset_mm": [
+      -12.0,
+      -6.0,
+      4.0
+    ],
+    "mesh_vertices": 16,
+    "mesh_faces": 24
+  },
+  {
+    "id": "05",
+    "name": "Right Front Frame Rim",
+    "description": "Primary structural rim surrounding the right optical lens.",
+    "role": "frame",
+    "material": "black",
+    "exploded_offset_mm": [
+      14.0,
+      0.0,
+      0.0
+    ],
+    "mesh_vertices": 208,
+    "mesh_faces": 416
+  },
+  {
+    "id": "06",
+    "name": "Right Optical Lens",
+    "description": "Transparent lens insert; final prescription and optical specifications are not defined in this concept model.",
+    "role": "lens",
+    "material": "lens_smoke",
+    "exploded_offset_mm": [
+      0.0,
+      0.0,
+      -20.0
+    ],
+    "mesh_vertices": 106,
+    "mesh_faces": 208
+  },
+  {
+    "id": "07",
+    "name": "Right Silicone Nose Pad",
+    "description": "Soft nose-contact pad for fit and comfort.",
+    "role": "nose_pad",
+    "material": "rubber",
+    "exploded_offset_mm": [
+      9.0,
+      -9.0,
+      8.0
+    ],
+    "mesh_vertices": 162,
+    "mesh_faces": 320
+  },
+  {
+    "id": "08",
+    "name": "Right Nose Pad Support",
+    "description": "Connected bridge bracket and vertical support stem attaching the nose pad to the frame.",
+    "role": "nose_support",
+    "material": "titanium",
+    "exploded_offset_mm": [
+      12.0,
+      -6.0,
+      4.0
+    ],
+    "mesh_vertices": 16,
+    "mesh_faces": 24
+  },
+  {
+    "id": "09",
+    "name": "Central Nose Bridge",
+    "description": "Structural bridge connecting left and right front rims.",
+    "role": "bridge",
+    "material": "black",
+    "exploded_offset_mm": [
+      0.0,
+      -10.0,
+      -8.0
+    ],
+    "mesh_vertices": 74,
+    "mesh_faces": 144
+  },
+  {
+    "id": "10",
+    "name": "Left Temple Arm",
+    "description": "Left side structural temple housing carrying internal electronics and routing.",
+    "role": "temple",
+    "material": "black",
+    "exploded_offset_mm": [
+      -18.0,
+      0.0,
+      14.0
+    ],
+    "mesh_vertices": 194,
+    "mesh_faces": 384
+  },
+  {
+    "id": "11",
+    "name": "Left Temple Tip / Earpiece",
+    "description": "Soft-touch rear temple tip for comfort and retention behind the ear.",
+    "role": "temple_tip",
+    "material": "rubber",
+    "exploded_offset_mm": [
+      -22.0,
+      -8.0,
+      28.0
+    ],
+    "mesh_vertices": 122,
+    "mesh_faces": 240
+  },
+  {
+    "id": "12",
+    "name": "Left Rechargeable Battery Cell",
+    "description": "Internal rechargeable battery cell housed inside the left temple.",
+    "role": "battery",
+    "material": "battery",
+    "exploded_offset_mm": [
+      -13.0,
+      7.0,
+      2.0
+    ],
+    "mesh_vertices": 98,
+    "mesh_faces": 192
+  },
+  {
+    "id": "13",
+    "name": "Left Control PCB",
+    "description": "Miniature control and power-management circuit board for the left temple.",
+    "role": "pcb",
+    "material": "pcb",
+    "exploded_offset_mm": [
+      -16.0,
+      10.0,
+      8.0
+    ],
+    "mesh_vertices": 8,
+    "mesh_faces": 12
+  },
+  {
+    "id": "14",
+    "name": "Left Main Control IC",
+    "description": "Illustrative controller package mounted on the temple PCB.",
+    "role": "chip",
+    "material": "black_glass",
+    "exploded_offset_mm": [
+      -19.0,
+      5.0,
+      10.0
+    ],
+    "mesh_vertices": 8,
+    "mesh_faces": 12
+  },
+  {
+    "id": "15",
+    "name": "Left Metal Hinge Assembly",
+    "description": "Metal hinge joining the front frame to the left temple.",
+    "role": "hinge",
+    "material": "titanium",
+    "exploded_offset_mm": [
+      -12.0,
+      0.0,
+      -7.0
+    ],
+    "mesh_vertices": 82,
+    "mesh_faces": 160
+  },
+  {
+    "id": "16",
+    "name": "Right Temple Arm",
+    "description": "Right side structural temple housing carrying internal electronics and routing.",
+    "role": "temple",
+    "material": "black",
+    "exploded_offset_mm": [
+      18.0,
+      0.0,
+      14.0
+    ],
+    "mesh_vertices": 194,
+    "mesh_faces": 384
+  },
+  {
+    "id": "17",
+    "name": "Right Temple Tip / Earpiece",
+    "description": "Soft-touch rear temple tip for comfort and retention behind the ear.",
+    "role": "temple_tip",
+    "material": "rubber",
+    "exploded_offset_mm": [
+      22.0,
+      -8.0,
+      28.0
+    ],
+    "mesh_vertices": 122,
+    "mesh_faces": 240
+  },
+  {
+    "id": "18",
+    "name": "Right Rechargeable Battery Cell",
+    "description": "Internal rechargeable battery cell housed inside the right temple.",
+    "role": "battery",
+    "material": "battery",
+    "exploded_offset_mm": [
+      13.0,
+      7.0,
+      2.0
+    ],
+    "mesh_vertices": 98,
+    "mesh_faces": 192
+  },
+  {
+    "id": "19",
+    "name": "Right Control PCB",
+    "description": "Miniature control and power-management circuit board for the right temple.",
+    "role": "pcb",
+    "material": "pcb",
+    "exploded_offset_mm": [
+      16.0,
+      10.0,
+      8.0
+    ],
+    "mesh_vertices": 8,
+    "mesh_faces": 12
+  },
+  {
+    "id": "20",
+    "name": "Right Main Control IC",
+    "description": "Illustrative controller package mounted on the temple PCB.",
+    "role": "chip",
+    "material": "black_glass",
+    "exploded_offset_mm": [
+      19.0,
+      5.0,
+      10.0
+    ],
+    "mesh_vertices": 8,
+    "mesh_faces": 12
+  },
+  {
+    "id": "21",
+    "name": "Right Metal Hinge Assembly",
+    "description": "Metal hinge joining the front frame to the right temple.",
+    "role": "hinge",
+    "material": "titanium",
+    "exploded_offset_mm": [
+      12.0,
+      0.0,
+      -7.0
+    ],
+    "mesh_vertices": 82,
+    "mesh_faces": 160
+  },
+  {
+    "id": "22",
+    "name": "Primary Wide-Angle Scene Camera Camera Housing",
+    "description": "Camera module enclosure for forward-facing visual capture.",
+    "role": "camera_housing",
+    "material": "graphite",
+    "exploded_offset_mm": [
+      0.0,
+      0.0,
+      -15.0
+    ],
+    "mesh_vertices": 106,
+    "mesh_faces": 208
+  },
+  {
+    "id": "23",
+    "name": "Primary Wide-Angle Scene Camera Camera Bezel",
+    "description": "Metal retaining ring around the camera optics.",
+    "role": "camera_bezel",
+    "material": "titanium",
+    "exploded_offset_mm": [
+      0.0,
+      0.0,
+      -23.0
+    ],
+    "mesh_vertices": 82,
+    "mesh_faces": 160
+  },
+  {
+    "id": "24",
+    "name": "Primary Wide-Angle Scene Camera Camera Lens Glass",
+    "description": "Front optical cover and dark lens element.",
+    "role": "camera_lens",
+    "material": "black_glass",
+    "exploded_offset_mm": [
+      0.0,
+      0.0,
+      -31.0
+    ],
+    "mesh_vertices": 82,
+    "mesh_faces": 160
+  },
+  {
+    "id": "25",
+    "name": "Primary Wide-Angle Scene Camera Optical Core",
+    "description": "Illustrative inner optical element of the camera module.",
+    "role": "camera_core",
+    "material": "amber_dark",
+    "exploded_offset_mm": [
+      0.0,
+      0.0,
+      -39.0
+    ],
+    "mesh_vertices": 82,
+    "mesh_faces": 160
+  },
+  {
+    "id": "26",
+    "name": "Secondary Stereo Camera Camera Housing",
+    "description": "Camera module enclosure for forward-facing visual capture.",
+    "role": "camera_housing",
+    "material": "graphite",
+    "exploded_offset_mm": [
+      0.0,
+      0.0,
+      -15.0
+    ],
+    "mesh_vertices": 106,
+    "mesh_faces": 208
+  },
+  {
+    "id": "27",
+    "name": "Secondary Stereo Camera Camera Bezel",
+    "description": "Metal retaining ring around the camera optics.",
+    "role": "camera_bezel",
+    "material": "titanium",
+    "exploded_offset_mm": [
+      0.0,
+      0.0,
+      -23.0
+    ],
+    "mesh_vertices": 82,
+    "mesh_faces": 160
+  },
+  {
+    "id": "28",
+    "name": "Secondary Stereo Camera Camera Lens Glass",
+    "description": "Front optical cover and dark lens element.",
+    "role": "camera_lens",
+    "material": "black_glass",
+    "exploded_offset_mm": [
+      0.0,
+      0.0,
+      -31.0
+    ],
+    "mesh_vertices": 82,
+    "mesh_faces": 160
+  },
+  {
+    "id": "29",
+    "name": "Secondary Stereo Camera Optical Core",
+    "description": "Illustrative inner optical element of the camera module.",
+    "role": "camera_core",
+    "material": "amber_dark",
+    "exploded_offset_mm": [
+      0.0,
+      0.0,
+      -39.0
+    ],
+    "mesh_vertices": 82,
+    "mesh_faces": 160
+  },
+  {
+    "id": "30",
+    "name": "Time-of-Flight Depth Sensor",
+    "description": "Optional depth-sensing module for improved distance estimation; final sensor selection is not fixed.",
+    "role": "depth_sensor",
+    "material": "amber",
+    "exploded_offset_mm": [
+      0.0,
+      -10.0,
+      -12.0
+    ],
+    "mesh_vertices": 66,
+    "mesh_faces": 128
+  },
+  {
+    "id": "31",
+    "name": "Depth Sensor Optical Window",
+    "description": "Protective optical window for the depth sensor.",
+    "role": "depth_window",
+    "material": "black_glass",
+    "exploded_offset_mm": [
+      0.0,
+      -10.0,
+      -20.0
+    ],
+    "mesh_vertices": 66,
+    "mesh_faces": 128
+  },
+  {
+    "id": "32",
+    "name": "Voice Input Left Microphone Port",
+    "description": "Acoustic inlet for the microphone array.",
+    "role": "microphone",
+    "material": "black_glass",
+    "exploded_offset_mm": [
+      0.0,
+      -11.0,
+      -3.0
+    ],
+    "mesh_vertices": 50,
+    "mesh_faces": 96
+  },
+  {
+    "id": "33",
+    "name": "Voice Input Right Microphone Port",
+    "description": "Acoustic inlet for the microphone array.",
+    "role": "microphone",
+    "material": "black_glass",
+    "exploded_offset_mm": [
+      0.0,
+      -11.0,
+      -3.0
+    ],
+    "mesh_vertices": 50,
+    "mesh_faces": 96
+  },
+  {
+    "id": "34",
+    "name": "Environmental Audio Microphone Port",
+    "description": "Acoustic inlet for the microphone array.",
+    "role": "microphone",
+    "material": "black_glass",
+    "exploded_offset_mm": [
+      0.0,
+      -11.0,
+      -3.0
+    ],
+    "mesh_vertices": 50,
+    "mesh_faces": 96
+  },
+  {
+    "id": "35",
+    "name": "Left Open-Ear Speaker Housing",
+    "description": "Compact open-ear audio module mounted along the temple.",
+    "role": "speaker",
+    "material": "graphite",
+    "exploded_offset_mm": [
+      -13.0,
+      0.0,
+      0.0
+    ],
+    "mesh_vertices": 82,
+    "mesh_faces": 160
+  },
+  {
+    "id": "36",
+    "name": "Left Speaker Grille",
+    "description": "Protective acoustic grille for the open-ear speaker.",
+    "role": "speaker_grille",
+    "material": "titanium",
+    "exploded_offset_mm": [
+      -21.0,
+      0.0,
+      0.0
+    ],
+    "mesh_vertices": 82,
+    "mesh_faces": 160
+  },
+  {
+    "id": "37",
+    "name": "Left Speaker Driver",
+    "description": "Illustrative acoustic driver behind the grille.",
+    "role": "speaker_driver",
+    "material": "black_glass",
+    "exploded_offset_mm": [
+      -29.0,
+      0.0,
+      0.0
+    ],
+    "mesh_vertices": 58,
+    "mesh_faces": 112
+  },
+  {
+    "id": "38",
+    "name": "Right Open-Ear Speaker Housing",
+    "description": "Compact open-ear audio module mounted along the temple.",
+    "role": "speaker",
+    "material": "graphite",
+    "exploded_offset_mm": [
+      13.0,
+      0.0,
+      0.0
+    ],
+    "mesh_vertices": 82,
+    "mesh_faces": 160
+  },
+  {
+    "id": "39",
+    "name": "Right Speaker Grille",
+    "description": "Protective acoustic grille for the open-ear speaker.",
+    "role": "speaker_grille",
+    "material": "titanium",
+    "exploded_offset_mm": [
+      21.0,
+      0.0,
+      0.0
+    ],
+    "mesh_vertices": 82,
+    "mesh_faces": 160
+  },
+  {
+    "id": "40",
+    "name": "Right Speaker Driver",
+    "description": "Illustrative acoustic driver behind the grille.",
+    "role": "speaker_driver",
+    "material": "black_glass",
+    "exploded_offset_mm": [
+      29.0,
+      0.0,
+      0.0
+    ],
+    "mesh_vertices": 58,
+    "mesh_faces": 112
+  },
+  {
+    "id": "41",
+    "name": "Voice Assistant Button",
+    "description": "Tactile control for power, capture, assistant activation, or supported shortcuts.",
+    "role": "button",
+    "material": "titanium",
+    "exploded_offset_mm": [
+      -12.0,
+      5.0,
+      0.0
+    ],
+    "mesh_vertices": 82,
+    "mesh_faces": 160
+  },
+  {
+    "id": "42",
+    "name": "Voice Assistant Button Accent Cap",
+    "description": "Colored tactile button cap.",
+    "role": "button_cap",
+    "material": "amber",
+    "exploded_offset_mm": [
+      -18.0,
+      7.0,
+      -2.0
+    ],
+    "mesh_vertices": 82,
+    "mesh_faces": 160
+  },
+  {
+    "id": "43",
+    "name": "Hazard Alert / Control Button",
+    "description": "Tactile control for power, capture, assistant activation, or supported shortcuts.",
+    "role": "button",
+    "material": "titanium",
+    "exploded_offset_mm": [
+      12.0,
+      5.0,
+      0.0
+    ],
+    "mesh_vertices": 82,
+    "mesh_faces": 160
+  },
+  {
+    "id": "44",
+    "name": "Hazard Alert / Control Button Accent Cap",
+    "description": "Colored tactile button cap.",
+    "role": "button_cap",
+    "material": "amber",
+    "exploded_offset_mm": [
+      18.0,
+      7.0,
+      -2.0
+    ],
+    "mesh_vertices": 82,
+    "mesh_faces": 160
+  },
+  {
+    "id": "45",
+    "name": "Vision Status LED",
+    "description": "Small device status indicator light.",
+    "role": "status_led",
+    "material": "amber",
+    "exploded_offset_mm": [
+      14.0,
+      7.0,
+      -3.0
+    ],
+    "mesh_vertices": 162,
+    "mesh_faces": 320
+  },
+  {
+    "id": "46",
+    "name": "USB-C Charging Port",
+    "description": "Charging/data connector opening near the rear underside of the temple.",
+    "role": "port",
+    "material": "black_glass",
+    "exploded_offset_mm": [
+      13.0,
+      -6.0,
+      6.0
+    ],
+    "mesh_vertices": 8,
+    "mesh_faces": 12
+  },
+  {
+    "id": "47",
+    "name": "USB-C Charging Port Metal Surround",
+    "description": "Metallic surround for the charging port.",
+    "role": "port_trim",
+    "material": "titanium",
+    "exploded_offset_mm": [
+      18.0,
+      -8.0,
+      8.0
+    ],
+    "mesh_vertices": 8,
+    "mesh_faces": 12
+  },
+  {
+    "id": "48",
+    "name": "Left Temple Haptic Motor",
+    "description": "Optional vibration motor for discreet tactile notifications.",
+    "role": "haptic_motor",
+    "material": "titanium",
+    "exploded_offset_mm": [
+      -14.0,
+      -5.0,
+      8.0
+    ],
+    "mesh_vertices": 66,
+    "mesh_faces": 128
+  },
+  {
+    "id": "49",
+    "name": "Vision Sensor Interface PCB",
+    "description": "Illustrative interface board for camera, depth and audio components, housed inside the right temple.",
+    "role": "pcb",
+    "material": "pcb",
+    "exploded_offset_mm": [
+      16.0,
+      10.0,
+      8.0
+    ],
+    "mesh_vertices": 8,
+    "mesh_faces": 12
+  }
+]

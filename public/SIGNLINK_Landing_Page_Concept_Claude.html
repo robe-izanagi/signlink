@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SIGNLINK — Smart glasses concept ecosystem</title>
+<meta name="description" content="SIGNLINK is a concept ecosystem of three AI smart glasses: Smart, Connect and Vision. Explore every component in 3D.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
+<style>
+:root{--ink:#0a101c;--ink2:#121b2c;--ink3:#1b2740;--line:#ffffff1f;--paper:#edf0f4;--paper2:#fff;--txt:#e8edf6;--mut:#9aa8c0;--dk:#0f1830;--dkm:#4d5b75;
+--smart:#6aa8ff;--connect:#2fd6c9;--vision:#ffa23a;--acc:var(--smart);--r:14px;
+--h:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;--b:'Instrument Sans','Segoe UI',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font:400 1rem/1.6 var(--b);background:var(--ink);color:var(--txt);overflow-x:hidden}
+img{max-width:100%;display:block}a{color:inherit}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+h1,h2,h3{font-family:var(--h);line-height:1.08;letter-spacing:-.02em;font-weight:700}
+h1{font-size:clamp(2.6rem,6.4vw,5.4rem)}h2{font-size:clamp(2rem,4vw,3.2rem)}h3{font-size:1.35rem}
+p{max-width:62ch}.wrap{width:min(1240px,92vw);margin:auto}section{padding:clamp(4.5rem,9vw,8rem) 0}
+.light{background:var(--paper);color:var(--dk)}.light p,.light li{color:var(--dkm)}
+.lead{font-size:1.15rem;color:var(--mut);margin-top:1rem}.light .lead{color:var(--dkm)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:46px;padding:.65rem 1.3rem;border-radius:99px;border:1px solid var(--line);background:#ffffff0d;color:var(--txt);font:600 .95rem var(--b);cursor:pointer;text-decoration:none;transition:background .2s,border-color .2s}
+.btn:hover{background:#ffffff1c}.btn.pri{background:var(--txt);color:var(--ink);border-color:var(--txt)}.btn.pri:hover{background:#fff}
+.btn[disabled],.btn[aria-disabled=true]{opacity:.55;cursor:not-allowed}
+nav{position:fixed;inset:0 0 auto;z-index:50;background:#0a101ccc;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:1.6rem;height:64px}
+.logo{font:700 1.25rem var(--h);letter-spacing:.14em;text-decoration:none;display:flex;gap:.55rem;align-items:center}
+.logo i{width:22px;height:10px;border:2px solid var(--txt);border-radius:5px;position:relative}.logo i:after{content:"";position:absolute;inset:1px;background:linear-gradient(90deg,var(--smart),var(--connect),var(--vision));border-radius:3px}
+nav ul{display:flex;gap:1.5rem;list-style:none;margin-left:auto;padding:0}nav ul a{text-decoration:none;color:var(--mut);font-weight:500;font-size:.95rem}nav ul a:hover{color:#fff}
+#mt{display:none;margin-left:auto}
+.hero{position:relative;min-height:100svh;display:grid;align-items:center;padding:96px 0 48px;background:radial-gradient(60% 60% at 72% 48%,#1d3a6b 0,transparent 70%),radial-gradient(40% 40% at 90% 90%,#0f4a4a66,transparent),var(--ink);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:2rem;align-items:center}
+.hero h1{max-width:12ch}.hero .cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}
+.hv{position:relative;aspect-ratio:1/.9;min-height:300px}.hv canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hv small{position:absolute;bottom:0;left:0;color:var(--mut);font-size:.85rem}
+.hero .tag{margin-top:2.2rem;color:var(--mut);max-width:44ch;border-left:2px solid var(--line);padding-left:1rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:3rem}
+.card{background:var(--paper2);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;border-top:5px solid var(--acc);box-shadow:0 18px 40px -22px #0f183055}
+.card .ph{background:linear-gradient(#26364f,#0d1424);aspect-ratio:16/10;overflow:hidden}.card .ph img{width:100%;height:100%;object-fit:cover}
+.card .bd{padding:1.4rem;display:flex;flex-direction:column;gap:.8rem;flex:1}.card .for{font-weight:600;color:var(--dk)}
+.card ul{padding-left:1.1rem;font-size:.93rem}.card .btn{margin-top:auto;background:var(--dk);color:#fff;border-color:var(--dk)}.card .btn:hover{background:#1d2c52}
+.s{--acc:var(--smart)}.c{--acc:var(--connect)}.v{--acc:var(--vision)}
+#explore{background:linear-gradient(var(--ink),var(--ink2))}
+.tabs{display:flex;gap:.5rem;flex-wrap:wrap;margin:2rem 0 1rem}
+.tabs button{min-height:46px;padding:.55rem 1.2rem;border-radius:99px;border:1px solid var(--line);background:none;color:var(--txt);font:600 .95rem var(--b);cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--acc);color:#07101f;border-color:var(--acc)}
+.xp{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(300px,1fr);gap:1.2rem}
+.vw{position:relative;border-radius:var(--r);overflow:hidden;background:radial-gradient(70% 70% at 50% 45%,#22345a,#0c1424);border:1px solid var(--line);min-height:460px;height:min(70vh,640px)}
+.vw canvas{width:100%;height:100%;display:block;touch-action:none;cursor:grab}.vw canvas:active{cursor:grabbing}
+.ov{position:absolute;inset:0;display:none;flex-direction:column;align-items:center;justify-content:center;gap:.8rem;background:#0a101ccc;text-align:center;padding:1.5rem}.ov.on{display:flex}
+.ov img{max-height:45%;opacity:.8}.bar{width:min(260px,70%);height:4px;background:var(--line);border-radius:4px;overflow:hidden}.bar b{display:block;height:100%;width:0;background:var(--acc);transition:width .2s}
+.tag{position:absolute;pointer-events:none;transform:translate(14px,-50%);background:var(--acc);color:#07101f;font:600 .8rem var(--b);padding:.25rem .6rem;border-radius:6px;white-space:nowrap;display:none}
+.hint{position:absolute;left:1rem;top:1rem;font-size:.82rem;color:var(--mut);pointer-events:none}
+.ctl{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;margin-top:.9rem}
+.ctl .sl{flex:1 1 220px;display:flex;align-items:center;gap:.7rem;min-height:46px}
+input[type=range]{flex:1;accent-color:var(--acc);height:28px}output{font-variant-numeric:tabular-nums;min-width:3.2ch;font-weight:600}
+.side{display:flex;flex-direction:column;gap:1rem;min-width:0}
+.panel{background:var(--ink2);border:1px solid var(--line);border-radius:var(--r);padding:1.2rem}
+#info h3{margin:.2rem 0 .5rem}#info dl{display:grid;grid-template-columns:auto 1fr;gap:.3rem .9rem;font-size:.92rem;margin-top:.8rem}#info dt{color:var(--mut)}#info dd{margin:0}
+#info .id{display:inline-block;background:var(--acc);color:#07101f;font-weight:700;border-radius:6px;padding:.05rem .5rem}
+#info .em{color:var(--mut)}
+.cl input{width:100%;min-height:44px;border-radius:10px;border:1px solid var(--line);background:#ffffff0d;color:var(--txt);padding:0 .9rem;font:inherit;margin-bottom:.6rem}
+#list{list-style:none;padding:0;max-height:300px;overflow:auto;display:grid;gap:2px}
+#list button{width:100%;text-align:left;display:flex;gap:.7rem;min-height:40px;align-items:center;padding:.3rem .6rem;border-radius:8px;border:0;background:none;color:var(--txt);font:.9rem var(--b);cursor:pointer}
+#list button:hover{background:#ffffff12}#list button[aria-current=true]{background:var(--acc);color:#07101f}#list b{min-width:2ch;color:var(--mut);font-weight:600}#list button[aria-current=true] b{color:#07101f}
+.tech{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1px;background:#0f183026;border:1px solid #0f183026;border-radius:var(--r);overflow:hidden;margin-top:3rem}
+.tech div{background:var(--paper);padding:1.6rem}.tech h3{margin-bottom:.5rem}
+.use{padding:0;background:var(--ink)}.use .row{padding:clamp(4rem,8vw,6.5rem) 0;border-top:1px solid var(--line);background:radial-gradient(50% 80% at 85% 50%,color-mix(in srgb,var(--acc) 22%,transparent),transparent)}
+.use .wrap{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}.use .row:nth-child(even) .wrap>:first-child{order:2}
+.use h2{color:var(--acc)}.use .users{font-weight:600;margin-top:.8rem}.use ul{margin-top:1.2rem;padding-left:1.2rem;color:var(--mut)}.use li{margin:.4rem 0}.use li::marker{color:var(--acc)}
+.use .ph{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:#0c1424}
+.tw{overflow-x:auto;margin-top:3rem;border-radius:var(--r);background:var(--paper2)}table{border-collapse:collapse;width:100%;min-width:720px;font-size:.95rem}
+th,td{text-align:left;padding:1rem 1.2rem;border-bottom:1px solid #0f183018;vertical-align:top;color:var(--dkm)}th{color:var(--dk)}thead th{border-top:4px solid var(--acc)}tbody th{width:18%}
+.app{background:radial-gradient(50% 70% at 80% 50%,#12423f66,transparent),var(--ink2)}.app .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:3rem;align-items:center}
+.ac{margin-top:2rem;background:#ffffff0a;border:1px solid var(--line);border-radius:var(--r);padding:1.4rem;display:flex;flex-direction:column;gap:.9rem;max-width:460px}
+.soon{align-self:flex-start;font:600 .8rem var(--b);padding:.2rem .7rem;border-radius:99px;background:var(--vision);color:#241400}
+.phone{width:min(250px,60vw);aspect-ratio:9/18.5;margin:auto;border-radius:34px;border:8px solid #263553;background:linear-gradient(#17233b,#0b1220);padding:1.4rem 1rem;display:flex;flex-direction:column;gap:.7rem;font-size:.8rem;color:var(--mut)}
+.phone i{display:block;height:48px;border-radius:12px;background:#ffffff12}.phone i:first-of-type{height:90px;background:linear-gradient(135deg,#2fd6c955,#6aa8ff44)}
+footer{background:#060a12;padding:4rem 0 2rem;font-size:.92rem;color:var(--mut)}footer .g{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:2rem}footer h3{font-size:1rem;color:var(--txt);margin-bottom:.7rem}footer ul{list-style:none;padding:0;display:grid;gap:.4rem}footer a{text-decoration:none}footer a:hover{color:#fff}
+footer .fine{border-top:1px solid var(--line);margin-top:2.5rem;padding-top:1.4rem;max-width:90ch}
+@media(max-width:980px){.hero .wrap,.xp,.use .wrap,.app .wrap{grid-template-columns:1fr}.use .row:nth-child(even) .wrap>:first-child{order:0}.cards{grid-template-columns:1fr}footer .g{grid-template-columns:1fr 1fr}.hv{order:-1;aspect-ratio:1/.7}.hero{padding-top:80px}
+ nav ul{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;background:var(--ink);padding:1rem 4vw;gap:1rem;margin:0;border-bottom:1px solid var(--line)}nav ul.on{display:flex}#mt{display:inline-flex}nav .btn.get{display:none}.vw{height:62svh;min-height:380px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<nav aria-label="Primary"><div class="wrap">
+<a class="logo" href="#top"><i></i>SIGNLINK</a>
+<ul id="menu"><li><a href="#top">Overview</a></li><li><a href="#products">Products</a></li><li><a href="#technology">Technology</a></li><li><a href="#explore">Explore 3D</a></li><li><a href="#about">About</a></li></ul>
+<a class="btn pri get" href="#app">Get the App</a>
+<button class="btn" id="mt" aria-expanded="false" aria-controls="menu">Menu</button>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+<div><h1>Technology That Connects Every Perspective.</h1>
+<p class="lead">Meet SIGNLINK — an intelligent smart glasses ecosystem designed for communication, accessibility, and everyday assistance.</p>
+<div class="cta"><a class="btn pri" href="#products">Explore Products</a><a class="btn" href="#explore">Explore 3D Models</a></div>
+<p class="tag">One intelligent platform. Three ways to experience the world. A product concept — not yet a shipping product.</p></div>
+<div class="hv"><canvas id="hc" aria-label="Rotating 3D model of SIGNLINK Smart glasses"></canvas><small>SIGNLINK Smart concept model</small></div>
+</div></header>
+
+<section class="light" id="products"><div class="wrap">
+<h2>Three products. One platform.</h2>
+<p class="lead">Each variant is a product concept designed around a different way of experiencing the world. Features listed are proposed, not yet validated.</p>
+<div class="cards" id="cards"></div>
+</div></section>
+
+<section id="explore"><div class="wrap">
+<h2>Explore the hardware in 3D</h2>
+<p class="lead">Rotate, zoom, pull the parts apart and select any component. Models load only when you choose a product.</p>
+<div class="tabs" role="tablist" aria-label="Product" id="tabs"></div>
+<div class="xp">
+<div>
+<div class="vw" id="vw"><canvas id="ec" tabindex="0" aria-label="Interactive 3D viewer. Drag to rotate, scroll to zoom, right-drag to pan."></canvas>
+<div class="hint">Drag to rotate · scroll to zoom · tap a part to inspect</div><div class="tag" id="tag"></div>
+<div class="ov" id="ov" role="status"><img id="fb" alt="" hidden><p id="ovt">Loading model…</p><div class="bar" id="ovb"><b></b></div><button class="btn" id="retry" hidden>Try again</button></div></div>
+<div class="ctl">
+<button class="btn pri" id="bx">Explode</button><button class="btn" id="ba">Assemble</button><button class="btn" id="bp" disabled>Pause</button>
+<label class="sl"><span>Explosion</span><input type="range" id="rg" min="0" max="100" value="0" aria-label="Explosion amount percent"><output id="ro">0%</output></label>
+<button class="btn" id="bv">Reset view</button><button class="btn" id="br">Reset all</button></div>
+</div>
+<div class="side">
+<div class="panel" id="info" aria-live="polite"></div>
+<div class="panel cl"><input type="search" id="q" placeholder="Search components" aria-label="Search components"><ul id="list"></ul></div>
+</div></div>
+</div></section>
+
+<section class="light" id="technology"><div class="wrap">
+<h2>The technology behind SIGNLINK</h2>
+<p class="lead">Seven building blocks the concept relies on. All are proposed capabilities; none has been commercially implemented in SIGNLINK hardware.</p>
+<div class="tech">
+<div><h3>Artificial intelligence</h3><p>An assistant layer that understands requests, summarizes what it sees and hears, and answers in plain language.</p></div>
+<div><h3>Computer vision</h3><p>Cameras feed software that identifies scenes, objects and text so they can be described or acted on.</p></div>
+<div><h3>Speech recognition</h3><p>Microphone arrays pick up nearby speech so it can be turned into text or commands.</p></div>
+<div><h3>Sign language recognition</h3><p>Designed to read hand shapes and movement from two cameras. Accuracy and language coverage are open research questions.</p></div>
+<div><h3>Augmented reality</h3><p>In Connect, a waveguide display is intended to place captions and sign output in the wearer's view.</p></div>
+<div><h3>Wearable electronics</h3><p>Battery, control boards and USB-C charging are arranged inside slim temples. Packaging is illustrative only.</p></div>
+<div><h3>Audio assistance</h3><p>Open-ear speakers are designed to deliver spoken answers while keeping surroundings audible.</p></div>
+</div></div></section>
+
+<section class="use" id="usecases">
+<div class="row s"><div class="wrap"><div><h2>SIGNLINK Smart</h2><p class="users">For everyday users</p><p class="lead">A hands-free companion for the moments when pulling out a phone is awkward.</p>
+<ul><li>Ask a question out loud and hear an answer.</li><li>Have a scene, sign or menu explained.</li><li>Translate speech between languages.</li><li>Capture photos and video without touching a screen.</li></ul></div><div class="ph"><img loading="lazy" src="SIGNLINK_3D_Concepts_v2/previews/SIGNLINK_Smart_Assembled.png" alt="SIGNLINK Smart concept model, assembled"></div></div></div>
+<div class="row c"><div class="wrap"><div><h2>SIGNLINK Connect</h2><p class="users">For Deaf and hard-of-hearing people</p><p class="lead">Designed to ease conversation between sign-language users and people who speak. Communication partners do not need to wear the device.</p>
+<ul><li>Live captions of nearby speech.</li><li>Speech shown as a sign-language representation.</li><li>Wearer's signing converted to text or synthesized voice.</li><li>Choose text, sign, or both.</li></ul></div><div class="ph"><img loading="lazy" src="SIGNLINK_3D_Concepts_v2/previews/SIGNLINK_Connect_Assembled.png" alt="SIGNLINK Connect concept model, assembled"></div></div></div>
+<div class="row v"><div class="wrap"><div><h2>SIGNLINK Vision</h2><p class="users">For blind and low-vision people</p><p class="lead">Designed to describe surroundings through audio and answer spoken questions.</p>
+<ul><li>Short scene descriptions by default, more detail on request.</li><li>Ask what is in front of you.</li><li>Photos and video explained aloud.</li><li>Basic alerts for some supported potential hazards. This is an aid only, not a guarantee of safety or a replacement for a cane, guide dog or other mobility aid.</li></ul></div><div class="ph"><img loading="lazy" src="SIGNLINK_3D_Concepts_v2/previews/SIGNLINK_Vision_Assembled.png" alt="SIGNLINK Vision concept model, assembled"></div></div></div>
+</section>
+
+<section class="light" id="compare"><div class="wrap">
+<h2>Compare the three</h2>
+<div class="tw"><table><thead><tr><th></th><th>SIGNLINK Smart</th><th>SIGNLINK Connect</th><th>SIGNLINK Vision</th></tr></thead><tbody>
+<tr><th>Intended users</th><td>General users</td><td>Deaf and hard-of-hearing people</td><td>Blind and low-vision people</td></tr>
+<tr><th>Primary functions</th><td>Voice assistant, scene understanding, translation, capture</td><td>Captions, speech-to-sign, sign recognition, sign-to-text and sign-to-voice</td><td>Scene descriptions, spoken Q&amp;A, image and video explanations, hazard awareness alerts</td></tr>
+<tr><th>Display</th><td>None. Audio-first.</td><td>AR waveguide and microdisplay projector (concept)</td><td>None. Audio and haptic feedback.</td></tr>
+<tr><th>Cameras</th><td>One wide-angle camera</td><td>Front sign-recognition camera plus downward wearer hand-sign camera</td><td>Wide-angle and stereo cameras, plus optional Time-of-Flight depth sensor</td></tr>
+<tr><th>Audio</th><td>Open-ear speakers, three microphone ports</td><td>Open-ear speakers, two speech-capture microphone ports</td><td>Open-ear speakers, three microphone ports, optional haptic motor</td></tr>
+</tbody></table></div></div></section>
+
+<section class="app" id="app"><div class="wrap">
+<div><h2>The SIGNLINK app</h2><p class="lead">A companion Android app is planned to pair with the glasses. It is not available yet.</p>
+<div class="ac"><span class="soon">Coming soon</span><strong>SIGNLINK for Android</strong>
+<button class="btn" disabled aria-disabled="true">Download unavailable — coming soon</button>
+<p style="font-size:.88rem;color:var(--mut)">There is no download yet. We'll add a real link when the app is released.</p></div></div>
+<div class="phone" role="img" aria-label="Placeholder mock-up of the planned mobile app"><b style="color:var(--txt)">SIGNLINK</b><i></i><span>Concept preview</span><i></i><i></i></div>
+</div></section>
+
+<section class="light" id="about"><div class="wrap">
+<h2>Why SIGNLINK</h2>
+<p class="lead">Wearable AI is usually designed for one kind of user. SIGNLINK starts from three: people who want everyday help, people who communicate in sign language, and people who navigate without sight. The three products are meant to share one hardware language and one app, so accessibility is part of the platform rather than an add-on.</p>
+<p class="lead">Every model on this page is a visual concept. Hardware, optics and sensors still need validation by qualified engineers.</p>
+</div></section>
+
+<footer><div class="wrap"><div class="g">
+<div><a class="logo" href="#top"><i></i>SIGNLINK</a><p style="margin-top:1rem">One intelligent platform. Three ways to experience the world.</p></div>
+<div><h3>Navigate</h3><ul><li><a href="#top">Overview</a></li><li><a href="#technology">Technology</a></li><li><a href="#explore">Explore 3D</a></li><li><a href="#about">About</a></li></ul></div>
+<div><h3>Products</h3><ul id="fp"></ul></div>
+<div><h3>Contact</h3><p>Contact details to be added.</p></div></div>
+<p class="fine">© 2026 SIGNLINK. SIGNLINK Smart, Connect and Vision are product concepts. The 3D models are illustrative, not manufacturing-ready, and no feature described here has been validated or is available for purchase.</p></div></footer>
+
+<script>
+window.SL={"parts":{"Smart":[["01","Left Front Frame Rim","frame",-0.013,0.0,0.0],["02","Left Optical Lens","lens",0.0,0.0,-0.018],["03","Left Silicone Nose Pad","nose_pad",-0.01,-0.015,0.01],["04","Left Nose Pad Support","nose_support",-0.011,-0.012,0.005],["05","Right Front Frame Rim","frame",0.013,0.0,0.0],["06","Right Optical Lens","lens",0.0,0.0,-0.018],["07","Right Silicone Nose Pad","nose_pad",0.01,-0.015,0.01],["08","Right Nose Pad Support","nose_support",0.011,-0.012,0.005],["09","Central Nose Bridge","bridge",0.0,-0.01,-0.008],["10","Left Temple Arm","temple",-0.018,0.0,0.018],["11","Left Temple Tip / Earpiece","temple_tip",-0.023,-0.01,0.042],["12","Left Rechargeable Battery Cell","battery",-0.022,0.008,0.047],["13","Left Control PCB","pcb",-0.019,0.011,0.019],["14","Left Main Control IC","chip",-0.02,0.014,0.021],["15","Left Metal Hinge Assembly","hinge",-0.014,0.0,0.0],["16","Right Temple Arm","temple",0.018,0.0,0.018],["17","Right Temple Tip / Earpiece","temple_tip",0.023,-0.01,0.042],["18","Right Rechargeable Battery Cell","battery",0.022,0.008,0.047],["19","Right Control PCB","pcb",0.019,0.011,0.019],["20","Right Main Control IC","chip",0.02,0.014,0.021],["21","Right Metal Hinge Assembly","hinge",0.014,0.0,0.0],["22","Primary Wide-Angle Camera Housing","camera_housing",-0.026,0.018,-0.013],["23","Primary Wide-Angle Camera Bezel","camera_bezel",-0.0273,0.018900000000000004,-0.02],["24","Primary Wide-Angle Camera Lens Glass","camera_lens",-0.0286,0.0198,-0.025],["25","Primary Wide-Angle Optical Core","camera_core",-0.029639999999999996,0.02052,-0.029],["26","Front Voice Microphone Port","microphone",-0.008,-0.02,-0.013],["27","Ambient Voice Microphone Port","microphone",0.008,-0.02,-0.013],["28","Secondary Voice Microphone Port","microphone",0.018,-0.018,-0.016],["29","Left Open-Ear Speaker Housing","speaker",-0.018,-0.01,0.028],["30","Left Speaker Grille","speaker_grille",-0.022,-0.01,0.028],["31","Left Speaker Driver","speaker_driver",-0.025,-0.01,0.032],["32","Right Open-Ear Speaker Housing","speaker",0.018,-0.01,0.028],["33","Right Speaker Grille","speaker_grille",0.022,-0.01,0.028],["34","Right Speaker Driver","speaker_driver",0.025,-0.01,0.032],["35","Power / Assistant Button","button",0.018,0.006,0.01],["36","Power / Assistant Button Accent Cap","button_cap",0.022,0.008,0.011],["37","Status LED","status_led",0.019,0.009,0.0],["38","USB-C Charging Port","port",0.022,-0.012,0.038],["39","USB-C Charging Port Metal Surround","port_trim",0.025,-0.014,0.04],["40","Right Temple Touch Strip","touch_strip",0.024,0.009,0.035],["41","Front Sensor Interface PCB","pcb",0.0,0.017,0.016]],"Connect":[["01","Left Front Frame Rim","frame",-0.013,0.0,0.0],["02","Left Optical Lens","lens",0.0,0.0,-0.018],["03","Left Silicone Nose Pad","nose_pad",-0.01,-0.015,0.01],["04","Left Nose Pad Support","nose_support",-0.011,-0.012,0.005],["05","Right Front Frame Rim","frame",0.013,0.0,0.0],["06","Right Optical Lens","lens",0.0,0.0,-0.018],["07","Right Silicone Nose Pad","nose_pad",0.01,-0.015,0.01],["08","Right Nose Pad Support","nose_support",0.011,-0.012,0.005],["09","Central Nose Bridge","bridge",0.0,-0.01,-0.008],["10","Left Temple Arm","temple",-0.018,0.0,0.018],["11","Left Temple Tip / Earpiece","temple_tip",-0.023,-0.01,0.042],["12","Left Rechargeable Battery Cell","battery",-0.022,0.008,0.047],["13","Left Control PCB","pcb",-0.019,0.011,0.019],["14","Left Main Control IC","chip",-0.02,0.014,0.021],["15","Left Metal Hinge Assembly","hinge",-0.014,0.0,0.0],["16","Right Temple Arm","temple",0.018,0.0,0.018],["17","Right Temple Tip / Earpiece","temple_tip",0.023,-0.01,0.042],["18","Right Rechargeable Battery Cell","battery",0.022,0.008,0.047],["19","Right Control PCB","pcb",0.019,0.011,0.019],["20","Right Main Control IC","chip",0.02,0.014,0.021],["21","Right Metal Hinge Assembly","hinge",0.014,0.0,0.0],["22","Left AR Waveguide / Combiner","waveguide",0.0,0.0,-0.024],["23","Right AR Waveguide / Combiner","waveguide",0.0,0.0,-0.024],["24","AR Microdisplay Projector Housing","projector_housing",0.024,0.022,-0.019],["25","AR Projector Optical Window","projector_window",0.028,0.026,-0.027],["26","AR Display Driver PCB","display_pcb",0.028,0.028,-0.016],["27","Sign Recognition Front Camera Camera Housing","camera_housing",0.0,0.025,-0.019],["28","Sign Recognition Front Camera Camera Bezel","camera_bezel",0.0,0.02625,-0.026],["29","Sign Recognition Front Camera Camera Lens Glass","camera_lens",0.0,0.027500000000000004,-0.031],["30","Sign Recognition Front Camera Optical Core","camera_core",0.0,0.028499999999999998,-0.035],["31","Wearer Hand-Sign Camera Housing","hand_camera_housing",0.018,-0.022,-0.014],["32","Wearer Hand-Sign Camera Bezel","hand_camera_bezel",0.021,-0.026,-0.019],["33","Wearer Hand-Sign Camera Lens","hand_camera_lens",0.023,-0.028,-0.023],["34","Speech Capture Left Microphone Port","microphone",-0.012,-0.02,-0.012],["35","Speech Capture Right Microphone Port","microphone",0.012,-0.02,-0.012],["36","Left Open-Ear Speaker Housing","speaker",-0.018,-0.01,0.028],["37","Left Speaker Grille","speaker_grille",-0.022,-0.01,0.028],["38","Left Speaker Driver","speaker_driver",-0.025,-0.01,0.032],["39","Right Open-Ear Speaker Housing","speaker",0.018,-0.01,0.028],["40","Right Speaker Grille","speaker_grille",0.022,-0.01,0.028],["41","Right Speaker Driver","speaker_driver",0.025,-0.01,0.032],["42","Communication Mode Button","button",0.018,0.006,0.01],["43","Communication Mode Button Accent Cap","button_cap",0.022,0.008,0.011],["44","Communication Status LED","status_led",0.019,0.009,0.0],["45","USB-C Charging Port","port",0.022,-0.012,0.038],["46","USB-C Charging Port Metal Surround","port_trim",0.025,-0.014,0.04],["47","Ambient Light Sensor","ambient_sensor",0.0,0.024,-0.011],["48","Right Temple Communication Control Strip","touch_strip",0.025,0.009,0.035]],"Vision":[["01","Left Front Frame Rim","frame",-0.013,0.0,0.0],["02","Left Optical Lens","lens",0.0,0.0,-0.018],["03","Left Silicone Nose Pad","nose_pad",-0.01,-0.015,0.01],["04","Left Nose Pad Support","nose_support",-0.011,-0.012,0.005],["05","Right Front Frame Rim","frame",0.013,0.0,0.0],["06","Right Optical Lens","lens",0.0,0.0,-0.018],["07","Right Silicone Nose Pad","nose_pad",0.01,-0.015,0.01],["08","Right Nose Pad Support","nose_support",0.011,-0.012,0.005],["09","Central Nose Bridge","bridge",0.0,-0.01,-0.008],["10","Left Temple Arm","temple",-0.018,0.0,0.018],["11","Left Temple Tip / Earpiece","temple_tip",-0.023,-0.01,0.042],["12","Left Rechargeable Battery Cell","battery",-0.022,0.008,0.047],["13","Left Control PCB","pcb",-0.019,0.011,0.019],["14","Left Main Control IC","chip",-0.02,0.014,0.021],["15","Left Metal Hinge Assembly","hinge",-0.014,0.0,0.0],["16","Right Temple Arm","temple",0.018,0.0,0.018],["17","Right Temple Tip / Earpiece","temple_tip",0.023,-0.01,0.042],["18","Right Rechargeable Battery Cell","battery",0.022,0.008,0.047],["19","Right Control PCB","pcb",0.019,0.011,0.019],["20","Right Main Control IC","chip",0.02,0.014,0.021],["21","Right Metal Hinge Assembly","hinge",0.014,0.0,0.0],["22","Primary Wide-Angle Scene Camera Camera Housing","camera_housing",0.0,0.025,-0.018],["23","Primary Wide-Angle Scene Camera Camera Bezel","camera_bezel",0.0,0.02625,-0.025],["24","Primary Wide-Angle Scene Camera Camera Lens Glass","camera_lens",0.0,0.027500000000000004,-0.03],["25","Primary Wide-Angle Scene Camera Optical Core","camera_core",0.0,0.028499999999999998,-0.034],["26","Secondary Stereo Camera Camera Housing","camera_housing",-0.022,0.022,-0.017],["27","Secondary Stereo Camera Camera Bezel","camera_bezel",-0.023100000000000002,0.023100000000000002,-0.024],["28","Secondary Stereo Camera Camera Lens Glass","camera_lens",-0.024200000000000003,0.024200000000000003,-0.029],["29","Secondary Stereo Camera Optical Core","camera_core",-0.025079999999999998,0.025079999999999998,-0.033],["30","Time-of-Flight Depth Sensor","depth_sensor",0.024,0.025,-0.02],["31","Depth Sensor Optical Window","depth_window",0.027,0.028,-0.026],["32","Voice Input Left Microphone Port","microphone",-0.014,-0.02,-0.013],["33","Voice Input Right Microphone Port","microphone",0.014,-0.02,-0.013],["34","Environmental Audio Microphone Port","microphone",0.022,-0.019,-0.015],["35","Left Open-Ear Speaker Housing","speaker",-0.018,-0.01,0.028],["36","Left Speaker Grille","speaker_grille",-0.022,-0.01,0.028],["37","Left Speaker Driver","speaker_driver",-0.025,-0.01,0.032],["38","Right Open-Ear Speaker Housing","speaker",0.018,-0.01,0.028],["39","Right Speaker Grille","speaker_grille",0.022,-0.01,0.028],["40","Right Speaker Driver","speaker_driver",0.025,-0.01,0.032],["41","Voice Assistant Button","button",-0.018,0.006,0.01],["42","Voice Assistant Button Accent Cap","button_cap",-0.022,0.008,0.011],["43","Hazard Alert / Control Button","button",0.018,0.006,0.01],["44","Hazard Alert / Control Button Accent Cap","button_cap",0.022,0.008,0.011],["45","Vision Status LED","status_led",0.019,0.009,0.0],["46","USB-C Charging Port","port",0.022,-0.012,0.038],["47","USB-C Charging Port Metal Surround","port_trim",0.025,-0.014,0.04],["48","Left Temple Haptic Motor","haptic_motor",-0.023,-0.01,0.032],["49","Vision Sensor Interface PCB","pcb",0.0,0.022,0.02]]},"desc":{"Left Front Frame Rim":"Primary structural rim surrounding the left optical lens.","Left Optical Lens":"Transparent lens insert; final prescription and optical specifications are not defined in this concept model.","Left Silicone Nose Pad":"Soft nose-contact pad for fit and comfort.","Left Nose Pad Support":"Small support arm attaching the nose pad to the bridge/frame.","Right Front Frame Rim":"Primary structural rim surrounding the right optical lens.","Right Optical Lens":"Transparent lens insert; final prescription and optical specifications are not defined in this concept model.","Right Silicone Nose Pad":"Soft nose-contact pad for fit and comfort.","Right Nose Pad Support":"Small support arm attaching the nose pad to the bridge/frame.","Central Nose Bridge":"Structural bridge connecting left and right front rims.","Left Temple Arm":"Left side structural temple housing carrying internal electronics and routing.","Left Temple Tip / Earpiece":"Soft-touch rear temple tip for comfort and retention behind the ear.","Left Rechargeable Battery Cell":"Internal rechargeable battery cell housed inside the left temple.","Left Control PCB":"Miniature control and power-management circuit board for the left temple.","Left Main Control IC":"Illustrative controller package mounted on the temple PCB.","Left Metal Hinge Assembly":"Metal hinge joining the front frame to the left temple.","Right Temple Arm":"Right side structural temple housing carrying internal electronics and routing.","Right Temple Tip / Earpiece":"Soft-touch rear temple tip for comfort and retention behind the ear.","Right Rechargeable Battery Cell":"Internal rechargeable battery cell housed inside the right temple.","Right Control PCB":"Miniature control and power-management circuit board for the right temple.","Right Main Control IC":"Illustrative controller package mounted on the temple PCB.","Right Metal Hinge Assembly":"Metal hinge joining the front frame to the right temple.","Primary Wide-Angle Camera Housing":"Camera module enclosure for forward-facing visual capture.","Primary Wide-Angle Camera Bezel":"Metal retaining ring around the camera optics.","Primary Wide-Angle Camera Lens Glass":"Front optical cover and dark lens element.","Primary Wide-Angle Optical Core":"Illustrative inner optical element of the camera module.","Front Voice Microphone Port":"Acoustic inlet for the microphone array.","Ambient Voice Microphone Port":"Acoustic inlet for the microphone array.","Secondary Voice Microphone Port":"Acoustic inlet for the microphone array.","Left Open-Ear Speaker Housing":"Compact open-ear audio module mounted along the temple.","Left Speaker Grille":"Protective acoustic grille for the open-ear speaker.","Left Speaker Driver":"Illustrative acoustic driver behind the grille.","Right Open-Ear Speaker Housing":"Compact open-ear audio module mounted along the temple.","Right Speaker Grille":"Protective acoustic grille for the open-ear speaker.","Right Speaker Driver":"Illustrative acoustic driver behind the grille.","Power / Assistant Button":"Tactile control for power, capture, assistant activation, or supported shortcuts.","Power / Assistant Button Accent Cap":"Colored tactile button cap.","Status LED":"Small device status indicator light.","USB-C Charging Port":"Charging/data connector opening near the rear underside of the temple.","USB-C Charging Port Metal Surround":"Metallic surround for the charging port.","Right Temple Touch Strip":"Touch-sensitive control zone for the general-purpose assistant.","Front Sensor Interface PCB":"Illustrative front sensor interconnect board.","Left AR Waveguide / Combiner":"Transparent optical layer intended to guide virtual display imagery into the left eye box.","Right AR Waveguide / Combiner":"Transparent optical layer intended to guide virtual display imagery into the right eye box.","AR Microdisplay Projector Housing":"Enclosure for the miniature AR display/projector assembly.","AR Projector Optical Window":"Optical output window of the microdisplay assembly.","AR Display Driver PCB":"Driver electronics for the AR microdisplay.","Sign Recognition Front Camera Camera Housing":"Camera module enclosure for forward-facing visual capture.","Sign Recognition Front Camera Camera Bezel":"Metal retaining ring around the camera optics.","Sign Recognition Front Camera Camera Lens Glass":"Front optical cover and dark lens element.","Sign Recognition Front Camera Optical Core":"Illustrative inner optical element of the camera module.","Wearer Hand-Sign Camera Housing":"Small downward-facing camera enclosure intended to observe the wearer\u2019s signing area; exact field of view requires ergonomic testing.","Wearer Hand-Sign Camera Bezel":"Metal retaining ring for the downward-facing hand-sign camera.","Wearer Hand-Sign Camera Lens":"Optical cover for the auxiliary hand-sign camera.","Speech Capture Left Microphone Port":"Acoustic inlet for the microphone array.","Speech Capture Right Microphone Port":"Acoustic inlet for the microphone array.","Communication Mode Button":"Tactile control for power, capture, assistant activation, or supported shortcuts.","Communication Mode Button Accent Cap":"Colored tactile button cap.","Communication Status LED":"Small device status indicator light.","Ambient Light Sensor":"Measures ambient brightness for display adjustment.","Right Temple Communication Control Strip":"Touch surface for caption, sign output, and volume controls.","Primary Wide-Angle Scene Camera Camera Housing":"Camera module enclosure for forward-facing visual capture.","Primary Wide-Angle Scene Camera Camera Bezel":"Metal retaining ring around the camera optics.","Primary Wide-Angle Scene Camera Camera Lens Glass":"Front optical cover and dark lens element.","Primary Wide-Angle Scene Camera Optical Core":"Illustrative inner optical element of the camera module.","Secondary Stereo Camera Camera Housing":"Camera module enclosure for forward-facing visual capture.","Secondary Stereo Camera Camera Bezel":"Metal retaining ring around the camera optics.","Secondary Stereo Camera Camera Lens Glass":"Front optical cover and dark lens element.","Secondary Stereo Camera Optical Core":"Illustrative inner optical element of the camera module.","Time-of-Flight Depth Sensor":"Optional depth-sensing module for improved distance estimation; final sensor selection is not fixed.","Depth Sensor Optical Window":"Protective optical window for the depth sensor.","Voice Input Left Microphone Port":"Acoustic inlet for the microphone array.","Voice Input Right Microphone Port":"Acoustic inlet for the microphone array.","Environmental Audio Microphone Port":"Acoustic inlet for the microphone array.","Voice Assistant Button":"Tactile control for power, capture, assistant activation, or supported shortcuts.","Voice Assistant Button Accent Cap":"Colored tactile button cap.","Hazard Alert / Control Button":"Tactile control for power, capture, assistant activation, or supported shortcuts.","Hazard Alert / Control Button Accent Cap":"Colored tactile button cap.","Vision Status LED":"Small device status indicator light.","Left Temple Haptic Motor":"Optional vibration motor for discreet tactile notifications.","Vision Sensor Interface PCB":"Illustrative interface board for camera, depth and audio components."}};
+window.PR={Smart:{n:'SIGNLINK Smart',cls:'s',col:'#6aa8ff',u:'General users',d:'An AI smart glasses concept for everyday help through voice, camera understanding, translation and hands-free capture.',f:['AI personal companion','Voice interaction','Scene understanding','Language translation']},
+Connect:{n:'SIGNLINK Connect',cls:'c',col:'#2fd6c9',u:'Deaf and hard-of-hearing people',d:'An AR smart glasses concept designed to support communication between sign-language users and spoken-language users.',f:['Real-time captions','Speech-to-sign representation','Sign recognition to text or voice','Text, sign or combined output']},
+Vision:{n:'SIGNLINK Vision',cls:'v',col:'#ffa23a',u:'Blind and low-vision people',d:'A visual assistance smart glasses concept designed to describe surroundings through audio and voice questions.',f:['Live scene descriptions','Voice questions about surroundings','Concise or detailed answers','Basic hazard awareness alerts']}};
+const $=s=>document.querySelector(s);
+$('#mt').onclick=e=>{const o=$('#menu').classList.toggle('on');e.target.setAttribute('aria-expanded',o)};
+$('#menu').onclick=()=>$('#menu').classList.remove('on');
+$('#cards').innerHTML=Object.entries(PR).map(([k,p])=>`<article class="card ${p.cls}"><div class="ph"><img loading="lazy" src="SIGNLINK_3D_Concepts_v2/previews/SIGNLINK_${k}_Assembled.png" alt="${p.n} concept model"></div><div class="bd"><h3>${p.n}</h3><p class="for">For ${p.u.toLowerCase()}</p><p>${p.d}</p><ul>${p.f.map(x=>`<li>${x}</li>`).join('')}</ul><button class="btn" data-p="${k}">View product</button></div></article>`).join('');
+$('#tabs').innerHTML=Object.entries(PR).map(([k,p])=>`<button role="tab" data-p="${k}" aria-selected="false">${p.n}</button>`).join('');
+$('#fp').innerHTML=Object.entries(PR).map(([k,p])=>`<li><a href="#explore" data-p="${k}">${p.n}</a></li>`).join('');
+</script>
+<script type="module">
+import * as THREE from 'three';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
+const BASE='SIGNLINK_3D_Concepts_v2/',$=s=>document.querySelector(s),loader=new GLTFLoader();
+const ID=/^(\d\d) \| (.+)$/,nm=o=>o.userData.name||o.name.replace(/_/g,' ');// GLTFLoader sanitizes names; originals live in userData.name
+
+class Viewer{
+ constructor(canvas,{hero=false}={}){
+  this.hero=hero;this.canvas=canvas;this.t=0;this.goal=0;this.dirty=true;this.active=false;this.vis=true;this.parts=[];this.sel=null;this.gen=0;
+  const r=this.r=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true});
+  r.toneMapping=THREE.ACESFilmicToneMapping;r.toneMappingExposure=1.1;r.outputColorSpace=THREE.SRGBColorSpace;r.setPixelRatio(Math.min(devicePixelRatio,2));
+  this.scene=new THREE.Scene();
+  const pm=new THREE.PMREMGenerator(r);this.scene.environment=pm.fromScene(new RoomEnvironment(),.04).texture;pm.dispose();
+  const k=new THREE.DirectionalLight(0xffffff,2.2);k.position.set(.5,.8,-.6);const f=new THREE.DirectionalLight(0x88aaff,.8);f.position.set(-.7,.1,-.4);
+  this.scene.add(k,f);
+  this.cam=new THREE.PerspectiveCamera(30,1,.002,10);
+  const c=this.ctl=new OrbitControls(this.cam,canvas);c.enableDamping=true;c.dampingFactor=.08;c.screenSpacePanning=true;
+  c.addEventListener('change',()=>this.dirty=true);
+  if(hero){c.autoRotate=true;c.autoRotateSpeed=1.2;c.enableZoom=c.enablePan=false;}
+  const cv=document.createElement('canvas');cv.width=cv.height=128;const g=cv.getContext('2d'),gr=g.createRadialGradient(64,64,0,64,64,64);gr.addColorStop(0,'rgba(0,0,0,.55)');gr.addColorStop(1,'rgba(0,0,0,0)');g.fillStyle=gr;g.fillRect(0,0,128,128);
+  this.shadow=new THREE.Mesh(new THREE.PlaneGeometry(1,1),new THREE.MeshBasicMaterial({map:new THREE.CanvasTexture(cv),transparent:true,depthWrite:false}));this.shadow.rotation.x=-Math.PI/2;this.scene.add(this.shadow);
+  this.ray=new THREE.Raycaster();
+  new ResizeObserver(()=>this.resize()).observe(canvas.parentElement);
+  new IntersectionObserver(e=>{this.vis=e[0].isIntersecting;this.sync()}).observe(canvas);
+  document.addEventListener('visibilitychange',()=>this.sync());
+  if(!hero){let d;canvas.addEventListener('pointerdown',e=>d=[e.clientX,e.clientY]);canvas.addEventListener('pointerup',e=>{if(d&&Math.hypot(e.clientX-d[0],e.clientY-d[1])<6)this.pick(e)});}
+  this.sync();
+ }
+ sync(){const a=this.vis&&!document.hidden;if(a&&!this.active){this.active=true;this.last=performance.now();requestAnimationFrame(n=>this.tick(n))}else if(!a)this.active=false}
+ resize(){const p=this.canvas.parentElement,w=p.clientWidth,h=p.clientHeight;if(!w||!h)return;this.r.setSize(w,h,false);this.cam.aspect=w/h;this.cam.updateProjectionMatrix();this.dirty=true;if(this.model&&!this.userMoved)this.frame()}
+ async load(key,onProg){
+  const id=++this.gen;this.clear();
+  const gltf=await loader.loadAsync(`${BASE}models/SIGNLINK_${key}_Assembled.glb`,e=>onProg&&onProg(e.total?e.loaded/e.total:null));
+  if(id!==this.gen){this.dispose(gltf.scene);return}
+  const m=this.model=gltf.scene;this.scene.add(m);m.updateMatrixWorld(true);
+  const man=SL.parts[key];this.meta={};man.forEach(p=>this.meta[p[1]]={id:p[0],role:p[2],off:p.slice(3)});
+  m.traverse(o=>{const x=ID.exec(nm(o));if(!o.isMesh||!x||!this.meta[x[2]])return;
+   const meta=this.meta[x[2]],inv=new THREE.Matrix4().copy(o.parent.matrixWorld).invert(),off=new THREE.Vector3(...meta.off),z=new THREE.Vector3().applyMatrix4(inv);
+   off.applyMatrix4(inv).sub(z);// world offset -> parent-local, so hierarchy is respected
+   this.parts.push({o,name:x[2],id:x[1],role:meta.role,orig:o.position.clone(),off,mat:o.material,home:meta.off})});
+  this.byName=Object.fromEntries(this.parts.map(p=>[p.name,p]));
+  this.setT(0);this.box=new THREE.Box3().setFromObject(m);this.userMoved=false;this.frame();this.dirty=true;
+  return this.parts;
+ }
+ setT(t){this.t=t;for(const p of this.parts){p.o.position.copy(p.orig);if(t>0)p.o.position.addScaledVector(p.off,t)}this.dirty=true}// always from stored originals
+ go(g){this.goal=g;this.anim=true;this.onAnim&&this.onAnim(true)}
+ stop(){this.anim=false;this.onAnim&&this.onAnim(false)}
+ frame(){
+  const t=this.t;this.setT(.3);const b=new THREE.Box3().setFromObject(this.model);this.setT(t);
+  const s=b.getBoundingSphere(new THREE.Sphere()),c=new THREE.Box3().setFromObject(this.model).getCenter(new THREE.Vector3());
+  const fov=THREE.MathUtils.degToRad(this.cam.fov/2),a=this.cam.aspect,d=Math.max(s.radius/Math.sin(fov),s.radius/Math.sin(Math.atan(Math.tan(fov)*a)))*1.05;
+  this.home={c:this.box.getCenter(new THREE.Vector3()),d,r:s.radius};
+  const dir=new THREE.Vector3(.5,.3,-1).normalize();
+  this.cam.position.copy(this.home.c).addScaledVector(dir,d);this.ctl.target.copy(this.home.c);
+  this.ctl.minDistance=d*.25;this.ctl.maxDistance=d*3;this.cam.near=d/100;this.cam.far=d*20;this.cam.updateProjectionMatrix();this.ctl.update();
+  this.shadow.position.set(this.home.c.x,this.box.min.y-this.home.r*.12,this.home.c.z);this.shadow.scale.setScalar(this.home.r*3.2);this.dirty=true;
+ }
+ resetView(){this.userMoved=false;this.frame()}
+ select(name){
+  this.deselect();const p=this.byName&&this.byName[name];if(!p)return;this.sel=p;
+  const m=p.mat.clone();if(m.emissive){m.emissive.set(this.accent||'#6aa8ff');m.emissiveIntensity=.85}p.o.material=m;
+  if(this.tagEl)this.tagEl.textContent=p.id+' · '+p.name;this.bh=new THREE.BoxHelper(p.o,this.accent);this.scene.add(this.bh);this.dirty=true;
+ }
+ deselect(){if(this.sel){this.sel.o.material.dispose();this.sel.o.material=this.sel.mat;this.sel=null}if(this.bh){this.scene.remove(this.bh);this.bh.geometry.dispose();this.bh=null}if(this.tagEl)this.tagEl.style.display='none';this.dirty=true}
+ pick(e){
+  if(!this.parts.length)return;const b=this.canvas.getBoundingClientRect();
+  this.ray.setFromCamera(new THREE.Vector2((e.clientX-b.left)/b.width*2-1,-((e.clientY-b.top)/b.height)*2+1),this.cam);
+  const hits=this.ray.intersectObjects(this.parts.map(p=>p.o),false);
+  const h=hits.find(h=>this.byName[ID.exec(nm(h.object))[2]].role!=='lens')||hits[0];// lenses are see-through: prefer parts behind them
+  this.onPick&&this.onPick(h?ID.exec(nm(h.object))[2]:null);
+ }
+ tick(now){
+  if(!this.active)return;const dt=Math.min((now-this.last)/1000,.1);this.last=now;
+  if(this.anim){const d=this.goal-this.t,n=Math.abs(d)<.004?this.goal:this.t+d*(1-Math.exp(-dt*4.5));this.setT(n);this.onT&&this.onT(n);if(n===this.goal)this.stop()}
+  const mv=this.ctl.update();
+  if(mv||this.dirty||this.hero){
+   if(this.bh)this.bh.update();this.r.render(this.scene,this.cam);this.dirty=false;
+   if(this.sel&&this.tagEl){const v=new THREE.Box3().setFromObject(this.sel.o).getCenter(new THREE.Vector3()).project(this.cam),b=this.canvas.getBoundingClientRect(),s=this.tagEl.style;
+    s.display='block';s.left=(v.x+1)/2*b.width+'px';s.top=(1-v.y)/2*b.height+'px'}
+  }
+  requestAnimationFrame(n=>this.tick(n));
+ }
+ dispose(root){root.traverse(o=>{if(o.geometry)o.geometry.dispose();if(o.material){const a=Array.isArray(o.material)?o.material:[o.material];a.forEach(m=>{for(const k in m)if(m[k]&&m[k].isTexture)m[k].dispose();m.dispose()})}})}
+ clear(){this.deselect();if(this.model){this.scene.remove(this.model);this.dispose(this.model)}this.model=null;this.parts=[];this.byName={}}
+}
+
+// Hero: Smart model, slow auto-rotate, non-interactive
+const hero=new Viewer($('#hc'),{hero:true});
+hero.load('Smart').then(()=>{hero.ctl.autoRotate=true}).catch(()=>{$('.hv small').textContent='3D preview unavailable — serve this page over http.'});
+
+// Explorer
+const V=new Viewer($('#ec')),PRD=PR,ov=$('#ov');let cur=null,loaded=false,started=false;
+V.tagEl=$('#tag');
+const where=n=>{const s=/Left/.test(n)?'left':/Right/.test(n)?'right':'',t=/Temple|Hinge|Speaker|Battery|Control PCB|Main Control|USB|Button|LED|Haptic|Control Strip|Touch/.test(n);
+ if(/Hand-Sign/.test(n))return'Underside of the front frame, facing down';
+ return t?`${s?s[0].toUpperCase()+s.slice(1)+' ':''}temple (side arm)`:`Front frame${s?', '+s+' side':''}${/Bridge|Nose|Projector|Waveguide|Camera|Sensor|Microphone/.test(n)&&!s?'':''}`};
+const info=p=>{const el=$('#info');
+ if(!p){el.innerHTML='<h3>Select a component</h3><p class="em">Tap a part in the viewer or choose one from the list to see its ID, function and location.</p>';return}
+ const mm=p.home.map(v=>Math.round(v*1000)).join(', ');
+ el.innerHTML=`<span class="id">${p.id}</span><h3>${p.name}</h3><p>${SL.desc[p.name]}</p><dl><dt>Location</dt><dd>${where(p.name)}</dd><dt>Type</dt><dd>${p.role.replace(/_/g,' ')}</dd><dt>Exploded offset</dt><dd>${mm} mm (x, y, z)</dd></dl><button class="btn" id="ds" style="margin-top:1rem">Deselect</button>`;
+ $('#ds').onclick=()=>choose(null)};
+function choose(n){n?V.select(n):V.deselect();info(n?V.byName[n]:null);
+ document.querySelectorAll('#list button').forEach(b=>{const on=b.dataset.n===n;b.setAttribute('aria-current',on);if(on)b.scrollIntoView({block:'nearest'})})}
+V.onPick=choose;
+function renderList(){const q=$('#q').value.trim().toLowerCase();
+ $('#list').innerHTML=V.parts.filter(p=>!q||(p.id+' '+p.name).toLowerCase().includes(q)).map(p=>`<li><button data-n="${p.name}" aria-current="${V.sel===p}"><b>${p.id}</b>${p.name}</button></li>`).join('')||'<li class="em" style="padding:.6rem">No matching components.</li>'}
+$('#list').onclick=e=>{const b=e.target.closest('button');if(b)choose(b.dataset.n===(V.sel&&V.sel.name)?null:b.dataset.n)};
+$('#q').oninput=renderList;
+const ui=t=>{const v=Math.round(t*100);$('#rg').value=v;$('#ro').textContent=v+'%'};
+V.onT=ui;V.onAnim=a=>$('#bp').disabled=!a;
+async function show(k){
+ cur=k;const p=PRD[k];document.documentElement.style.setProperty('--acc',p.col);V.accent=p.col;
+ document.querySelectorAll('#tabs button').forEach(b=>b.setAttribute('aria-selected',b.dataset.p===k));
+ loaded=false;started=true;V.stop();ui(0);info(null);renderList();
+ const fb=$('#fb');fb.hidden=true;$('#retry').hidden=true;$('#ovt').textContent=`Loading ${p.n}…`;$('#ovb').hidden=false;$('#ovb b').style.width='6%';ov.classList.add('on');
+ try{await V.load(k,f=>$('#ovb b').style.width=(f==null?40:Math.max(6,f*100))+'%');if(cur!==k)return;loaded=true;ov.classList.remove('on');renderList();info(null)}
+ catch(err){console.error(err);$('#ovt').textContent=`Couldn't load ${p.n}. Check that SIGNLINK_3D_Concepts_v2/models/SIGNLINK_${k}_Assembled.glb exists next to this page, and that the page is served over http (for example: python3 -m http.server), not opened as a file.`;$('#ovb').hidden=true;fb.src=`${BASE}previews/SIGNLINK_${k}_Assembled.png`;fb.alt=`${p.n} preview image`;fb.hidden=false;$('#retry').hidden=false}
+}
+$('#retry').onclick=()=>show(cur);
+document.addEventListener('click',e=>{const b=e.target.closest('[data-p]');if(!b)return;if(b.tagName==='A')e.preventDefault();$('#explore').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'});if(b.dataset.p!==cur||!loaded)show(b.dataset.p)});
+new IntersectionObserver((e,o)=>{if(e[0].isIntersecting&&!started){show('Smart');o.disconnect()}},{rootMargin:'300px'}).observe($('#explore'));
+$('#bx').onclick=()=>loaded&&V.go(1);$('#ba').onclick=()=>loaded&&V.go(0);$('#bp').onclick=()=>V.stop();
+$('#rg').oninput=e=>{if(!loaded)return;V.stop();const t=e.target.value/100;V.setT(t);$('#ro').textContent=e.target.value+'%'};
+$('#bv').onclick=()=>loaded&&V.resetView();
+$('#br').onclick=()=>{if(!loaded)return;V.stop();V.setT(0);ui(0);choose(null);V.resetView()};
+V.ctl.addEventListener('start',()=>V.userMoved=true);
+</script>
+</body>
+</html>

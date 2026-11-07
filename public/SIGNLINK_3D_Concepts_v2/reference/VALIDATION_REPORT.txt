@@ -1,0 +1,65 @@
+SIGNLINK 3D MODEL ALIGNMENT / EXPORT VALIDATION
+Generated: 2026-11-07
+
+Component counts
+- SIGNLINK Smart: 41 separately named mesh nodes
+- SIGNLINK Connect: 48 separately named mesh nodes
+- SIGNLINK Vision: 49 separately named mesh nodes
+- Total: 138 separately named mesh nodes
+
+Automated checks
+- All six GLB files are readable.
+- Assembled/exploded node names and counts match per variant: PASS
+- Component catalog and manifest entries match all named GLB nodes: PASS
+- Static exploded GLB centroid deltas match manifest offsets within floating-point tolerance: PASS
+- All offsets are finite: PASS
+- Lens/waveguide GLB materials retain BLEND alpha mode: PASS
+
+Alignment corrections in this revision
+- Smart: primary camera moved to upper front-frame rim; front sensor interface PCB moved into left temple.
+- Connect: sign-recognition camera moved to upper front-frame rim; wearer hand-sign camera mounted under central bridge; AR display driver PCB moved into right temple.
+- Vision: primary/secondary cameras moved to upper front-frame rims; ToF sensor/window seated against central bridge; sensor interface PCB moved into right temple; haptic motor moved inside left temple.
+- Shared geometry: nose-pad supports rebuilt as connected bridge-to-pad bracket/stem assemblies; temple buttons, LEDs, and touch strips repositioned against temple outer surfaces.
+- Exploded offsets reorganized into grouped directions for frame/lens, camera stacks, electronics, audio, controls, and optical assemblies.
+- Static PNG previews use opaque tinted optical surfaces for visibility; exported GLB materials remain translucent.
+
+Runtime note
+The React viewer loads the assembled GLB and moves the separately named meshes using threejs_explode_manifest.json. It does not need to fetch *_Exploded.glb when Explode is pressed. The exploded GLBs are static inspection references. If an error appears during an explode interaction, inspect the assembled GLB and JSON manifest requests in the browser Network panel.
+
+Packaging note
+The uploaded ZIP used backslashes in archive entry paths. The replacement ZIP uses standard forward-slash paths so asset folders extract consistently.
+
+Placement envelope checks (axis-aligned bounding-box overlap/containment only; not CAD clearance proof):
+Smart: 41 nodes; names/IDs match; static exploded deltas match manifest.
+Connect: 48 nodes; names/IDs match; static exploded deltas match manifest.
+Vision: 49 nodes; names/IDs match; static exploded deltas match manifest.
+Smart: Front Sensor Interface PCB inside Left Temple Arm: PASS
+Smart: Primary Wide-Angle Camera Housing intersects Left Front Frame Rim: PASS
+Connect: AR Display Driver PCB inside Right Temple Arm: PASS
+Connect: Wearer Hand-Sign Camera Housing intersects Central Nose Bridge: PASS
+Connect: Sign Recognition Front Camera Camera Housing intersects Left Front Frame Rim: PASS
+Vision: Vision Sensor Interface PCB inside Right Temple Arm: PASS
+Vision: Left Temple Haptic Motor inside Left Temple Arm: PASS
+Vision: Time-of-Flight Depth Sensor intersects Central Nose Bridge: PASS
+Vision: Primary Wide-Angle Scene Camera Camera Housing intersects Left Front Frame Rim: PASS
+Vision: Secondary Stereo Camera Camera Housing intersects Right Front Frame Rim: PASS
+Smart: Left Nose Pad Support intersects Central Nose Bridge: PASS
+Smart: Left Nose Pad Support intersects Left Silicone Nose Pad: PASS
+Smart: Right Nose Pad Support intersects Central Nose Bridge: PASS
+Smart: Right Nose Pad Support intersects Right Silicone Nose Pad: PASS
+Connect: Left Nose Pad Support intersects Central Nose Bridge: PASS
+Connect: Left Nose Pad Support intersects Left Silicone Nose Pad: PASS
+Connect: Right Nose Pad Support intersects Central Nose Bridge: PASS
+Connect: Right Nose Pad Support intersects Right Silicone Nose Pad: PASS
+Vision: Left Nose Pad Support intersects Central Nose Bridge: PASS
+Vision: Left Nose Pad Support intersects Left Silicone Nose Pad: PASS
+Vision: Right Nose Pad Support intersects Central Nose Bridge: PASS
+Vision: Right Nose Pad Support intersects Right Silicone Nose Pad: PASS
+Smart: Right Temple Touch Strip intersects Right Temple Arm: PASS
+Connect: Right Temple Communication Control Strip intersects Right Temple Arm: PASS
+Smart: optical lens/waveguide material alphaMode BLEND: PASS
+Connect: optical lens/waveguide material alphaMode BLEND: PASS
+Vision: optical lens/waveguide material alphaMode BLEND: PASS
+
+Limitations
+These are visual concept models, not manufacturing-ready CAD, validated optical prescriptions, tested electronics, or safety-certified devices. Mechanical fit, exact dimensions, fastening, wiring, thermal behavior, battery safety and optics require professional validation.
