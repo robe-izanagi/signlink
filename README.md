@@ -1,6 +1,6 @@
-# SIGNLINK React Landing Page
+# SIGNLINK Prototype Review
 
-The React/Vite landing page recreates the supplied Claude design and uses the SIGNLINK concept previews, GLB models, and component references in `public/SIGNLINK_3D_Concepts_v2/`.
+React 18, TypeScript, Vite, and Three.js app for reviewing the SIGNLINK ENGG 405 Technopreneurship prototype concepts. It presents modelled parts, allocated part prices, planning estimates, and the prototype build cost. Figures are estimates in Philippine peso, not production manufacturing costs.
 
 ## Run locally
 
@@ -11,10 +11,10 @@ npm install
 npm run dev
 ```
 
-Open the local address printed by Vite. Create a production build with `npm run build`.
+Open the local address printed by Vite. Run `npm test` and `npm run typecheck` to verify the data and types. Create a production build with `npm run build`.
 
-## Interactive model explorer
+## Assets and model viewer
 
-The 3D viewer loads the selected assembled GLB on demand. It uses the supplied exploded-view manifest and component data to animate named meshes, describe components, and support selection, search, rotation, zoom, and pan. The separate exploded GLBs and preview renders remain unchanged in `public/SIGNLINK_3D_Concepts_v2/`.
+The original v5 asset folder is served unchanged from `public/SIGNLINK_3D_Concepts_v5/`. Assembled models load on demand when the explorer is reached or its product is selected. Three.js is installed from npm; model and part GLBs are loaded by URL rather than imported into the bundle.
 
-All three products and every described function are concepts, not validated or commercially available features. The SIGNLINK Android app is not available; its disabled download button has no APK URL.
+Product part data is kept in `src/data/signlinkData.ts`; the accessor can later be replaced with an API. All models and functions are concepts, and all prices are planning estimates. Refer to the Basis, assumptions and limits section in the app.
