@@ -1,0 +1,12 @@
+SIGNLINK v5 validation report
+
+Smart: 95 components; catalog identical to v4 (id/name/role/material/description)=True; node names match in assembled/exploded/cutaway=True; part GLBs+images present=True
+Connect: 106 components; catalog identical to v4 (id/name/role/material/description)=True; node names match in assembled/exploded/cutaway=True; part GLBs+images present=True
+Vision: 94 components; catalog identical to v4 (id/name/role/material/description)=True; node names match in assembled/exploded/cutaway=True; part GLBs+images present=True
+
+Total components: 295
+All checks passed: True
+
+Whole-product GLBs per variant: assembled, exploded, cutaway (right-rear temple half-section).
+USB-C is on the underside of the right temple, flush pocket with bezel, inner shell, receptacle opening and tongue.
+Concept models only. Not manufacturing-ready CAD or validated electronics/optics.

@@ -1,0 +1,4755 @@
+{
+ "version": "5.0",
+ "units": "meters",
+ "authoringUnits": "meters",
+ "designDirection": "Modern, smooth, premium wayfarer-style AI/AR smart glasses family (SDF-sculpted). Component catalog kept identical to v4.",
+ "products": {
+  "Smart": {
+   "title": "SIGNLINK SMART  /  GENERAL AI ASSISTANCE",
+   "assembledModel": "models/SIGNLINK_Smart_Assembled.glb",
+   "explodedModel": "models/SIGNLINK_Smart_Exploded.glb",
+   "cutawayModel": "models/SIGNLINK_Smart_Cutaway.glb",
+   "componentCount": 95,
+   "parts": {
+    "Left Polished Acetate Lens Rim": {
+     "id": "001",
+     "role": "front_rim",
+     "category": "Frame",
+     "material": "piano_black",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.016,
+      0.0,
+      -0.004
+     ],
+     "description": "High-gloss molded full-rim front eyewear frame. The rounded rectangular lens opening is sized for prescription-style lenses; final ophthalmic fit remains a design-stage item.",
+     "individualGlb": "part_assets/glb/Smart/001_left_polished_acetate_lens_rim.glb",
+     "image": "part_assets/images/Smart/001_left_polished_acetate_lens_rim.png",
+     "location": "Front frame, left side"
+    },
+    "Left Lens Retaining Bezel": {
+     "id": "002",
+     "role": "lens_bezel",
+     "category": "Frame detail",
+     "material": "gunmetal",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.016,
+      0.0,
+      0.014
+     ],
+     "description": "Thin dark-metal inner retaining lip seated within the acetate rim.",
+     "individualGlb": "part_assets/glb/Smart/002_left_lens_retaining_bezel.glb",
+     "image": "part_assets/images/Smart/002_left_lens_retaining_bezel.png",
+     "location": "Front frame, left side"
+    },
+    "Left Clear Prescription Lens": {
+     "id": "003",
+     "role": "lens",
+     "category": "Optics",
+     "material": "clear_lens",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.016,
+      0.0,
+      0.034
+     ],
+     "description": "Thin clear curved lens insert with subtle edge tint and realistic thickness. Prescription strength and optical coating are not specified.",
+     "individualGlb": "part_assets/glb/Smart/003_left_clear_prescription_lens.glb",
+     "image": "part_assets/images/Smart/003_left_clear_prescription_lens.png",
+     "location": "Front frame, left side"
+    },
+    "Right Polished Acetate Lens Rim": {
+     "id": "004",
+     "role": "front_rim",
+     "category": "Frame",
+     "material": "piano_black",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.016,
+      0.0,
+      -0.004
+     ],
+     "description": "High-gloss molded full-rim front eyewear frame. The rounded rectangular lens opening is sized for prescription-style lenses; final ophthalmic fit remains a design-stage item.",
+     "individualGlb": "part_assets/glb/Smart/004_right_polished_acetate_lens_rim.glb",
+     "image": "part_assets/images/Smart/004_right_polished_acetate_lens_rim.png",
+     "location": "Front frame, right side"
+    },
+    "Right Lens Retaining Bezel": {
+     "id": "005",
+     "role": "lens_bezel",
+     "category": "Frame detail",
+     "material": "gunmetal",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.016,
+      0.0,
+      0.014
+     ],
+     "description": "Thin dark-metal inner retaining lip seated within the acetate rim.",
+     "individualGlb": "part_assets/glb/Smart/005_right_lens_retaining_bezel.glb",
+     "image": "part_assets/images/Smart/005_right_lens_retaining_bezel.png",
+     "location": "Front frame, right side"
+    },
+    "Right Clear Prescription Lens": {
+     "id": "006",
+     "role": "lens",
+     "category": "Optics",
+     "material": "clear_lens",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.016,
+      0.0,
+      0.034
+     ],
+     "description": "Thin clear curved lens insert with subtle edge tint and realistic thickness. Prescription strength and optical coating are not specified.",
+     "individualGlb": "part_assets/glb/Smart/006_right_clear_prescription_lens.glb",
+     "image": "part_assets/images/Smart/006_right_clear_prescription_lens.png",
+     "location": "Front frame, right side"
+    },
+    "Integrated Sculpted Nose Bridge": {
+     "id": "007",
+     "role": "bridge",
+     "category": "Frame",
+     "material": "black_acetate",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0,
+      -0.006,
+      0.0
+     ],
+     "description": "Contoured acetate bridge joining both front rims with a shallow saddle profile.",
+     "individualGlb": "part_assets/glb/Smart/007_integrated_sculpted_nose_bridge.glb",
+     "image": "part_assets/images/Smart/007_integrated_sculpted_nose_bridge.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "Left Adjustable Titanium Nose Pad Arm": {
+     "id": "008",
+     "role": "nose_arm",
+     "category": "Fit hardware",
+     "material": "titanium",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.014,
+      -0.016,
+      0.012
+     ],
+     "description": "Thin adjustable metal nose-pad arm mounted behind the bridge.",
+     "individualGlb": "part_assets/glb/Smart/008_left_adjustable_titanium_nose_pad_arm.glb",
+     "image": "part_assets/images/Smart/008_left_adjustable_titanium_nose_pad_arm.png",
+     "location": "Underside of the nose bridge"
+    },
+    "Left Silicone Nose Pad": {
+     "id": "009",
+     "role": "nose_pad",
+     "category": "Fit hardware",
+     "material": "rubber",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.016,
+      -0.03,
+      0.022
+     ],
+     "description": "Soft translucent-black silicone nose pad with a rounded contact surface.",
+     "individualGlb": "part_assets/glb/Smart/009_left_silicone_nose_pad.glb",
+     "image": "part_assets/images/Smart/009_left_silicone_nose_pad.png",
+     "location": "Underside of the nose bridge"
+    },
+    "Right Adjustable Titanium Nose Pad Arm": {
+     "id": "010",
+     "role": "nose_arm",
+     "category": "Fit hardware",
+     "material": "titanium",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.014,
+      -0.016,
+      0.012
+     ],
+     "description": "Thin adjustable metal nose-pad arm mounted behind the bridge.",
+     "individualGlb": "part_assets/glb/Smart/010_right_adjustable_titanium_nose_pad_arm.glb",
+     "image": "part_assets/images/Smart/010_right_adjustable_titanium_nose_pad_arm.png",
+     "location": "Underside of the nose bridge"
+    },
+    "Right Silicone Nose Pad": {
+     "id": "011",
+     "role": "nose_pad",
+     "category": "Fit hardware",
+     "material": "rubber",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.016,
+      -0.03,
+      0.022
+     ],
+     "description": "Soft translucent-black silicone nose pad with a rounded contact surface.",
+     "individualGlb": "part_assets/glb/Smart/011_right_silicone_nose_pad.glb",
+     "image": "part_assets/images/Smart/011_right_silicone_nose_pad.png",
+     "location": "Underside of the nose bridge"
+    },
+    "Central Dual-Camera Bridge Pod": {
+     "id": "012",
+     "role": "camera_pod",
+     "category": "Sensors",
+     "material": "black_acetate",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0,
+      0.034,
+      -0.01
+     ],
+     "description": "Low-profile central bridge module for the forward RGB and spatial sensing camera assemblies.",
+     "individualGlb": "part_assets/glb/Smart/012_central_dual_camera_bridge_pod.glb",
+     "image": "part_assets/images/Smart/012_central_dual_camera_bridge_pod.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "Central Camera Pod Bridge Mount": {
+     "id": "013",
+     "role": "camera_mount",
+     "category": "Frame / Sensors",
+     "material": "black_acetate",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0,
+      0.02,
+      -0.004
+     ],
+     "description": "Short molded support that physically joins the raised camera pod to the sculpted nose bridge.",
+     "individualGlb": "part_assets/glb/Smart/013_central_camera_pod_bridge_mount.glb",
+     "image": "part_assets/images/Smart/013_central_camera_pod_bridge_mount.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "Upper Brow Micro-Trim": {
+     "id": "014",
+     "role": "trim",
+     "category": "Frame detail",
+     "material": "gunmetal",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0,
+      0.046,
+      -0.006
+     ],
+     "description": "Fine metallic trim following the upper brow line around the central camera pod.",
+     "individualGlb": "part_assets/glb/Smart/014_upper_brow_micro_trim.glb",
+     "image": "part_assets/images/Smart/014_upper_brow_micro_trim.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "RGB Main Camera Metal Retaining Ring": {
+     "id": "015",
+     "role": "camera_bezel",
+     "category": "Sensors",
+     "material": "titanium",
+     "side": 0,
+     "explodedOffsetMeters": [
+      -0.0136,
+      0.034,
+      -0.046
+     ],
+     "description": "Polished micro-machined retaining ring around the bridge camera window.",
+     "individualGlb": "part_assets/glb/Smart/015_rgb_main_camera_metal_retaining_ring.glb",
+     "image": "part_assets/images/Smart/015_rgb_main_camera_metal_retaining_ring.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "RGB Main Camera Optical Cover": {
+     "id": "016",
+     "role": "camera_cover",
+     "category": "Sensors",
+     "material": "camera_glass",
+     "side": 0,
+     "explodedOffsetMeters": [
+      -0.0136,
+      0.034,
+      -0.034
+     ],
+     "description": "Dark coated optical glass protecting the camera sensor aperture.",
+     "individualGlb": "part_assets/glb/Smart/016_rgb_main_camera_optical_cover.glb",
+     "image": "part_assets/images/Smart/016_rgb_main_camera_optical_cover.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "RGB Main Camera Lens Element": {
+     "id": "017",
+     "role": "camera_lens",
+     "category": "Sensors",
+     "material": "camera_blue",
+     "side": 0,
+     "explodedOffsetMeters": [
+      -0.0136,
+      0.034,
+      -0.022
+     ],
+     "description": "Convex multi-coated camera lens element visible through the bridge opening.",
+     "individualGlb": "part_assets/glb/Smart/017_rgb_main_camera_lens_element.glb",
+     "image": "part_assets/images/Smart/017_rgb_main_camera_lens_element.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "RGB Main Camera Iris Detail": {
+     "id": "018",
+     "role": "camera_iris",
+     "category": "Sensors",
+     "material": "camera_coating",
+     "side": 0,
+     "explodedOffsetMeters": [
+      -0.0136,
+      0.034,
+      -0.014
+     ],
+     "description": "Subtle optical iris / sensor reflection detail.",
+     "individualGlb": "part_assets/glb/Smart/018_rgb_main_camera_iris_detail.glb",
+     "image": "part_assets/images/Smart/018_rgb_main_camera_iris_detail.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "Spatial Camera Metal Retaining Ring": {
+     "id": "019",
+     "role": "camera_bezel",
+     "category": "Sensors",
+     "material": "titanium",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0136,
+      0.034,
+      -0.046
+     ],
+     "description": "Polished micro-machined retaining ring around the bridge camera window.",
+     "individualGlb": "part_assets/glb/Smart/019_spatial_camera_metal_retaining_ring.glb",
+     "image": "part_assets/images/Smart/019_spatial_camera_metal_retaining_ring.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "Spatial Camera Optical Cover": {
+     "id": "020",
+     "role": "camera_cover",
+     "category": "Sensors",
+     "material": "camera_glass",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0136,
+      0.034,
+      -0.034
+     ],
+     "description": "Dark coated optical glass protecting the camera sensor aperture.",
+     "individualGlb": "part_assets/glb/Smart/020_spatial_camera_optical_cover.glb",
+     "image": "part_assets/images/Smart/020_spatial_camera_optical_cover.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "Spatial Camera Lens Element": {
+     "id": "021",
+     "role": "camera_lens",
+     "category": "Sensors",
+     "material": "camera_blue",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0136,
+      0.034,
+      -0.022
+     ],
+     "description": "Convex multi-coated camera lens element visible through the bridge opening.",
+     "individualGlb": "part_assets/glb/Smart/021_spatial_camera_lens_element.glb",
+     "image": "part_assets/images/Smart/021_spatial_camera_lens_element.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "Spatial Camera Iris Detail": {
+     "id": "022",
+     "role": "camera_iris",
+     "category": "Sensors",
+     "material": "camera_coating",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0136,
+      0.034,
+      -0.014
+     ],
+     "description": "Subtle optical iris / sensor reflection detail.",
+     "individualGlb": "part_assets/glb/Smart/022_spatial_camera_iris_detail.glb",
+     "image": "part_assets/images/Smart/022_spatial_camera_iris_detail.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "Front Status Indicator": {
+     "id": "023",
+     "role": "status_led",
+     "category": "Controls",
+     "material": "led_blue",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0,
+      0.046,
+      -0.02
+     ],
+     "description": "Small discreet recording/status indicator placed beside the bridge camera module.",
+     "individualGlb": "part_assets/glb/Smart/023_front_status_indicator.glb",
+     "image": "part_assets/images/Smart/023_front_status_indicator.png",
+     "location": "Front frame, right side"
+    },
+    "Left Reinforced Hinge Plate": {
+     "id": "024",
+     "role": "hinge_plate",
+     "category": "Mechanical",
+     "material": "gunmetal",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.046,
+      0.0,
+      0.0
+     ],
+     "description": "Satin-metal hinge reinforcement plate integrated at the end of the front rim.",
+     "individualGlb": "part_assets/glb/Smart/024_left_reinforced_hinge_plate.glb",
+     "image": "part_assets/images/Smart/024_left_reinforced_hinge_plate.png",
+     "location": "Front frame, left side"
+    },
+    "Left Stainless Hinge Barrel": {
+     "id": "025",
+     "role": "hinge_barrel",
+     "category": "Mechanical",
+     "material": "titanium",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.022,
+      0.036,
+      -0.004
+     ],
+     "description": "Compact multi-barrel hinge joint connecting the front frame and temple arm.",
+     "individualGlb": "part_assets/glb/Smart/025_left_stainless_hinge_barrel.glb",
+     "image": "part_assets/images/Smart/025_left_stainless_hinge_barrel.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Hinge Fastener 1": {
+     "id": "026",
+     "role": "screw",
+     "category": "Mechanical",
+     "material": "silver",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.062,
+      0.0,
+      0.0
+     ],
+     "description": "Small flush stainless fastener securing the hinge plate.",
+     "individualGlb": "part_assets/glb/Smart/026_left_hinge_fastener_1.glb",
+     "image": "part_assets/images/Smart/026_left_hinge_fastener_1.png",
+     "location": "Front frame, left side"
+    },
+    "Left Hinge Fastener 2": {
+     "id": "027",
+     "role": "screw",
+     "category": "Mechanical",
+     "material": "silver",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.062,
+      0.0,
+      0.0
+     ],
+     "description": "Small flush stainless fastener securing the hinge plate.",
+     "individualGlb": "part_assets/glb/Smart/027_left_hinge_fastener_2.glb",
+     "image": "part_assets/images/Smart/027_left_hinge_fastener_2.png",
+     "location": "Left temple (side arm)"
+    },
+    "Right Reinforced Hinge Plate": {
+     "id": "028",
+     "role": "hinge_plate",
+     "category": "Mechanical",
+     "material": "gunmetal",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.046,
+      0.0,
+      0.0
+     ],
+     "description": "Satin-metal hinge reinforcement plate integrated at the end of the front rim.",
+     "individualGlb": "part_assets/glb/Smart/028_right_reinforced_hinge_plate.glb",
+     "image": "part_assets/images/Smart/028_right_reinforced_hinge_plate.png",
+     "location": "Front frame, right side"
+    },
+    "Right Stainless Hinge Barrel": {
+     "id": "029",
+     "role": "hinge_barrel",
+     "category": "Mechanical",
+     "material": "titanium",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.022,
+      0.036,
+      -0.004
+     ],
+     "description": "Compact multi-barrel hinge joint connecting the front frame and temple arm.",
+     "individualGlb": "part_assets/glb/Smart/029_right_stainless_hinge_barrel.glb",
+     "image": "part_assets/images/Smart/029_right_stainless_hinge_barrel.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Hinge Fastener 1": {
+     "id": "030",
+     "role": "screw",
+     "category": "Mechanical",
+     "material": "silver",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.062,
+      0.0,
+      0.0
+     ],
+     "description": "Small flush stainless fastener securing the hinge plate.",
+     "individualGlb": "part_assets/glb/Smart/030_right_hinge_fastener_1.glb",
+     "image": "part_assets/images/Smart/030_right_hinge_fastener_1.png",
+     "location": "Front frame, right side"
+    },
+    "Right Hinge Fastener 2": {
+     "id": "031",
+     "role": "screw",
+     "category": "Mechanical",
+     "material": "silver",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.062,
+      0.0,
+      0.0
+     ],
+     "description": "Small flush stainless fastener securing the hinge plate.",
+     "individualGlb": "part_assets/glb/Smart/031_right_hinge_fastener_2.glb",
+     "image": "part_assets/images/Smart/031_right_hinge_fastener_2.png",
+     "location": "Right temple (side arm)"
+    },
+    "Left Brow Identity Inlay": {
+     "id": "032",
+     "role": "brand_mark",
+     "category": "Frame detail",
+     "material": "white_mark",
+     "side": -1,
+     "explodedOffsetMeters": [
+      0.092,
+      0.0,
+      0.0
+     ],
+     "description": "Small understated metallic brand marker on the outer upper brow.",
+     "individualGlb": "part_assets/glb/Smart/032_left_brow_identity_inlay.glb",
+     "image": "part_assets/images/Smart/032_left_brow_identity_inlay.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Brow Identity Inlay": {
+     "id": "033",
+     "role": "brand_mark",
+     "category": "Frame detail",
+     "material": "white_mark",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.092,
+      0.0,
+      0.0
+     ],
+     "description": "Small understated metallic brand marker on the outer upper brow.",
+     "individualGlb": "part_assets/glb/Smart/033_right_brow_identity_inlay.glb",
+     "image": "part_assets/images/Smart/033_right_brow_identity_inlay.png",
+     "location": "Right temple (side arm)"
+    },
+    "Left Gloss-Black Temple Outer Housing": {
+     "id": "034",
+     "role": "temple_shell",
+     "category": "Temple housing",
+     "material": "piano_black",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.0,
+      0.0
+     ],
+     "description": "Smooth tapered temple arm with integrated electronics cavity and ergonomic ear bend.",
+     "individualGlb": "part_assets/glb/Smart/034_left_gloss_black_temple_outer_housing.glb",
+     "image": "part_assets/images/Smart/034_left_gloss_black_temple_outer_housing.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Internal Temple Carrier Rail": {
+     "id": "035",
+     "role": "chassis",
+     "category": "Internal structure",
+     "material": "satin_black",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      -0.046,
+      0.0
+     ],
+     "description": "Lightweight internal structural rail supporting the battery, PCB, speaker and charging assembly.",
+     "individualGlb": "part_assets/glb/Smart/035_left_internal_temple_carrier_rail.glb",
+     "image": "part_assets/images/Smart/035_left_internal_temple_carrier_rail.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Inner Temple Service Cover": {
+     "id": "036",
+     "role": "service_cover",
+     "category": "Temple housing",
+     "material": "black_acetate",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.014,
+      0.0,
+      0.0
+     ],
+     "description": "Slim removable inner-side service panel covering the internal electronics channel.",
+     "individualGlb": "part_assets/glb/Smart/036_left_inner_temple_service_cover.glb",
+     "image": "part_assets/images/Smart/036_left_inner_temple_service_cover.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Soft-Touch Ear Tip": {
+     "id": "037",
+     "role": "ear_tip",
+     "category": "Fit hardware",
+     "material": "soft_touch",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.0,
+      0.04
+     ],
+     "description": "Elastomerized tapered terminal section for comfort behind the ear.",
+     "individualGlb": "part_assets/glb/Smart/037_left_soft_touch_ear_tip.glb",
+     "image": "part_assets/images/Smart/037_left_soft_touch_ear_tip.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Main Temple PCB": {
+     "id": "038",
+     "role": "pcb",
+     "category": "Electronics",
+     "material": "pcb",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.034,
+      0.01
+     ],
+     "description": "Compact elongated multilayer PCB mounted along the temple carrier rail.",
+     "individualGlb": "part_assets/glb/Smart/038_left_main_temple_pcb.glb",
+     "image": "part_assets/images/Smart/038_left_main_temple_pcb.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left PCB Gold Contact 1": {
+     "id": "039",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Smart/039_left_pcb_gold_contact_1.glb",
+     "image": "part_assets/images/Smart/039_left_pcb_gold_contact_1.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left PCB Gold Contact 2": {
+     "id": "040",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Smart/040_left_pcb_gold_contact_2.glb",
+     "image": "part_assets/images/Smart/040_left_pcb_gold_contact_2.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left PCB Gold Contact 3": {
+     "id": "041",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Smart/041_left_pcb_gold_contact_3.glb",
+     "image": "part_assets/images/Smart/041_left_pcb_gold_contact_3.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left PCB Gold Contact 4": {
+     "id": "042",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Smart/042_left_pcb_gold_contact_4.glb",
+     "image": "part_assets/images/Smart/042_left_pcb_gold_contact_4.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left PCB Gold Contact 5": {
+     "id": "043",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Smart/043_left_pcb_gold_contact_5.glb",
+     "image": "part_assets/images/Smart/043_left_pcb_gold_contact_5.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left PCB Gold Contact 6": {
+     "id": "044",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Smart/044_left_pcb_gold_contact_6.glb",
+     "image": "part_assets/images/Smart/044_left_pcb_gold_contact_6.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Main Processing SoC Package": {
+     "id": "045",
+     "role": "processor",
+     "category": "Electronics",
+     "material": "chip",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.022,
+      0.046,
+      0.01
+     ],
+     "description": "Illustrative processor package mounted on the main temple PCB.",
+     "individualGlb": "part_assets/glb/Smart/045_left_main_processing_soc_package.glb",
+     "image": "part_assets/images/Smart/045_left_main_processing_soc_package.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Power Management IC": {
+     "id": "046",
+     "role": "pmic",
+     "category": "Electronics",
+     "material": "chip",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.022,
+      0.04,
+      0.01
+     ],
+     "description": "Power-management integrated circuit package on the PCB.",
+     "individualGlb": "part_assets/glb/Smart/046_left_power_management_ic.glb",
+     "image": "part_assets/images/Smart/046_left_power_management_ic.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Wireless RF Module": {
+     "id": "047",
+     "role": "rf_module",
+     "category": "Electronics",
+     "material": "chip",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.022,
+      0.052,
+      0.01
+     ],
+     "description": "Shielded wireless connectivity module on the temple PCB.",
+     "individualGlb": "part_assets/glb/Smart/047_left_wireless_rf_module.glb",
+     "image": "part_assets/images/Smart/047_left_wireless_rf_module.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left RF Shield Can": {
+     "id": "048",
+     "role": "rf_shield",
+     "category": "Electronics",
+     "material": "gunmetal",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.012,
+      0.06,
+      0.01
+     ],
+     "description": "Thin metal RF shield covering the wireless circuit section.",
+     "individualGlb": "part_assets/glb/Smart/048_left_rf_shield_can.glb",
+     "image": "part_assets/images/Smart/048_left_rf_shield_can.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Rechargeable Lithium Battery Cell": {
+     "id": "049",
+     "role": "battery",
+     "category": "Power",
+     "material": "battery",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      -0.034,
+      0.0
+     ],
+     "description": "Flat protected lithium battery pack housed lengthwise in the temple; chemistry and capacity remain to be selected.",
+     "individualGlb": "part_assets/glb/Smart/049_left_rechargeable_lithium_battery_cell.glb",
+     "image": "part_assets/images/Smart/049_left_rechargeable_lithium_battery_cell.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Battery Terminal Tab": {
+     "id": "050",
+     "role": "battery_tab",
+     "category": "Power",
+     "material": "battery_foil",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      -0.034,
+      0.014
+     ],
+     "description": "Metal battery terminal tab connecting the cell to the power-management board.",
+     "individualGlb": "part_assets/glb/Smart/050_left_battery_terminal_tab.glb",
+     "image": "part_assets/images/Smart/050_left_battery_terminal_tab.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Flexible Battery Interconnect": {
+     "id": "051",
+     "role": "flex_cable",
+     "category": "Power",
+     "material": "battery_foil",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      -0.046,
+      0.008
+     ],
+     "description": "Thin flexible interconnect between the cell terminal and temple PCB.",
+     "individualGlb": "part_assets/glb/Smart/051_left_flexible_battery_interconnect.glb",
+     "image": "part_assets/images/Smart/051_left_flexible_battery_interconnect.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Open-Ear Speaker Driver": {
+     "id": "052",
+     "role": "speaker",
+     "category": "Audio",
+     "material": "steel_dark",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.058,
+      0.0,
+      0.0
+     ],
+     "description": "Miniature acoustic transducer positioned in the rear temple near the ear.",
+     "individualGlb": "part_assets/glb/Smart/052_left_open_ear_speaker_driver.glb",
+     "image": "part_assets/images/Smart/052_left_open_ear_speaker_driver.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Acoustic Outlet Grille": {
+     "id": "053",
+     "role": "speaker_grille",
+     "category": "Audio",
+     "material": "gunmetal",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.072,
+      0.0,
+      0.0
+     ],
+     "description": "Perforated-look metal acoustic outlet cover over the speaker chamber.",
+     "individualGlb": "part_assets/glb/Smart/053_left_acoustic_outlet_grille.glb",
+     "image": "part_assets/images/Smart/053_left_acoustic_outlet_grille.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Beamforming Microphone Port 1": {
+     "id": "054",
+     "role": "microphone",
+     "category": "Audio",
+     "material": "camera_glass",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.05,
+      0.0,
+      -0.01
+     ],
+     "description": "Tiny acoustic inlet on the lower temple surface for voice pickup.",
+     "individualGlb": "part_assets/glb/Smart/054_left_beamforming_microphone_port_1.glb",
+     "image": "part_assets/images/Smart/054_left_beamforming_microphone_port_1.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Beamforming Microphone Port 2": {
+     "id": "055",
+     "role": "microphone",
+     "category": "Audio",
+     "material": "camera_glass",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.05,
+      0.0,
+      -0.01
+     ],
+     "description": "Tiny acoustic inlet on the lower temple surface for voice pickup.",
+     "individualGlb": "part_assets/glb/Smart/055_left_beamforming_microphone_port_2.glb",
+     "image": "part_assets/images/Smart/055_left_beamforming_microphone_port_2.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Beamforming Microphone Port 3": {
+     "id": "056",
+     "role": "microphone",
+     "category": "Audio",
+     "material": "camera_glass",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.05,
+      0.0,
+      -0.01
+     ],
+     "description": "Tiny acoustic inlet on the lower temple surface for voice pickup.",
+     "individualGlb": "part_assets/glb/Smart/056_left_beamforming_microphone_port_3.glb",
+     "image": "part_assets/images/Smart/056_left_beamforming_microphone_port_3.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Tactile Temple Control 1": {
+     "id": "057",
+     "role": "button",
+     "category": "Controls",
+     "material": "gunmetal",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.03,
+      0.0
+     ],
+     "description": "Low-profile multifunction touch/control surface on the outer temple.",
+     "individualGlb": "part_assets/glb/Smart/057_left_tactile_temple_control_1.glb",
+     "image": "part_assets/images/Smart/057_left_tactile_temple_control_1.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Tactile Temple Control 2": {
+     "id": "058",
+     "role": "button",
+     "category": "Controls",
+     "material": "gunmetal",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.03,
+      0.0
+     ],
+     "description": "Low-profile multifunction touch/control surface on the outer temple.",
+     "individualGlb": "part_assets/glb/Smart/058_left_tactile_temple_control_2.glb",
+     "image": "part_assets/images/Smart/058_left_tactile_temple_control_2.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Temple Status LED": {
+     "id": "059",
+     "role": "status_led",
+     "category": "Controls",
+     "material": "led_blue",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.042,
+      0.0
+     ],
+     "description": "Small low-current status indicator flush with the temple side.",
+     "individualGlb": "part_assets/glb/Smart/059_left_temple_status_led.glb",
+     "image": "part_assets/images/Smart/059_left_temple_status_led.png",
+     "location": "Left temple (side arm)"
+    },
+    "Right Gloss-Black Temple Outer Housing": {
+     "id": "060",
+     "role": "temple_shell",
+     "category": "Temple housing",
+     "material": "piano_black",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.0,
+      0.0
+     ],
+     "description": "Smooth tapered temple arm with integrated electronics cavity and ergonomic ear bend.",
+     "individualGlb": "part_assets/glb/Smart/060_right_gloss_black_temple_outer_housing.glb",
+     "image": "part_assets/images/Smart/060_right_gloss_black_temple_outer_housing.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Internal Temple Carrier Rail": {
+     "id": "061",
+     "role": "chassis",
+     "category": "Internal structure",
+     "material": "satin_black",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.046,
+      0.0
+     ],
+     "description": "Lightweight internal structural rail supporting the battery, PCB, speaker and charging assembly.",
+     "individualGlb": "part_assets/glb/Smart/061_right_internal_temple_carrier_rail.glb",
+     "image": "part_assets/images/Smart/061_right_internal_temple_carrier_rail.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Inner Temple Service Cover": {
+     "id": "062",
+     "role": "service_cover",
+     "category": "Temple housing",
+     "material": "black_acetate",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.014,
+      0.0,
+      0.0
+     ],
+     "description": "Slim removable inner-side service panel covering the internal electronics channel.",
+     "individualGlb": "part_assets/glb/Smart/062_right_inner_temple_service_cover.glb",
+     "image": "part_assets/images/Smart/062_right_inner_temple_service_cover.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Soft-Touch Ear Tip": {
+     "id": "063",
+     "role": "ear_tip",
+     "category": "Fit hardware",
+     "material": "soft_touch",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.0,
+      0.04
+     ],
+     "description": "Elastomerized tapered terminal section for comfort behind the ear.",
+     "individualGlb": "part_assets/glb/Smart/063_right_soft_touch_ear_tip.glb",
+     "image": "part_assets/images/Smart/063_right_soft_touch_ear_tip.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Main Temple PCB": {
+     "id": "064",
+     "role": "pcb",
+     "category": "Electronics",
+     "material": "pcb",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.034,
+      0.01
+     ],
+     "description": "Compact elongated multilayer PCB mounted along the temple carrier rail.",
+     "individualGlb": "part_assets/glb/Smart/064_right_main_temple_pcb.glb",
+     "image": "part_assets/images/Smart/064_right_main_temple_pcb.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right PCB Gold Contact 1": {
+     "id": "065",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Smart/065_right_pcb_gold_contact_1.glb",
+     "image": "part_assets/images/Smart/065_right_pcb_gold_contact_1.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right PCB Gold Contact 2": {
+     "id": "066",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Smart/066_right_pcb_gold_contact_2.glb",
+     "image": "part_assets/images/Smart/066_right_pcb_gold_contact_2.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right PCB Gold Contact 3": {
+     "id": "067",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Smart/067_right_pcb_gold_contact_3.glb",
+     "image": "part_assets/images/Smart/067_right_pcb_gold_contact_3.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right PCB Gold Contact 4": {
+     "id": "068",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Smart/068_right_pcb_gold_contact_4.glb",
+     "image": "part_assets/images/Smart/068_right_pcb_gold_contact_4.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right PCB Gold Contact 5": {
+     "id": "069",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Smart/069_right_pcb_gold_contact_5.glb",
+     "image": "part_assets/images/Smart/069_right_pcb_gold_contact_5.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right PCB Gold Contact 6": {
+     "id": "070",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Smart/070_right_pcb_gold_contact_6.glb",
+     "image": "part_assets/images/Smart/070_right_pcb_gold_contact_6.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Main Processing SoC Package": {
+     "id": "071",
+     "role": "processor",
+     "category": "Electronics",
+     "material": "chip",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.022,
+      0.046,
+      0.01
+     ],
+     "description": "Illustrative processor package mounted on the main temple PCB.",
+     "individualGlb": "part_assets/glb/Smart/071_right_main_processing_soc_package.glb",
+     "image": "part_assets/images/Smart/071_right_main_processing_soc_package.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Power Management IC": {
+     "id": "072",
+     "role": "pmic",
+     "category": "Electronics",
+     "material": "chip",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.022,
+      0.04,
+      0.01
+     ],
+     "description": "Power-management integrated circuit package on the PCB.",
+     "individualGlb": "part_assets/glb/Smart/072_right_power_management_ic.glb",
+     "image": "part_assets/images/Smart/072_right_power_management_ic.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Wireless RF Module": {
+     "id": "073",
+     "role": "rf_module",
+     "category": "Electronics",
+     "material": "chip",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.022,
+      0.052,
+      0.01
+     ],
+     "description": "Shielded wireless connectivity module on the temple PCB.",
+     "individualGlb": "part_assets/glb/Smart/073_right_wireless_rf_module.glb",
+     "image": "part_assets/images/Smart/073_right_wireless_rf_module.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right RF Shield Can": {
+     "id": "074",
+     "role": "rf_shield",
+     "category": "Electronics",
+     "material": "gunmetal",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.012,
+      0.06,
+      0.01
+     ],
+     "description": "Thin metal RF shield covering the wireless circuit section.",
+     "individualGlb": "part_assets/glb/Smart/074_right_rf_shield_can.glb",
+     "image": "part_assets/images/Smart/074_right_rf_shield_can.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Rechargeable Lithium Battery Cell": {
+     "id": "075",
+     "role": "battery",
+     "category": "Power",
+     "material": "battery",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.034,
+      0.0
+     ],
+     "description": "Flat protected lithium battery pack housed lengthwise in the temple; chemistry and capacity remain to be selected.",
+     "individualGlb": "part_assets/glb/Smart/075_right_rechargeable_lithium_battery_cell.glb",
+     "image": "part_assets/images/Smart/075_right_rechargeable_lithium_battery_cell.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Battery Terminal Tab": {
+     "id": "076",
+     "role": "battery_tab",
+     "category": "Power",
+     "material": "battery_foil",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.034,
+      0.014
+     ],
+     "description": "Metal battery terminal tab connecting the cell to the power-management board.",
+     "individualGlb": "part_assets/glb/Smart/076_right_battery_terminal_tab.glb",
+     "image": "part_assets/images/Smart/076_right_battery_terminal_tab.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Flexible Battery Interconnect": {
+     "id": "077",
+     "role": "flex_cable",
+     "category": "Power",
+     "material": "battery_foil",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.046,
+      0.008
+     ],
+     "description": "Thin flexible interconnect between the cell terminal and temple PCB.",
+     "individualGlb": "part_assets/glb/Smart/077_right_flexible_battery_interconnect.glb",
+     "image": "part_assets/images/Smart/077_right_flexible_battery_interconnect.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Open-Ear Speaker Driver": {
+     "id": "078",
+     "role": "speaker",
+     "category": "Audio",
+     "material": "steel_dark",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.058,
+      0.0,
+      0.0
+     ],
+     "description": "Miniature acoustic transducer positioned in the rear temple near the ear.",
+     "individualGlb": "part_assets/glb/Smart/078_right_open_ear_speaker_driver.glb",
+     "image": "part_assets/images/Smart/078_right_open_ear_speaker_driver.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Acoustic Outlet Grille": {
+     "id": "079",
+     "role": "speaker_grille",
+     "category": "Audio",
+     "material": "gunmetal",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.072,
+      0.0,
+      0.0
+     ],
+     "description": "Perforated-look metal acoustic outlet cover over the speaker chamber.",
+     "individualGlb": "part_assets/glb/Smart/079_right_acoustic_outlet_grille.glb",
+     "image": "part_assets/images/Smart/079_right_acoustic_outlet_grille.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Beamforming Microphone Port 1": {
+     "id": "080",
+     "role": "microphone",
+     "category": "Audio",
+     "material": "camera_glass",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.05,
+      0.0,
+      -0.01
+     ],
+     "description": "Tiny acoustic inlet on the lower temple surface for voice pickup.",
+     "individualGlb": "part_assets/glb/Smart/080_right_beamforming_microphone_port_1.glb",
+     "image": "part_assets/images/Smart/080_right_beamforming_microphone_port_1.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Beamforming Microphone Port 2": {
+     "id": "081",
+     "role": "microphone",
+     "category": "Audio",
+     "material": "camera_glass",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.05,
+      0.0,
+      -0.01
+     ],
+     "description": "Tiny acoustic inlet on the lower temple surface for voice pickup.",
+     "individualGlb": "part_assets/glb/Smart/081_right_beamforming_microphone_port_2.glb",
+     "image": "part_assets/images/Smart/081_right_beamforming_microphone_port_2.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Beamforming Microphone Port 3": {
+     "id": "082",
+     "role": "microphone",
+     "category": "Audio",
+     "material": "camera_glass",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.05,
+      0.0,
+      -0.01
+     ],
+     "description": "Tiny acoustic inlet on the lower temple surface for voice pickup.",
+     "individualGlb": "part_assets/glb/Smart/082_right_beamforming_microphone_port_3.glb",
+     "image": "part_assets/images/Smart/082_right_beamforming_microphone_port_3.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Tactile Temple Control 1": {
+     "id": "083",
+     "role": "button",
+     "category": "Controls",
+     "material": "gunmetal",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.03,
+      0.0
+     ],
+     "description": "Low-profile multifunction touch/control surface on the outer temple.",
+     "individualGlb": "part_assets/glb/Smart/083_right_tactile_temple_control_1.glb",
+     "image": "part_assets/images/Smart/083_right_tactile_temple_control_1.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Tactile Temple Control 2": {
+     "id": "084",
+     "role": "button",
+     "category": "Controls",
+     "material": "gunmetal",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.03,
+      0.0
+     ],
+     "description": "Low-profile multifunction touch/control surface on the outer temple.",
+     "individualGlb": "part_assets/glb/Smart/084_right_tactile_temple_control_2.glb",
+     "image": "part_assets/images/Smart/084_right_tactile_temple_control_2.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Temple Status LED": {
+     "id": "085",
+     "role": "status_led",
+     "category": "Controls",
+     "material": "led_blue",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.042,
+      0.0
+     ],
+     "description": "Small low-current status indicator flush with the temple side.",
+     "individualGlb": "part_assets/glb/Smart/085_right_temple_status_led.glb",
+     "image": "part_assets/images/Smart/085_right_temple_status_led.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right USB-C External Metal Bezel": {
+     "id": "086",
+     "role": "usb_bezel",
+     "category": "Power / I-O",
+     "material": "titanium",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.044,
+      0.01
+     ],
+     "description": "Externally accessible polished metal bezel seated flush-to-proud on the underside temple surface; port mouth faces outward for cable insertion.",
+     "individualGlb": "part_assets/glb/Smart/086_right_usb_c_external_metal_bezel.glb",
+     "image": "part_assets/images/Smart/086_right_usb_c_external_metal_bezel.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right USB-C Inner Metal Receptacle Shell": {
+     "id": "087",
+     "role": "usb_inner_shell",
+     "category": "Power / I-O",
+     "material": "silver",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.056,
+      0.01
+     ],
+     "description": "Thin metal Type-C female shell visible within the outer bezel and surrounding the cable-entry cavity.",
+     "individualGlb": "part_assets/glb/Smart/087_right_usb_c_inner_metal_receptacle_shell.glb",
+     "image": "part_assets/images/Smart/087_right_usb_c_inner_metal_receptacle_shell.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right USB-C Female Receptacle Opening": {
+     "id": "088",
+     "role": "usb_receptacle",
+     "category": "Power / I-O",
+     "material": "camera_glass",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.068,
+      0.01
+     ],
+     "description": "Dark female Type-C receptacle cavity set behind the exposed metal shell. Conceptual scale pending connector datasheet.",
+     "individualGlb": "part_assets/glb/Smart/088_right_usb_c_female_receptacle_opening.glb",
+     "image": "part_assets/images/Smart/088_right_usb_c_female_receptacle_opening.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right USB-C Inner Tongue": {
+     "id": "089",
+     "role": "usb_tongue",
+     "category": "Power / I-O",
+     "material": "silver",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.08,
+      0.01
+     ],
+     "description": "Centered metal tongue recessed within the Type-C receptacle opening.",
+     "individualGlb": "part_assets/glb/Smart/089_right_usb_c_inner_tongue.glb",
+     "image": "part_assets/images/Smart/089_right_usb_c_inner_tongue.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Temple Service Fastener 1": {
+     "id": "090",
+     "role": "screw",
+     "category": "Mechanical",
+     "material": "titanium",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.05,
+      0.0
+     ],
+     "description": "Small metallic service screw adjacent to the charging and electronics access zone.",
+     "individualGlb": "part_assets/glb/Smart/090_right_temple_service_fastener_1.glb",
+     "image": "part_assets/images/Smart/090_right_temple_service_fastener_1.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Temple Service Fastener 2": {
+     "id": "091",
+     "role": "screw",
+     "category": "Mechanical",
+     "material": "titanium",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.05,
+      0.0
+     ],
+     "description": "Small metallic service screw adjacent to the charging and electronics access zone.",
+     "individualGlb": "part_assets/glb/Smart/091_right_temple_service_fastener_2.glb",
+     "image": "part_assets/images/Smart/091_right_temple_service_fastener_2.png",
+     "location": "Right temple (side arm)"
+    },
+    "Left Front Beamforming Microphone Port": {
+     "id": "092",
+     "role": "microphone",
+     "category": "Audio",
+     "material": "camera_glass",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0,
+      0.04,
+      -0.024
+     ],
+     "description": "Front-facing acoustic inlet for the multi-microphone voice array.",
+     "individualGlb": "part_assets/glb/Smart/092_left_front_beamforming_microphone_port.glb",
+     "image": "part_assets/images/Smart/092_left_front_beamforming_microphone_port.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "Right Front Beamforming Microphone Port": {
+     "id": "093",
+     "role": "microphone",
+     "category": "Audio",
+     "material": "camera_glass",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0,
+      0.04,
+      -0.024
+     ],
+     "description": "Front-facing acoustic inlet for the multi-microphone voice array.",
+     "individualGlb": "part_assets/glb/Smart/093_right_front_beamforming_microphone_port.glb",
+     "image": "part_assets/images/Smart/093_right_front_beamforming_microphone_port.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "Auxiliary Scene Sensor Window": {
+     "id": "094",
+     "role": "aux_sensor",
+     "category": "Sensors",
+     "material": "gunmetal",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0,
+      0.046,
+      -0.02
+     ],
+     "description": "Small auxiliary scene-sensing window integrated below the central camera pod.",
+     "individualGlb": "part_assets/glb/Smart/094_auxiliary_scene_sensor_window.glb",
+     "image": "part_assets/images/Smart/094_auxiliary_scene_sensor_window.png",
+     "location": "Front frame, left side"
+    },
+    "Smart Model Identity Detail": {
+     "id": "095",
+     "role": "brand_detail",
+     "category": "Brand detail",
+     "material": "blue_accent",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.006,
+      0.052,
+      -0.014
+     ],
+     "description": "Subtle blue model-identification line on the inner right brow.",
+     "individualGlb": "part_assets/glb/Smart/095_smart_model_identity_detail.glb",
+     "image": "part_assets/images/Smart/095_smart_model_identity_detail.png",
+     "location": "Front frame, right side"
+    }
+   }
+  },
+  "Connect": {
+   "title": "SIGNLINK CONNECT  /  ACCESSIBLE COMMUNICATION",
+   "assembledModel": "models/SIGNLINK_Connect_Assembled.glb",
+   "explodedModel": "models/SIGNLINK_Connect_Exploded.glb",
+   "cutawayModel": "models/SIGNLINK_Connect_Cutaway.glb",
+   "componentCount": 106,
+   "parts": {
+    "Left Polished Acetate Lens Rim": {
+     "id": "001",
+     "role": "front_rim",
+     "category": "Frame",
+     "material": "piano_black",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.016,
+      0.0,
+      -0.004
+     ],
+     "description": "High-gloss molded full-rim front eyewear frame. The rounded rectangular lens opening is sized for prescription-style lenses; final ophthalmic fit remains a design-stage item.",
+     "individualGlb": "part_assets/glb/Connect/001_left_polished_acetate_lens_rim.glb",
+     "image": "part_assets/images/Connect/001_left_polished_acetate_lens_rim.png",
+     "location": "Front frame, left side"
+    },
+    "Left Lens Retaining Bezel": {
+     "id": "002",
+     "role": "lens_bezel",
+     "category": "Frame detail",
+     "material": "gunmetal",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.016,
+      0.0,
+      0.014
+     ],
+     "description": "Thin dark-metal inner retaining lip seated within the acetate rim.",
+     "individualGlb": "part_assets/glb/Connect/002_left_lens_retaining_bezel.glb",
+     "image": "part_assets/images/Connect/002_left_lens_retaining_bezel.png",
+     "location": "Front frame, left side"
+    },
+    "Left Clear Prescription Lens": {
+     "id": "003",
+     "role": "lens",
+     "category": "Optics",
+     "material": "clear_lens",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.016,
+      0.0,
+      0.034
+     ],
+     "description": "Thin clear curved lens insert with subtle edge tint and realistic thickness. Prescription strength and optical coating are not specified.",
+     "individualGlb": "part_assets/glb/Connect/003_left_clear_prescription_lens.glb",
+     "image": "part_assets/images/Connect/003_left_clear_prescription_lens.png",
+     "location": "Front frame, left side"
+    },
+    "Right Polished Acetate Lens Rim": {
+     "id": "004",
+     "role": "front_rim",
+     "category": "Frame",
+     "material": "piano_black",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.016,
+      0.0,
+      -0.004
+     ],
+     "description": "High-gloss molded full-rim front eyewear frame. The rounded rectangular lens opening is sized for prescription-style lenses; final ophthalmic fit remains a design-stage item.",
+     "individualGlb": "part_assets/glb/Connect/004_right_polished_acetate_lens_rim.glb",
+     "image": "part_assets/images/Connect/004_right_polished_acetate_lens_rim.png",
+     "location": "Front frame, right side"
+    },
+    "Right Lens Retaining Bezel": {
+     "id": "005",
+     "role": "lens_bezel",
+     "category": "Frame detail",
+     "material": "gunmetal",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.016,
+      0.0,
+      0.014
+     ],
+     "description": "Thin dark-metal inner retaining lip seated within the acetate rim.",
+     "individualGlb": "part_assets/glb/Connect/005_right_lens_retaining_bezel.glb",
+     "image": "part_assets/images/Connect/005_right_lens_retaining_bezel.png",
+     "location": "Front frame, right side"
+    },
+    "Right Clear Prescription Lens": {
+     "id": "006",
+     "role": "lens",
+     "category": "Optics",
+     "material": "clear_lens",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.016,
+      0.0,
+      0.034
+     ],
+     "description": "Thin clear curved lens insert with subtle edge tint and realistic thickness. Prescription strength and optical coating are not specified.",
+     "individualGlb": "part_assets/glb/Connect/006_right_clear_prescription_lens.glb",
+     "image": "part_assets/images/Connect/006_right_clear_prescription_lens.png",
+     "location": "Front frame, right side"
+    },
+    "Integrated Sculpted Nose Bridge": {
+     "id": "007",
+     "role": "bridge",
+     "category": "Frame",
+     "material": "black_acetate",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0,
+      -0.006,
+      0.0
+     ],
+     "description": "Contoured acetate bridge joining both front rims with a shallow saddle profile.",
+     "individualGlb": "part_assets/glb/Connect/007_integrated_sculpted_nose_bridge.glb",
+     "image": "part_assets/images/Connect/007_integrated_sculpted_nose_bridge.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "Left Adjustable Titanium Nose Pad Arm": {
+     "id": "008",
+     "role": "nose_arm",
+     "category": "Fit hardware",
+     "material": "titanium",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.014,
+      -0.016,
+      0.012
+     ],
+     "description": "Thin adjustable metal nose-pad arm mounted behind the bridge.",
+     "individualGlb": "part_assets/glb/Connect/008_left_adjustable_titanium_nose_pad_arm.glb",
+     "image": "part_assets/images/Connect/008_left_adjustable_titanium_nose_pad_arm.png",
+     "location": "Underside of the nose bridge"
+    },
+    "Left Silicone Nose Pad": {
+     "id": "009",
+     "role": "nose_pad",
+     "category": "Fit hardware",
+     "material": "rubber",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.016,
+      -0.03,
+      0.022
+     ],
+     "description": "Soft translucent-black silicone nose pad with a rounded contact surface.",
+     "individualGlb": "part_assets/glb/Connect/009_left_silicone_nose_pad.glb",
+     "image": "part_assets/images/Connect/009_left_silicone_nose_pad.png",
+     "location": "Underside of the nose bridge"
+    },
+    "Right Adjustable Titanium Nose Pad Arm": {
+     "id": "010",
+     "role": "nose_arm",
+     "category": "Fit hardware",
+     "material": "titanium",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.014,
+      -0.016,
+      0.012
+     ],
+     "description": "Thin adjustable metal nose-pad arm mounted behind the bridge.",
+     "individualGlb": "part_assets/glb/Connect/010_right_adjustable_titanium_nose_pad_arm.glb",
+     "image": "part_assets/images/Connect/010_right_adjustable_titanium_nose_pad_arm.png",
+     "location": "Underside of the nose bridge"
+    },
+    "Right Silicone Nose Pad": {
+     "id": "011",
+     "role": "nose_pad",
+     "category": "Fit hardware",
+     "material": "rubber",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.016,
+      -0.03,
+      0.022
+     ],
+     "description": "Soft translucent-black silicone nose pad with a rounded contact surface.",
+     "individualGlb": "part_assets/glb/Connect/011_right_silicone_nose_pad.glb",
+     "image": "part_assets/images/Connect/011_right_silicone_nose_pad.png",
+     "location": "Underside of the nose bridge"
+    },
+    "Central Dual-Camera Bridge Pod": {
+     "id": "012",
+     "role": "camera_pod",
+     "category": "Sensors",
+     "material": "black_acetate",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0,
+      0.034,
+      -0.01
+     ],
+     "description": "Low-profile central bridge module for the forward RGB and spatial sensing camera assemblies.",
+     "individualGlb": "part_assets/glb/Connect/012_central_dual_camera_bridge_pod.glb",
+     "image": "part_assets/images/Connect/012_central_dual_camera_bridge_pod.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "Central Camera Pod Bridge Mount": {
+     "id": "013",
+     "role": "camera_mount",
+     "category": "Frame / Sensors",
+     "material": "black_acetate",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0,
+      0.02,
+      -0.004
+     ],
+     "description": "Short molded support that physically joins the raised camera pod to the sculpted nose bridge.",
+     "individualGlb": "part_assets/glb/Connect/013_central_camera_pod_bridge_mount.glb",
+     "image": "part_assets/images/Connect/013_central_camera_pod_bridge_mount.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "Upper Brow Micro-Trim": {
+     "id": "014",
+     "role": "trim",
+     "category": "Frame detail",
+     "material": "gunmetal",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0,
+      0.046,
+      -0.006
+     ],
+     "description": "Fine metallic trim following the upper brow line around the central camera pod.",
+     "individualGlb": "part_assets/glb/Connect/014_upper_brow_micro_trim.glb",
+     "image": "part_assets/images/Connect/014_upper_brow_micro_trim.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "RGB Main Camera Metal Retaining Ring": {
+     "id": "015",
+     "role": "camera_bezel",
+     "category": "Sensors",
+     "material": "titanium",
+     "side": 0,
+     "explodedOffsetMeters": [
+      -0.0136,
+      0.034,
+      -0.046
+     ],
+     "description": "Polished micro-machined retaining ring around the bridge camera window.",
+     "individualGlb": "part_assets/glb/Connect/015_rgb_main_camera_metal_retaining_ring.glb",
+     "image": "part_assets/images/Connect/015_rgb_main_camera_metal_retaining_ring.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "RGB Main Camera Optical Cover": {
+     "id": "016",
+     "role": "camera_cover",
+     "category": "Sensors",
+     "material": "camera_glass",
+     "side": 0,
+     "explodedOffsetMeters": [
+      -0.0136,
+      0.034,
+      -0.034
+     ],
+     "description": "Dark coated optical glass protecting the camera sensor aperture.",
+     "individualGlb": "part_assets/glb/Connect/016_rgb_main_camera_optical_cover.glb",
+     "image": "part_assets/images/Connect/016_rgb_main_camera_optical_cover.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "RGB Main Camera Lens Element": {
+     "id": "017",
+     "role": "camera_lens",
+     "category": "Sensors",
+     "material": "camera_blue",
+     "side": 0,
+     "explodedOffsetMeters": [
+      -0.0136,
+      0.034,
+      -0.022
+     ],
+     "description": "Convex multi-coated camera lens element visible through the bridge opening.",
+     "individualGlb": "part_assets/glb/Connect/017_rgb_main_camera_lens_element.glb",
+     "image": "part_assets/images/Connect/017_rgb_main_camera_lens_element.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "RGB Main Camera Iris Detail": {
+     "id": "018",
+     "role": "camera_iris",
+     "category": "Sensors",
+     "material": "camera_coating",
+     "side": 0,
+     "explodedOffsetMeters": [
+      -0.0136,
+      0.034,
+      -0.014
+     ],
+     "description": "Subtle optical iris / sensor reflection detail.",
+     "individualGlb": "part_assets/glb/Connect/018_rgb_main_camera_iris_detail.glb",
+     "image": "part_assets/images/Connect/018_rgb_main_camera_iris_detail.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "Spatial Camera Metal Retaining Ring": {
+     "id": "019",
+     "role": "camera_bezel",
+     "category": "Sensors",
+     "material": "titanium",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0136,
+      0.034,
+      -0.046
+     ],
+     "description": "Polished micro-machined retaining ring around the bridge camera window.",
+     "individualGlb": "part_assets/glb/Connect/019_spatial_camera_metal_retaining_ring.glb",
+     "image": "part_assets/images/Connect/019_spatial_camera_metal_retaining_ring.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "Spatial Camera Optical Cover": {
+     "id": "020",
+     "role": "camera_cover",
+     "category": "Sensors",
+     "material": "camera_glass",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0136,
+      0.034,
+      -0.034
+     ],
+     "description": "Dark coated optical glass protecting the camera sensor aperture.",
+     "individualGlb": "part_assets/glb/Connect/020_spatial_camera_optical_cover.glb",
+     "image": "part_assets/images/Connect/020_spatial_camera_optical_cover.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "Spatial Camera Lens Element": {
+     "id": "021",
+     "role": "camera_lens",
+     "category": "Sensors",
+     "material": "camera_blue",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0136,
+      0.034,
+      -0.022
+     ],
+     "description": "Convex multi-coated camera lens element visible through the bridge opening.",
+     "individualGlb": "part_assets/glb/Connect/021_spatial_camera_lens_element.glb",
+     "image": "part_assets/images/Connect/021_spatial_camera_lens_element.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "Spatial Camera Iris Detail": {
+     "id": "022",
+     "role": "camera_iris",
+     "category": "Sensors",
+     "material": "camera_coating",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0136,
+      0.034,
+      -0.014
+     ],
+     "description": "Subtle optical iris / sensor reflection detail.",
+     "individualGlb": "part_assets/glb/Connect/022_spatial_camera_iris_detail.glb",
+     "image": "part_assets/images/Connect/022_spatial_camera_iris_detail.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "Front Status Indicator": {
+     "id": "023",
+     "role": "status_led",
+     "category": "Controls",
+     "material": "led_teal",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0,
+      0.046,
+      -0.02
+     ],
+     "description": "Small discreet recording/status indicator placed beside the bridge camera module.",
+     "individualGlb": "part_assets/glb/Connect/023_front_status_indicator.glb",
+     "image": "part_assets/images/Connect/023_front_status_indicator.png",
+     "location": "Front frame, right side"
+    },
+    "Left Reinforced Hinge Plate": {
+     "id": "024",
+     "role": "hinge_plate",
+     "category": "Mechanical",
+     "material": "gunmetal",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.046,
+      0.0,
+      0.0
+     ],
+     "description": "Satin-metal hinge reinforcement plate integrated at the end of the front rim.",
+     "individualGlb": "part_assets/glb/Connect/024_left_reinforced_hinge_plate.glb",
+     "image": "part_assets/images/Connect/024_left_reinforced_hinge_plate.png",
+     "location": "Front frame, left side"
+    },
+    "Left Stainless Hinge Barrel": {
+     "id": "025",
+     "role": "hinge_barrel",
+     "category": "Mechanical",
+     "material": "titanium",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.022,
+      0.036,
+      -0.004
+     ],
+     "description": "Compact multi-barrel hinge joint connecting the front frame and temple arm.",
+     "individualGlb": "part_assets/glb/Connect/025_left_stainless_hinge_barrel.glb",
+     "image": "part_assets/images/Connect/025_left_stainless_hinge_barrel.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Hinge Fastener 1": {
+     "id": "026",
+     "role": "screw",
+     "category": "Mechanical",
+     "material": "silver",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.062,
+      0.0,
+      0.0
+     ],
+     "description": "Small flush stainless fastener securing the hinge plate.",
+     "individualGlb": "part_assets/glb/Connect/026_left_hinge_fastener_1.glb",
+     "image": "part_assets/images/Connect/026_left_hinge_fastener_1.png",
+     "location": "Front frame, left side"
+    },
+    "Left Hinge Fastener 2": {
+     "id": "027",
+     "role": "screw",
+     "category": "Mechanical",
+     "material": "silver",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.062,
+      0.0,
+      0.0
+     ],
+     "description": "Small flush stainless fastener securing the hinge plate.",
+     "individualGlb": "part_assets/glb/Connect/027_left_hinge_fastener_2.glb",
+     "image": "part_assets/images/Connect/027_left_hinge_fastener_2.png",
+     "location": "Left temple (side arm)"
+    },
+    "Right Reinforced Hinge Plate": {
+     "id": "028",
+     "role": "hinge_plate",
+     "category": "Mechanical",
+     "material": "gunmetal",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.046,
+      0.0,
+      0.0
+     ],
+     "description": "Satin-metal hinge reinforcement plate integrated at the end of the front rim.",
+     "individualGlb": "part_assets/glb/Connect/028_right_reinforced_hinge_plate.glb",
+     "image": "part_assets/images/Connect/028_right_reinforced_hinge_plate.png",
+     "location": "Front frame, right side"
+    },
+    "Right Stainless Hinge Barrel": {
+     "id": "029",
+     "role": "hinge_barrel",
+     "category": "Mechanical",
+     "material": "titanium",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.022,
+      0.036,
+      -0.004
+     ],
+     "description": "Compact multi-barrel hinge joint connecting the front frame and temple arm.",
+     "individualGlb": "part_assets/glb/Connect/029_right_stainless_hinge_barrel.glb",
+     "image": "part_assets/images/Connect/029_right_stainless_hinge_barrel.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Hinge Fastener 1": {
+     "id": "030",
+     "role": "screw",
+     "category": "Mechanical",
+     "material": "silver",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.062,
+      0.0,
+      0.0
+     ],
+     "description": "Small flush stainless fastener securing the hinge plate.",
+     "individualGlb": "part_assets/glb/Connect/030_right_hinge_fastener_1.glb",
+     "image": "part_assets/images/Connect/030_right_hinge_fastener_1.png",
+     "location": "Front frame, right side"
+    },
+    "Right Hinge Fastener 2": {
+     "id": "031",
+     "role": "screw",
+     "category": "Mechanical",
+     "material": "silver",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.062,
+      0.0,
+      0.0
+     ],
+     "description": "Small flush stainless fastener securing the hinge plate.",
+     "individualGlb": "part_assets/glb/Connect/031_right_hinge_fastener_2.glb",
+     "image": "part_assets/images/Connect/031_right_hinge_fastener_2.png",
+     "location": "Right temple (side arm)"
+    },
+    "Left Brow Identity Inlay": {
+     "id": "032",
+     "role": "brand_mark",
+     "category": "Frame detail",
+     "material": "white_mark",
+     "side": -1,
+     "explodedOffsetMeters": [
+      0.092,
+      0.0,
+      0.0
+     ],
+     "description": "Small understated metallic brand marker on the outer upper brow.",
+     "individualGlb": "part_assets/glb/Connect/032_left_brow_identity_inlay.glb",
+     "image": "part_assets/images/Connect/032_left_brow_identity_inlay.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Brow Identity Inlay": {
+     "id": "033",
+     "role": "brand_mark",
+     "category": "Frame detail",
+     "material": "white_mark",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.092,
+      0.0,
+      0.0
+     ],
+     "description": "Small understated metallic brand marker on the outer upper brow.",
+     "individualGlb": "part_assets/glb/Connect/033_right_brow_identity_inlay.glb",
+     "image": "part_assets/images/Connect/033_right_brow_identity_inlay.png",
+     "location": "Right temple (side arm)"
+    },
+    "Left Gloss-Black Temple Outer Housing": {
+     "id": "034",
+     "role": "temple_shell",
+     "category": "Temple housing",
+     "material": "piano_black",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.0,
+      0.0
+     ],
+     "description": "Smooth tapered temple arm with integrated electronics cavity and ergonomic ear bend.",
+     "individualGlb": "part_assets/glb/Connect/034_left_gloss_black_temple_outer_housing.glb",
+     "image": "part_assets/images/Connect/034_left_gloss_black_temple_outer_housing.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Internal Temple Carrier Rail": {
+     "id": "035",
+     "role": "chassis",
+     "category": "Internal structure",
+     "material": "satin_black",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      -0.046,
+      0.0
+     ],
+     "description": "Lightweight internal structural rail supporting the battery, PCB, speaker and charging assembly.",
+     "individualGlb": "part_assets/glb/Connect/035_left_internal_temple_carrier_rail.glb",
+     "image": "part_assets/images/Connect/035_left_internal_temple_carrier_rail.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Inner Temple Service Cover": {
+     "id": "036",
+     "role": "service_cover",
+     "category": "Temple housing",
+     "material": "black_acetate",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.014,
+      0.0,
+      0.0
+     ],
+     "description": "Slim removable inner-side service panel covering the internal electronics channel.",
+     "individualGlb": "part_assets/glb/Connect/036_left_inner_temple_service_cover.glb",
+     "image": "part_assets/images/Connect/036_left_inner_temple_service_cover.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Soft-Touch Ear Tip": {
+     "id": "037",
+     "role": "ear_tip",
+     "category": "Fit hardware",
+     "material": "soft_touch",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.0,
+      0.04
+     ],
+     "description": "Elastomerized tapered terminal section for comfort behind the ear.",
+     "individualGlb": "part_assets/glb/Connect/037_left_soft_touch_ear_tip.glb",
+     "image": "part_assets/images/Connect/037_left_soft_touch_ear_tip.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Main Temple PCB": {
+     "id": "038",
+     "role": "pcb",
+     "category": "Electronics",
+     "material": "pcb",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.034,
+      0.01
+     ],
+     "description": "Compact elongated multilayer PCB mounted along the temple carrier rail.",
+     "individualGlb": "part_assets/glb/Connect/038_left_main_temple_pcb.glb",
+     "image": "part_assets/images/Connect/038_left_main_temple_pcb.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left PCB Gold Contact 1": {
+     "id": "039",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Connect/039_left_pcb_gold_contact_1.glb",
+     "image": "part_assets/images/Connect/039_left_pcb_gold_contact_1.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left PCB Gold Contact 2": {
+     "id": "040",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Connect/040_left_pcb_gold_contact_2.glb",
+     "image": "part_assets/images/Connect/040_left_pcb_gold_contact_2.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left PCB Gold Contact 3": {
+     "id": "041",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Connect/041_left_pcb_gold_contact_3.glb",
+     "image": "part_assets/images/Connect/041_left_pcb_gold_contact_3.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left PCB Gold Contact 4": {
+     "id": "042",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Connect/042_left_pcb_gold_contact_4.glb",
+     "image": "part_assets/images/Connect/042_left_pcb_gold_contact_4.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left PCB Gold Contact 5": {
+     "id": "043",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Connect/043_left_pcb_gold_contact_5.glb",
+     "image": "part_assets/images/Connect/043_left_pcb_gold_contact_5.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left PCB Gold Contact 6": {
+     "id": "044",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Connect/044_left_pcb_gold_contact_6.glb",
+     "image": "part_assets/images/Connect/044_left_pcb_gold_contact_6.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Main Processing SoC Package": {
+     "id": "045",
+     "role": "processor",
+     "category": "Electronics",
+     "material": "chip",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.022,
+      0.046,
+      0.01
+     ],
+     "description": "Illustrative processor package mounted on the main temple PCB.",
+     "individualGlb": "part_assets/glb/Connect/045_left_main_processing_soc_package.glb",
+     "image": "part_assets/images/Connect/045_left_main_processing_soc_package.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Power Management IC": {
+     "id": "046",
+     "role": "pmic",
+     "category": "Electronics",
+     "material": "chip",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.022,
+      0.04,
+      0.01
+     ],
+     "description": "Power-management integrated circuit package on the PCB.",
+     "individualGlb": "part_assets/glb/Connect/046_left_power_management_ic.glb",
+     "image": "part_assets/images/Connect/046_left_power_management_ic.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Wireless RF Module": {
+     "id": "047",
+     "role": "rf_module",
+     "category": "Electronics",
+     "material": "chip",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.022,
+      0.052,
+      0.01
+     ],
+     "description": "Shielded wireless connectivity module on the temple PCB.",
+     "individualGlb": "part_assets/glb/Connect/047_left_wireless_rf_module.glb",
+     "image": "part_assets/images/Connect/047_left_wireless_rf_module.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left RF Shield Can": {
+     "id": "048",
+     "role": "rf_shield",
+     "category": "Electronics",
+     "material": "gunmetal",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.012,
+      0.06,
+      0.01
+     ],
+     "description": "Thin metal RF shield covering the wireless circuit section.",
+     "individualGlb": "part_assets/glb/Connect/048_left_rf_shield_can.glb",
+     "image": "part_assets/images/Connect/048_left_rf_shield_can.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Rechargeable Lithium Battery Cell": {
+     "id": "049",
+     "role": "battery",
+     "category": "Power",
+     "material": "battery",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      -0.034,
+      0.0
+     ],
+     "description": "Flat protected lithium battery pack housed lengthwise in the temple; chemistry and capacity remain to be selected.",
+     "individualGlb": "part_assets/glb/Connect/049_left_rechargeable_lithium_battery_cell.glb",
+     "image": "part_assets/images/Connect/049_left_rechargeable_lithium_battery_cell.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Battery Terminal Tab": {
+     "id": "050",
+     "role": "battery_tab",
+     "category": "Power",
+     "material": "battery_foil",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      -0.034,
+      0.014
+     ],
+     "description": "Metal battery terminal tab connecting the cell to the power-management board.",
+     "individualGlb": "part_assets/glb/Connect/050_left_battery_terminal_tab.glb",
+     "image": "part_assets/images/Connect/050_left_battery_terminal_tab.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Flexible Battery Interconnect": {
+     "id": "051",
+     "role": "flex_cable",
+     "category": "Power",
+     "material": "battery_foil",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      -0.046,
+      0.008
+     ],
+     "description": "Thin flexible interconnect between the cell terminal and temple PCB.",
+     "individualGlb": "part_assets/glb/Connect/051_left_flexible_battery_interconnect.glb",
+     "image": "part_assets/images/Connect/051_left_flexible_battery_interconnect.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Open-Ear Speaker Driver": {
+     "id": "052",
+     "role": "speaker",
+     "category": "Audio",
+     "material": "steel_dark",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.058,
+      0.0,
+      0.0
+     ],
+     "description": "Miniature acoustic transducer positioned in the rear temple near the ear.",
+     "individualGlb": "part_assets/glb/Connect/052_left_open_ear_speaker_driver.glb",
+     "image": "part_assets/images/Connect/052_left_open_ear_speaker_driver.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Acoustic Outlet Grille": {
+     "id": "053",
+     "role": "speaker_grille",
+     "category": "Audio",
+     "material": "gunmetal",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.072,
+      0.0,
+      0.0
+     ],
+     "description": "Perforated-look metal acoustic outlet cover over the speaker chamber.",
+     "individualGlb": "part_assets/glb/Connect/053_left_acoustic_outlet_grille.glb",
+     "image": "part_assets/images/Connect/053_left_acoustic_outlet_grille.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Beamforming Microphone Port 1": {
+     "id": "054",
+     "role": "microphone",
+     "category": "Audio",
+     "material": "camera_glass",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.05,
+      0.0,
+      -0.01
+     ],
+     "description": "Tiny acoustic inlet on the lower temple surface for voice pickup.",
+     "individualGlb": "part_assets/glb/Connect/054_left_beamforming_microphone_port_1.glb",
+     "image": "part_assets/images/Connect/054_left_beamforming_microphone_port_1.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Beamforming Microphone Port 2": {
+     "id": "055",
+     "role": "microphone",
+     "category": "Audio",
+     "material": "camera_glass",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.05,
+      0.0,
+      -0.01
+     ],
+     "description": "Tiny acoustic inlet on the lower temple surface for voice pickup.",
+     "individualGlb": "part_assets/glb/Connect/055_left_beamforming_microphone_port_2.glb",
+     "image": "part_assets/images/Connect/055_left_beamforming_microphone_port_2.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Beamforming Microphone Port 3": {
+     "id": "056",
+     "role": "microphone",
+     "category": "Audio",
+     "material": "camera_glass",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.05,
+      0.0,
+      -0.01
+     ],
+     "description": "Tiny acoustic inlet on the lower temple surface for voice pickup.",
+     "individualGlb": "part_assets/glb/Connect/056_left_beamforming_microphone_port_3.glb",
+     "image": "part_assets/images/Connect/056_left_beamforming_microphone_port_3.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Tactile Temple Control 1": {
+     "id": "057",
+     "role": "button",
+     "category": "Controls",
+     "material": "gunmetal",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.03,
+      0.0
+     ],
+     "description": "Low-profile multifunction touch/control surface on the outer temple.",
+     "individualGlb": "part_assets/glb/Connect/057_left_tactile_temple_control_1.glb",
+     "image": "part_assets/images/Connect/057_left_tactile_temple_control_1.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Tactile Temple Control 2": {
+     "id": "058",
+     "role": "button",
+     "category": "Controls",
+     "material": "gunmetal",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.03,
+      0.0
+     ],
+     "description": "Low-profile multifunction touch/control surface on the outer temple.",
+     "individualGlb": "part_assets/glb/Connect/058_left_tactile_temple_control_2.glb",
+     "image": "part_assets/images/Connect/058_left_tactile_temple_control_2.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Temple Status LED": {
+     "id": "059",
+     "role": "status_led",
+     "category": "Controls",
+     "material": "led_teal",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.042,
+      0.0
+     ],
+     "description": "Small low-current status indicator flush with the temple side.",
+     "individualGlb": "part_assets/glb/Connect/059_left_temple_status_led.glb",
+     "image": "part_assets/images/Connect/059_left_temple_status_led.png",
+     "location": "Left temple (side arm)"
+    },
+    "Right Gloss-Black Temple Outer Housing": {
+     "id": "060",
+     "role": "temple_shell",
+     "category": "Temple housing",
+     "material": "piano_black",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.0,
+      0.0
+     ],
+     "description": "Smooth tapered temple arm with integrated electronics cavity and ergonomic ear bend.",
+     "individualGlb": "part_assets/glb/Connect/060_right_gloss_black_temple_outer_housing.glb",
+     "image": "part_assets/images/Connect/060_right_gloss_black_temple_outer_housing.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Internal Temple Carrier Rail": {
+     "id": "061",
+     "role": "chassis",
+     "category": "Internal structure",
+     "material": "satin_black",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.046,
+      0.0
+     ],
+     "description": "Lightweight internal structural rail supporting the battery, PCB, speaker and charging assembly.",
+     "individualGlb": "part_assets/glb/Connect/061_right_internal_temple_carrier_rail.glb",
+     "image": "part_assets/images/Connect/061_right_internal_temple_carrier_rail.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Inner Temple Service Cover": {
+     "id": "062",
+     "role": "service_cover",
+     "category": "Temple housing",
+     "material": "black_acetate",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.014,
+      0.0,
+      0.0
+     ],
+     "description": "Slim removable inner-side service panel covering the internal electronics channel.",
+     "individualGlb": "part_assets/glb/Connect/062_right_inner_temple_service_cover.glb",
+     "image": "part_assets/images/Connect/062_right_inner_temple_service_cover.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Soft-Touch Ear Tip": {
+     "id": "063",
+     "role": "ear_tip",
+     "category": "Fit hardware",
+     "material": "soft_touch",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.0,
+      0.04
+     ],
+     "description": "Elastomerized tapered terminal section for comfort behind the ear.",
+     "individualGlb": "part_assets/glb/Connect/063_right_soft_touch_ear_tip.glb",
+     "image": "part_assets/images/Connect/063_right_soft_touch_ear_tip.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Main Temple PCB": {
+     "id": "064",
+     "role": "pcb",
+     "category": "Electronics",
+     "material": "pcb",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.034,
+      0.01
+     ],
+     "description": "Compact elongated multilayer PCB mounted along the temple carrier rail.",
+     "individualGlb": "part_assets/glb/Connect/064_right_main_temple_pcb.glb",
+     "image": "part_assets/images/Connect/064_right_main_temple_pcb.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right PCB Gold Contact 1": {
+     "id": "065",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Connect/065_right_pcb_gold_contact_1.glb",
+     "image": "part_assets/images/Connect/065_right_pcb_gold_contact_1.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right PCB Gold Contact 2": {
+     "id": "066",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Connect/066_right_pcb_gold_contact_2.glb",
+     "image": "part_assets/images/Connect/066_right_pcb_gold_contact_2.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right PCB Gold Contact 3": {
+     "id": "067",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Connect/067_right_pcb_gold_contact_3.glb",
+     "image": "part_assets/images/Connect/067_right_pcb_gold_contact_3.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right PCB Gold Contact 4": {
+     "id": "068",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Connect/068_right_pcb_gold_contact_4.glb",
+     "image": "part_assets/images/Connect/068_right_pcb_gold_contact_4.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right PCB Gold Contact 5": {
+     "id": "069",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Connect/069_right_pcb_gold_contact_5.glb",
+     "image": "part_assets/images/Connect/069_right_pcb_gold_contact_5.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right PCB Gold Contact 6": {
+     "id": "070",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Connect/070_right_pcb_gold_contact_6.glb",
+     "image": "part_assets/images/Connect/070_right_pcb_gold_contact_6.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Main Processing SoC Package": {
+     "id": "071",
+     "role": "processor",
+     "category": "Electronics",
+     "material": "chip",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.022,
+      0.046,
+      0.01
+     ],
+     "description": "Illustrative processor package mounted on the main temple PCB.",
+     "individualGlb": "part_assets/glb/Connect/071_right_main_processing_soc_package.glb",
+     "image": "part_assets/images/Connect/071_right_main_processing_soc_package.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Power Management IC": {
+     "id": "072",
+     "role": "pmic",
+     "category": "Electronics",
+     "material": "chip",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.022,
+      0.04,
+      0.01
+     ],
+     "description": "Power-management integrated circuit package on the PCB.",
+     "individualGlb": "part_assets/glb/Connect/072_right_power_management_ic.glb",
+     "image": "part_assets/images/Connect/072_right_power_management_ic.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Wireless RF Module": {
+     "id": "073",
+     "role": "rf_module",
+     "category": "Electronics",
+     "material": "chip",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.022,
+      0.052,
+      0.01
+     ],
+     "description": "Shielded wireless connectivity module on the temple PCB.",
+     "individualGlb": "part_assets/glb/Connect/073_right_wireless_rf_module.glb",
+     "image": "part_assets/images/Connect/073_right_wireless_rf_module.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right RF Shield Can": {
+     "id": "074",
+     "role": "rf_shield",
+     "category": "Electronics",
+     "material": "gunmetal",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.012,
+      0.06,
+      0.01
+     ],
+     "description": "Thin metal RF shield covering the wireless circuit section.",
+     "individualGlb": "part_assets/glb/Connect/074_right_rf_shield_can.glb",
+     "image": "part_assets/images/Connect/074_right_rf_shield_can.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Rechargeable Lithium Battery Cell": {
+     "id": "075",
+     "role": "battery",
+     "category": "Power",
+     "material": "battery",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.034,
+      0.0
+     ],
+     "description": "Flat protected lithium battery pack housed lengthwise in the temple; chemistry and capacity remain to be selected.",
+     "individualGlb": "part_assets/glb/Connect/075_right_rechargeable_lithium_battery_cell.glb",
+     "image": "part_assets/images/Connect/075_right_rechargeable_lithium_battery_cell.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Battery Terminal Tab": {
+     "id": "076",
+     "role": "battery_tab",
+     "category": "Power",
+     "material": "battery_foil",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.034,
+      0.014
+     ],
+     "description": "Metal battery terminal tab connecting the cell to the power-management board.",
+     "individualGlb": "part_assets/glb/Connect/076_right_battery_terminal_tab.glb",
+     "image": "part_assets/images/Connect/076_right_battery_terminal_tab.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Flexible Battery Interconnect": {
+     "id": "077",
+     "role": "flex_cable",
+     "category": "Power",
+     "material": "battery_foil",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.046,
+      0.008
+     ],
+     "description": "Thin flexible interconnect between the cell terminal and temple PCB.",
+     "individualGlb": "part_assets/glb/Connect/077_right_flexible_battery_interconnect.glb",
+     "image": "part_assets/images/Connect/077_right_flexible_battery_interconnect.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Open-Ear Speaker Driver": {
+     "id": "078",
+     "role": "speaker",
+     "category": "Audio",
+     "material": "steel_dark",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.058,
+      0.0,
+      0.0
+     ],
+     "description": "Miniature acoustic transducer positioned in the rear temple near the ear.",
+     "individualGlb": "part_assets/glb/Connect/078_right_open_ear_speaker_driver.glb",
+     "image": "part_assets/images/Connect/078_right_open_ear_speaker_driver.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Acoustic Outlet Grille": {
+     "id": "079",
+     "role": "speaker_grille",
+     "category": "Audio",
+     "material": "gunmetal",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.072,
+      0.0,
+      0.0
+     ],
+     "description": "Perforated-look metal acoustic outlet cover over the speaker chamber.",
+     "individualGlb": "part_assets/glb/Connect/079_right_acoustic_outlet_grille.glb",
+     "image": "part_assets/images/Connect/079_right_acoustic_outlet_grille.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Beamforming Microphone Port 1": {
+     "id": "080",
+     "role": "microphone",
+     "category": "Audio",
+     "material": "camera_glass",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.05,
+      0.0,
+      -0.01
+     ],
+     "description": "Tiny acoustic inlet on the lower temple surface for voice pickup.",
+     "individualGlb": "part_assets/glb/Connect/080_right_beamforming_microphone_port_1.glb",
+     "image": "part_assets/images/Connect/080_right_beamforming_microphone_port_1.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Beamforming Microphone Port 2": {
+     "id": "081",
+     "role": "microphone",
+     "category": "Audio",
+     "material": "camera_glass",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.05,
+      0.0,
+      -0.01
+     ],
+     "description": "Tiny acoustic inlet on the lower temple surface for voice pickup.",
+     "individualGlb": "part_assets/glb/Connect/081_right_beamforming_microphone_port_2.glb",
+     "image": "part_assets/images/Connect/081_right_beamforming_microphone_port_2.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Beamforming Microphone Port 3": {
+     "id": "082",
+     "role": "microphone",
+     "category": "Audio",
+     "material": "camera_glass",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.05,
+      0.0,
+      -0.01
+     ],
+     "description": "Tiny acoustic inlet on the lower temple surface for voice pickup.",
+     "individualGlb": "part_assets/glb/Connect/082_right_beamforming_microphone_port_3.glb",
+     "image": "part_assets/images/Connect/082_right_beamforming_microphone_port_3.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Tactile Temple Control 1": {
+     "id": "083",
+     "role": "button",
+     "category": "Controls",
+     "material": "gunmetal",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.03,
+      0.0
+     ],
+     "description": "Low-profile multifunction touch/control surface on the outer temple.",
+     "individualGlb": "part_assets/glb/Connect/083_right_tactile_temple_control_1.glb",
+     "image": "part_assets/images/Connect/083_right_tactile_temple_control_1.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Tactile Temple Control 2": {
+     "id": "084",
+     "role": "button",
+     "category": "Controls",
+     "material": "gunmetal",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.03,
+      0.0
+     ],
+     "description": "Low-profile multifunction touch/control surface on the outer temple.",
+     "individualGlb": "part_assets/glb/Connect/084_right_tactile_temple_control_2.glb",
+     "image": "part_assets/images/Connect/084_right_tactile_temple_control_2.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Temple Status LED": {
+     "id": "085",
+     "role": "status_led",
+     "category": "Controls",
+     "material": "led_teal",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.042,
+      0.0
+     ],
+     "description": "Small low-current status indicator flush with the temple side.",
+     "individualGlb": "part_assets/glb/Connect/085_right_temple_status_led.glb",
+     "image": "part_assets/images/Connect/085_right_temple_status_led.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right USB-C External Metal Bezel": {
+     "id": "086",
+     "role": "usb_bezel",
+     "category": "Power / I-O",
+     "material": "titanium",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.044,
+      0.01
+     ],
+     "description": "Externally accessible polished metal bezel seated flush-to-proud on the underside temple surface; port mouth faces outward for cable insertion.",
+     "individualGlb": "part_assets/glb/Connect/086_right_usb_c_external_metal_bezel.glb",
+     "image": "part_assets/images/Connect/086_right_usb_c_external_metal_bezel.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right USB-C Inner Metal Receptacle Shell": {
+     "id": "087",
+     "role": "usb_inner_shell",
+     "category": "Power / I-O",
+     "material": "silver",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.056,
+      0.01
+     ],
+     "description": "Thin metal Type-C female shell visible within the outer bezel and surrounding the cable-entry cavity.",
+     "individualGlb": "part_assets/glb/Connect/087_right_usb_c_inner_metal_receptacle_shell.glb",
+     "image": "part_assets/images/Connect/087_right_usb_c_inner_metal_receptacle_shell.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right USB-C Female Receptacle Opening": {
+     "id": "088",
+     "role": "usb_receptacle",
+     "category": "Power / I-O",
+     "material": "camera_glass",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.068,
+      0.01
+     ],
+     "description": "Dark female Type-C receptacle cavity set behind the exposed metal shell. Conceptual scale pending connector datasheet.",
+     "individualGlb": "part_assets/glb/Connect/088_right_usb_c_female_receptacle_opening.glb",
+     "image": "part_assets/images/Connect/088_right_usb_c_female_receptacle_opening.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right USB-C Inner Tongue": {
+     "id": "089",
+     "role": "usb_tongue",
+     "category": "Power / I-O",
+     "material": "silver",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.08,
+      0.01
+     ],
+     "description": "Centered metal tongue recessed within the Type-C receptacle opening.",
+     "individualGlb": "part_assets/glb/Connect/089_right_usb_c_inner_tongue.glb",
+     "image": "part_assets/images/Connect/089_right_usb_c_inner_tongue.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Temple Service Fastener 1": {
+     "id": "090",
+     "role": "screw",
+     "category": "Mechanical",
+     "material": "titanium",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.05,
+      0.0
+     ],
+     "description": "Small metallic service screw adjacent to the charging and electronics access zone.",
+     "individualGlb": "part_assets/glb/Connect/090_right_temple_service_fastener_1.glb",
+     "image": "part_assets/images/Connect/090_right_temple_service_fastener_1.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Temple Service Fastener 2": {
+     "id": "091",
+     "role": "screw",
+     "category": "Mechanical",
+     "material": "titanium",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.05,
+      0.0
+     ],
+     "description": "Small metallic service screw adjacent to the charging and electronics access zone.",
+     "individualGlb": "part_assets/glb/Connect/091_right_temple_service_fastener_2.glb",
+     "image": "part_assets/images/Connect/091_right_temple_service_fastener_2.png",
+     "location": "Right temple (side arm)"
+    },
+    "Left Front Beamforming Microphone Port": {
+     "id": "092",
+     "role": "microphone",
+     "category": "Audio",
+     "material": "camera_glass",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0,
+      0.04,
+      -0.024
+     ],
+     "description": "Front-facing acoustic inlet for the multi-microphone voice array.",
+     "individualGlb": "part_assets/glb/Connect/092_left_front_beamforming_microphone_port.glb",
+     "image": "part_assets/images/Connect/092_left_front_beamforming_microphone_port.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "Right Front Beamforming Microphone Port": {
+     "id": "093",
+     "role": "microphone",
+     "category": "Audio",
+     "material": "camera_glass",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0,
+      0.04,
+      -0.024
+     ],
+     "description": "Front-facing acoustic inlet for the multi-microphone voice array.",
+     "individualGlb": "part_assets/glb/Connect/093_right_front_beamforming_microphone_port.glb",
+     "image": "part_assets/images/Connect/093_right_front_beamforming_microphone_port.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "Left Binocular AR Waveguide": {
+     "id": "094",
+     "role": "waveguide",
+     "category": "AR optics",
+     "material": "waveguide",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.016,
+      0.004,
+      0.056
+     ],
+     "description": "Thin clear diffractive waveguide plate positioned behind the prescription lens. Optical coupling and prescription fit are conceptual.",
+     "individualGlb": "part_assets/glb/Connect/094_left_binocular_ar_waveguide.glb",
+     "image": "part_assets/images/Connect/094_left_binocular_ar_waveguide.png",
+     "location": "Front frame, left side"
+    },
+    "Left MicroLED Optical Engine Housing": {
+     "id": "095",
+     "role": "optical_engine",
+     "category": "AR optics",
+     "material": "satin_black",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.014,
+      0.036,
+      0.03
+     ],
+     "description": "Compact projector/optical-engine enclosure integrated near the temple hinge.",
+     "individualGlb": "part_assets/glb/Connect/095_left_microled_optical_engine_housing.glb",
+     "image": "part_assets/images/Connect/095_left_microled_optical_engine_housing.png",
+     "location": "Front frame, left side"
+    },
+    "Left MicroLED Display Engine": {
+     "id": "096",
+     "role": "microdisplay",
+     "category": "AR optics",
+     "material": "gunmetal",
+     "side": -1,
+     "explodedOffsetMeters": [
+      0.0,
+      0.036,
+      0.03
+     ],
+     "description": "Illustrative microdisplay package that supplies visual information to the waveguide.",
+     "individualGlb": "part_assets/glb/Connect/096_left_microled_display_engine.glb",
+     "image": "part_assets/images/Connect/096_left_microled_display_engine.png",
+     "location": "Front frame, left side"
+    },
+    "Left Waveguide Input Coupler": {
+     "id": "097",
+     "role": "optical_coupler",
+     "category": "AR optics",
+     "material": "optical_glass",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.03,
+      0.012,
+      0.056
+     ],
+     "description": "Optical coupling prism seated along the upper inner edge of the lens waveguide.",
+     "individualGlb": "part_assets/glb/Connect/097_left_waveguide_input_coupler.glb",
+     "image": "part_assets/images/Connect/097_left_waveguide_input_coupler.png",
+     "location": "Front frame, left side"
+    },
+    "Right Binocular AR Waveguide": {
+     "id": "098",
+     "role": "waveguide",
+     "category": "AR optics",
+     "material": "waveguide",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.016,
+      0.004,
+      0.056
+     ],
+     "description": "Thin clear diffractive waveguide plate positioned behind the prescription lens. Optical coupling and prescription fit are conceptual.",
+     "individualGlb": "part_assets/glb/Connect/098_right_binocular_ar_waveguide.glb",
+     "image": "part_assets/images/Connect/098_right_binocular_ar_waveguide.png",
+     "location": "Front frame, right side"
+    },
+    "Right MicroLED Optical Engine Housing": {
+     "id": "099",
+     "role": "optical_engine",
+     "category": "AR optics",
+     "material": "satin_black",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.014,
+      0.036,
+      0.03
+     ],
+     "description": "Compact projector/optical-engine enclosure integrated near the temple hinge.",
+     "individualGlb": "part_assets/glb/Connect/099_right_microled_optical_engine_housing.glb",
+     "image": "part_assets/images/Connect/099_right_microled_optical_engine_housing.png",
+     "location": "Front frame, right side"
+    },
+    "Right MicroLED Display Engine": {
+     "id": "100",
+     "role": "microdisplay",
+     "category": "AR optics",
+     "material": "gunmetal",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.0,
+      0.036,
+      0.03
+     ],
+     "description": "Illustrative microdisplay package that supplies visual information to the waveguide.",
+     "individualGlb": "part_assets/glb/Connect/100_right_microled_display_engine.glb",
+     "image": "part_assets/images/Connect/100_right_microled_display_engine.png",
+     "location": "Front frame, right side"
+    },
+    "Right Waveguide Input Coupler": {
+     "id": "101",
+     "role": "optical_coupler",
+     "category": "AR optics",
+     "material": "optical_glass",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.03,
+      0.012,
+      0.056
+     ],
+     "description": "Optical coupling prism seated along the upper inner edge of the lens waveguide.",
+     "individualGlb": "part_assets/glb/Connect/101_right_waveguide_input_coupler.glb",
+     "image": "part_assets/images/Connect/101_right_waveguide_input_coupler.png",
+     "location": "Front frame, right side"
+    },
+    "Wearer-Facing Hand-Sign Camera Housing": {
+     "id": "102",
+     "role": "hand_camera",
+     "category": "Sensors",
+     "material": "black_acetate",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0,
+      -0.03,
+      0.0
+     ],
+     "description": "Small downward-facing camera enclosure mounted to the rear underside of the central bridge.",
+     "individualGlb": "part_assets/glb/Connect/102_wearer_facing_hand_sign_camera_housing.glb",
+     "image": "part_assets/images/Connect/102_wearer_facing_hand_sign_camera_housing.png",
+     "location": "Underside of the nose bridge"
+    },
+    "Wearer-Facing Camera Retaining Ring": {
+     "id": "103",
+     "role": "hand_camera_bezel",
+     "category": "Sensors",
+     "material": "titanium",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0,
+      -0.052,
+      0.0
+     ],
+     "description": "Metal retaining ring around the downward-facing camera aperture.",
+     "individualGlb": "part_assets/glb/Connect/103_wearer_facing_camera_retaining_ring.glb",
+     "image": "part_assets/images/Connect/103_wearer_facing_camera_retaining_ring.png",
+     "location": "Underside of the nose bridge"
+    },
+    "Wearer-Facing Camera Optical Cover": {
+     "id": "104",
+     "role": "hand_camera_lens",
+     "category": "Sensors",
+     "material": "camera_glass",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0,
+      -0.04,
+      0.0
+     ],
+     "description": "Dark optical window for the sign-recognition camera.",
+     "individualGlb": "part_assets/glb/Connect/104_wearer_facing_camera_optical_cover.glb",
+     "image": "part_assets/images/Connect/104_wearer_facing_camera_optical_cover.png",
+     "location": "Underside of the nose bridge"
+    },
+    "Ambient Light Sensor Window": {
+     "id": "105",
+     "role": "ambient_sensor",
+     "category": "Sensors",
+     "material": "optical_glass",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0,
+      0.046,
+      -0.02
+     ],
+     "description": "Small ambient-light sensor window for automatic AR brightness management.",
+     "individualGlb": "part_assets/glb/Connect/105_ambient_light_sensor_window.glb",
+     "image": "part_assets/images/Connect/105_ambient_light_sensor_window.png",
+     "location": "Front frame, left side"
+    },
+    "Connect Model Identity Detail": {
+     "id": "106",
+     "role": "brand_detail",
+     "category": "Brand detail",
+     "material": "teal_accent",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.006,
+      0.052,
+      -0.014
+     ],
+     "description": "Subtle teal identity inlay along the upper left brow.",
+     "individualGlb": "part_assets/glb/Connect/106_connect_model_identity_detail.glb",
+     "image": "part_assets/images/Connect/106_connect_model_identity_detail.png",
+     "location": "Front frame, left side"
+    }
+   }
+  },
+  "Vision": {
+   "title": "SIGNLINK VISION  /  AI VISUAL ASSISTANCE",
+   "assembledModel": "models/SIGNLINK_Vision_Assembled.glb",
+   "explodedModel": "models/SIGNLINK_Vision_Exploded.glb",
+   "cutawayModel": "models/SIGNLINK_Vision_Cutaway.glb",
+   "componentCount": 94,
+   "parts": {
+    "Left Polished Acetate Lens Rim": {
+     "id": "001",
+     "role": "front_rim",
+     "category": "Frame",
+     "material": "piano_black",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.016,
+      0.0,
+      -0.004
+     ],
+     "description": "High-gloss molded full-rim front eyewear frame. The rounded rectangular lens opening is sized for prescription-style lenses; final ophthalmic fit remains a design-stage item.",
+     "individualGlb": "part_assets/glb/Vision/001_left_polished_acetate_lens_rim.glb",
+     "image": "part_assets/images/Vision/001_left_polished_acetate_lens_rim.png",
+     "location": "Front frame, left side"
+    },
+    "Left Lens Retaining Bezel": {
+     "id": "002",
+     "role": "lens_bezel",
+     "category": "Frame detail",
+     "material": "gunmetal",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.016,
+      0.0,
+      0.014
+     ],
+     "description": "Thin dark-metal inner retaining lip seated within the acetate rim.",
+     "individualGlb": "part_assets/glb/Vision/002_left_lens_retaining_bezel.glb",
+     "image": "part_assets/images/Vision/002_left_lens_retaining_bezel.png",
+     "location": "Front frame, left side"
+    },
+    "Left Clear Prescription Lens": {
+     "id": "003",
+     "role": "lens",
+     "category": "Optics",
+     "material": "clear_lens",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.016,
+      0.0,
+      0.034
+     ],
+     "description": "Thin clear curved lens insert with subtle edge tint and realistic thickness. Prescription strength and optical coating are not specified.",
+     "individualGlb": "part_assets/glb/Vision/003_left_clear_prescription_lens.glb",
+     "image": "part_assets/images/Vision/003_left_clear_prescription_lens.png",
+     "location": "Front frame, left side"
+    },
+    "Right Polished Acetate Lens Rim": {
+     "id": "004",
+     "role": "front_rim",
+     "category": "Frame",
+     "material": "piano_black",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.016,
+      0.0,
+      -0.004
+     ],
+     "description": "High-gloss molded full-rim front eyewear frame. The rounded rectangular lens opening is sized for prescription-style lenses; final ophthalmic fit remains a design-stage item.",
+     "individualGlb": "part_assets/glb/Vision/004_right_polished_acetate_lens_rim.glb",
+     "image": "part_assets/images/Vision/004_right_polished_acetate_lens_rim.png",
+     "location": "Front frame, right side"
+    },
+    "Right Lens Retaining Bezel": {
+     "id": "005",
+     "role": "lens_bezel",
+     "category": "Frame detail",
+     "material": "gunmetal",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.016,
+      0.0,
+      0.014
+     ],
+     "description": "Thin dark-metal inner retaining lip seated within the acetate rim.",
+     "individualGlb": "part_assets/glb/Vision/005_right_lens_retaining_bezel.glb",
+     "image": "part_assets/images/Vision/005_right_lens_retaining_bezel.png",
+     "location": "Front frame, right side"
+    },
+    "Right Clear Prescription Lens": {
+     "id": "006",
+     "role": "lens",
+     "category": "Optics",
+     "material": "clear_lens",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.016,
+      0.0,
+      0.034
+     ],
+     "description": "Thin clear curved lens insert with subtle edge tint and realistic thickness. Prescription strength and optical coating are not specified.",
+     "individualGlb": "part_assets/glb/Vision/006_right_clear_prescription_lens.glb",
+     "image": "part_assets/images/Vision/006_right_clear_prescription_lens.png",
+     "location": "Front frame, right side"
+    },
+    "Integrated Sculpted Nose Bridge": {
+     "id": "007",
+     "role": "bridge",
+     "category": "Frame",
+     "material": "black_acetate",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0,
+      -0.006,
+      0.0
+     ],
+     "description": "Contoured acetate bridge joining both front rims with a shallow saddle profile.",
+     "individualGlb": "part_assets/glb/Vision/007_integrated_sculpted_nose_bridge.glb",
+     "image": "part_assets/images/Vision/007_integrated_sculpted_nose_bridge.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "Left Adjustable Titanium Nose Pad Arm": {
+     "id": "008",
+     "role": "nose_arm",
+     "category": "Fit hardware",
+     "material": "titanium",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.014,
+      -0.016,
+      0.012
+     ],
+     "description": "Thin adjustable metal nose-pad arm mounted behind the bridge.",
+     "individualGlb": "part_assets/glb/Vision/008_left_adjustable_titanium_nose_pad_arm.glb",
+     "image": "part_assets/images/Vision/008_left_adjustable_titanium_nose_pad_arm.png",
+     "location": "Underside of the nose bridge"
+    },
+    "Left Silicone Nose Pad": {
+     "id": "009",
+     "role": "nose_pad",
+     "category": "Fit hardware",
+     "material": "rubber",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.016,
+      -0.03,
+      0.022
+     ],
+     "description": "Soft translucent-black silicone nose pad with a rounded contact surface.",
+     "individualGlb": "part_assets/glb/Vision/009_left_silicone_nose_pad.glb",
+     "image": "part_assets/images/Vision/009_left_silicone_nose_pad.png",
+     "location": "Underside of the nose bridge"
+    },
+    "Right Adjustable Titanium Nose Pad Arm": {
+     "id": "010",
+     "role": "nose_arm",
+     "category": "Fit hardware",
+     "material": "titanium",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.014,
+      -0.016,
+      0.012
+     ],
+     "description": "Thin adjustable metal nose-pad arm mounted behind the bridge.",
+     "individualGlb": "part_assets/glb/Vision/010_right_adjustable_titanium_nose_pad_arm.glb",
+     "image": "part_assets/images/Vision/010_right_adjustable_titanium_nose_pad_arm.png",
+     "location": "Underside of the nose bridge"
+    },
+    "Right Silicone Nose Pad": {
+     "id": "011",
+     "role": "nose_pad",
+     "category": "Fit hardware",
+     "material": "rubber",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.016,
+      -0.03,
+      0.022
+     ],
+     "description": "Soft translucent-black silicone nose pad with a rounded contact surface.",
+     "individualGlb": "part_assets/glb/Vision/011_right_silicone_nose_pad.glb",
+     "image": "part_assets/images/Vision/011_right_silicone_nose_pad.png",
+     "location": "Underside of the nose bridge"
+    },
+    "Central Dual-Camera Bridge Pod": {
+     "id": "012",
+     "role": "camera_pod",
+     "category": "Sensors",
+     "material": "black_acetate",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0,
+      0.034,
+      -0.01
+     ],
+     "description": "Low-profile central bridge module for the forward RGB and spatial sensing camera assemblies.",
+     "individualGlb": "part_assets/glb/Vision/012_central_dual_camera_bridge_pod.glb",
+     "image": "part_assets/images/Vision/012_central_dual_camera_bridge_pod.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "Central Camera Pod Bridge Mount": {
+     "id": "013",
+     "role": "camera_mount",
+     "category": "Frame / Sensors",
+     "material": "black_acetate",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0,
+      0.02,
+      -0.004
+     ],
+     "description": "Short molded support that physically joins the raised camera pod to the sculpted nose bridge.",
+     "individualGlb": "part_assets/glb/Vision/013_central_camera_pod_bridge_mount.glb",
+     "image": "part_assets/images/Vision/013_central_camera_pod_bridge_mount.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "Upper Brow Micro-Trim": {
+     "id": "014",
+     "role": "trim",
+     "category": "Frame detail",
+     "material": "gunmetal",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0,
+      0.046,
+      -0.006
+     ],
+     "description": "Fine metallic trim following the upper brow line around the central camera pod.",
+     "individualGlb": "part_assets/glb/Vision/014_upper_brow_micro_trim.glb",
+     "image": "part_assets/images/Vision/014_upper_brow_micro_trim.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "Front Status Indicator": {
+     "id": "015",
+     "role": "status_led",
+     "category": "Controls",
+     "material": "led_amber",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0,
+      0.046,
+      -0.02
+     ],
+     "description": "Small discreet recording/status indicator placed beside the bridge camera module.",
+     "individualGlb": "part_assets/glb/Vision/015_front_status_indicator.glb",
+     "image": "part_assets/images/Vision/015_front_status_indicator.png",
+     "location": "Front frame, right side"
+    },
+    "Left Reinforced Hinge Plate": {
+     "id": "016",
+     "role": "hinge_plate",
+     "category": "Mechanical",
+     "material": "gunmetal",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.046,
+      0.0,
+      0.0
+     ],
+     "description": "Satin-metal hinge reinforcement plate integrated at the end of the front rim.",
+     "individualGlb": "part_assets/glb/Vision/016_left_reinforced_hinge_plate.glb",
+     "image": "part_assets/images/Vision/016_left_reinforced_hinge_plate.png",
+     "location": "Front frame, left side"
+    },
+    "Left Stainless Hinge Barrel": {
+     "id": "017",
+     "role": "hinge_barrel",
+     "category": "Mechanical",
+     "material": "titanium",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.022,
+      0.036,
+      -0.004
+     ],
+     "description": "Compact multi-barrel hinge joint connecting the front frame and temple arm.",
+     "individualGlb": "part_assets/glb/Vision/017_left_stainless_hinge_barrel.glb",
+     "image": "part_assets/images/Vision/017_left_stainless_hinge_barrel.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Hinge Fastener 1": {
+     "id": "018",
+     "role": "screw",
+     "category": "Mechanical",
+     "material": "silver",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.062,
+      0.0,
+      0.0
+     ],
+     "description": "Small flush stainless fastener securing the hinge plate.",
+     "individualGlb": "part_assets/glb/Vision/018_left_hinge_fastener_1.glb",
+     "image": "part_assets/images/Vision/018_left_hinge_fastener_1.png",
+     "location": "Front frame, left side"
+    },
+    "Left Hinge Fastener 2": {
+     "id": "019",
+     "role": "screw",
+     "category": "Mechanical",
+     "material": "silver",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.062,
+      0.0,
+      0.0
+     ],
+     "description": "Small flush stainless fastener securing the hinge plate.",
+     "individualGlb": "part_assets/glb/Vision/019_left_hinge_fastener_2.glb",
+     "image": "part_assets/images/Vision/019_left_hinge_fastener_2.png",
+     "location": "Left temple (side arm)"
+    },
+    "Right Reinforced Hinge Plate": {
+     "id": "020",
+     "role": "hinge_plate",
+     "category": "Mechanical",
+     "material": "gunmetal",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.046,
+      0.0,
+      0.0
+     ],
+     "description": "Satin-metal hinge reinforcement plate integrated at the end of the front rim.",
+     "individualGlb": "part_assets/glb/Vision/020_right_reinforced_hinge_plate.glb",
+     "image": "part_assets/images/Vision/020_right_reinforced_hinge_plate.png",
+     "location": "Front frame, right side"
+    },
+    "Right Stainless Hinge Barrel": {
+     "id": "021",
+     "role": "hinge_barrel",
+     "category": "Mechanical",
+     "material": "titanium",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.022,
+      0.036,
+      -0.004
+     ],
+     "description": "Compact multi-barrel hinge joint connecting the front frame and temple arm.",
+     "individualGlb": "part_assets/glb/Vision/021_right_stainless_hinge_barrel.glb",
+     "image": "part_assets/images/Vision/021_right_stainless_hinge_barrel.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Hinge Fastener 1": {
+     "id": "022",
+     "role": "screw",
+     "category": "Mechanical",
+     "material": "silver",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.062,
+      0.0,
+      0.0
+     ],
+     "description": "Small flush stainless fastener securing the hinge plate.",
+     "individualGlb": "part_assets/glb/Vision/022_right_hinge_fastener_1.glb",
+     "image": "part_assets/images/Vision/022_right_hinge_fastener_1.png",
+     "location": "Front frame, right side"
+    },
+    "Right Hinge Fastener 2": {
+     "id": "023",
+     "role": "screw",
+     "category": "Mechanical",
+     "material": "silver",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.062,
+      0.0,
+      0.0
+     ],
+     "description": "Small flush stainless fastener securing the hinge plate.",
+     "individualGlb": "part_assets/glb/Vision/023_right_hinge_fastener_2.glb",
+     "image": "part_assets/images/Vision/023_right_hinge_fastener_2.png",
+     "location": "Right temple (side arm)"
+    },
+    "Left Brow Identity Inlay": {
+     "id": "024",
+     "role": "brand_mark",
+     "category": "Frame detail",
+     "material": "white_mark",
+     "side": -1,
+     "explodedOffsetMeters": [
+      0.092,
+      0.0,
+      0.0
+     ],
+     "description": "Small understated metallic brand marker on the outer upper brow.",
+     "individualGlb": "part_assets/glb/Vision/024_left_brow_identity_inlay.glb",
+     "image": "part_assets/images/Vision/024_left_brow_identity_inlay.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Brow Identity Inlay": {
+     "id": "025",
+     "role": "brand_mark",
+     "category": "Frame detail",
+     "material": "white_mark",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.092,
+      0.0,
+      0.0
+     ],
+     "description": "Small understated metallic brand marker on the outer upper brow.",
+     "individualGlb": "part_assets/glb/Vision/025_right_brow_identity_inlay.glb",
+     "image": "part_assets/images/Vision/025_right_brow_identity_inlay.png",
+     "location": "Right temple (side arm)"
+    },
+    "Left Gloss-Black Temple Outer Housing": {
+     "id": "026",
+     "role": "temple_shell",
+     "category": "Temple housing",
+     "material": "piano_black",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.0,
+      0.0
+     ],
+     "description": "Smooth tapered temple arm with integrated electronics cavity and ergonomic ear bend.",
+     "individualGlb": "part_assets/glb/Vision/026_left_gloss_black_temple_outer_housing.glb",
+     "image": "part_assets/images/Vision/026_left_gloss_black_temple_outer_housing.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Internal Temple Carrier Rail": {
+     "id": "027",
+     "role": "chassis",
+     "category": "Internal structure",
+     "material": "satin_black",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      -0.046,
+      0.0
+     ],
+     "description": "Lightweight internal structural rail supporting the battery, PCB, speaker and charging assembly.",
+     "individualGlb": "part_assets/glb/Vision/027_left_internal_temple_carrier_rail.glb",
+     "image": "part_assets/images/Vision/027_left_internal_temple_carrier_rail.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Inner Temple Service Cover": {
+     "id": "028",
+     "role": "service_cover",
+     "category": "Temple housing",
+     "material": "black_acetate",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.014,
+      0.0,
+      0.0
+     ],
+     "description": "Slim removable inner-side service panel covering the internal electronics channel.",
+     "individualGlb": "part_assets/glb/Vision/028_left_inner_temple_service_cover.glb",
+     "image": "part_assets/images/Vision/028_left_inner_temple_service_cover.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Soft-Touch Ear Tip": {
+     "id": "029",
+     "role": "ear_tip",
+     "category": "Fit hardware",
+     "material": "soft_touch",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.0,
+      0.04
+     ],
+     "description": "Elastomerized tapered terminal section for comfort behind the ear.",
+     "individualGlb": "part_assets/glb/Vision/029_left_soft_touch_ear_tip.glb",
+     "image": "part_assets/images/Vision/029_left_soft_touch_ear_tip.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Main Temple PCB": {
+     "id": "030",
+     "role": "pcb",
+     "category": "Electronics",
+     "material": "pcb",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.034,
+      0.01
+     ],
+     "description": "Compact elongated multilayer PCB mounted along the temple carrier rail.",
+     "individualGlb": "part_assets/glb/Vision/030_left_main_temple_pcb.glb",
+     "image": "part_assets/images/Vision/030_left_main_temple_pcb.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left PCB Gold Contact 1": {
+     "id": "031",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Vision/031_left_pcb_gold_contact_1.glb",
+     "image": "part_assets/images/Vision/031_left_pcb_gold_contact_1.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left PCB Gold Contact 2": {
+     "id": "032",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Vision/032_left_pcb_gold_contact_2.glb",
+     "image": "part_assets/images/Vision/032_left_pcb_gold_contact_2.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left PCB Gold Contact 3": {
+     "id": "033",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Vision/033_left_pcb_gold_contact_3.glb",
+     "image": "part_assets/images/Vision/033_left_pcb_gold_contact_3.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left PCB Gold Contact 4": {
+     "id": "034",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Vision/034_left_pcb_gold_contact_4.glb",
+     "image": "part_assets/images/Vision/034_left_pcb_gold_contact_4.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left PCB Gold Contact 5": {
+     "id": "035",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Vision/035_left_pcb_gold_contact_5.glb",
+     "image": "part_assets/images/Vision/035_left_pcb_gold_contact_5.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left PCB Gold Contact 6": {
+     "id": "036",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Vision/036_left_pcb_gold_contact_6.glb",
+     "image": "part_assets/images/Vision/036_left_pcb_gold_contact_6.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Main Processing SoC Package": {
+     "id": "037",
+     "role": "processor",
+     "category": "Electronics",
+     "material": "chip",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.022,
+      0.046,
+      0.01
+     ],
+     "description": "Illustrative processor package mounted on the main temple PCB.",
+     "individualGlb": "part_assets/glb/Vision/037_left_main_processing_soc_package.glb",
+     "image": "part_assets/images/Vision/037_left_main_processing_soc_package.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Power Management IC": {
+     "id": "038",
+     "role": "pmic",
+     "category": "Electronics",
+     "material": "chip",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.022,
+      0.04,
+      0.01
+     ],
+     "description": "Power-management integrated circuit package on the PCB.",
+     "individualGlb": "part_assets/glb/Vision/038_left_power_management_ic.glb",
+     "image": "part_assets/images/Vision/038_left_power_management_ic.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Wireless RF Module": {
+     "id": "039",
+     "role": "rf_module",
+     "category": "Electronics",
+     "material": "chip",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.022,
+      0.052,
+      0.01
+     ],
+     "description": "Shielded wireless connectivity module on the temple PCB.",
+     "individualGlb": "part_assets/glb/Vision/039_left_wireless_rf_module.glb",
+     "image": "part_assets/images/Vision/039_left_wireless_rf_module.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left RF Shield Can": {
+     "id": "040",
+     "role": "rf_shield",
+     "category": "Electronics",
+     "material": "gunmetal",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.012,
+      0.06,
+      0.01
+     ],
+     "description": "Thin metal RF shield covering the wireless circuit section.",
+     "individualGlb": "part_assets/glb/Vision/040_left_rf_shield_can.glb",
+     "image": "part_assets/images/Vision/040_left_rf_shield_can.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Rechargeable Lithium Battery Cell": {
+     "id": "041",
+     "role": "battery",
+     "category": "Power",
+     "material": "battery",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      -0.034,
+      0.0
+     ],
+     "description": "Flat protected lithium battery pack housed lengthwise in the temple; chemistry and capacity remain to be selected.",
+     "individualGlb": "part_assets/glb/Vision/041_left_rechargeable_lithium_battery_cell.glb",
+     "image": "part_assets/images/Vision/041_left_rechargeable_lithium_battery_cell.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Battery Terminal Tab": {
+     "id": "042",
+     "role": "battery_tab",
+     "category": "Power",
+     "material": "battery_foil",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      -0.034,
+      0.014
+     ],
+     "description": "Metal battery terminal tab connecting the cell to the power-management board.",
+     "individualGlb": "part_assets/glb/Vision/042_left_battery_terminal_tab.glb",
+     "image": "part_assets/images/Vision/042_left_battery_terminal_tab.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Flexible Battery Interconnect": {
+     "id": "043",
+     "role": "flex_cable",
+     "category": "Power",
+     "material": "battery_foil",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      -0.046,
+      0.008
+     ],
+     "description": "Thin flexible interconnect between the cell terminal and temple PCB.",
+     "individualGlb": "part_assets/glb/Vision/043_left_flexible_battery_interconnect.glb",
+     "image": "part_assets/images/Vision/043_left_flexible_battery_interconnect.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Open-Ear Speaker Driver": {
+     "id": "044",
+     "role": "speaker",
+     "category": "Audio",
+     "material": "steel_dark",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.058,
+      0.0,
+      0.0
+     ],
+     "description": "Miniature acoustic transducer positioned in the rear temple near the ear.",
+     "individualGlb": "part_assets/glb/Vision/044_left_open_ear_speaker_driver.glb",
+     "image": "part_assets/images/Vision/044_left_open_ear_speaker_driver.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Acoustic Outlet Grille": {
+     "id": "045",
+     "role": "speaker_grille",
+     "category": "Audio",
+     "material": "gunmetal",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.072,
+      0.0,
+      0.0
+     ],
+     "description": "Perforated-look metal acoustic outlet cover over the speaker chamber.",
+     "individualGlb": "part_assets/glb/Vision/045_left_acoustic_outlet_grille.glb",
+     "image": "part_assets/images/Vision/045_left_acoustic_outlet_grille.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Beamforming Microphone Port 1": {
+     "id": "046",
+     "role": "microphone",
+     "category": "Audio",
+     "material": "camera_glass",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.05,
+      0.0,
+      -0.01
+     ],
+     "description": "Tiny acoustic inlet on the lower temple surface for voice pickup.",
+     "individualGlb": "part_assets/glb/Vision/046_left_beamforming_microphone_port_1.glb",
+     "image": "part_assets/images/Vision/046_left_beamforming_microphone_port_1.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Beamforming Microphone Port 2": {
+     "id": "047",
+     "role": "microphone",
+     "category": "Audio",
+     "material": "camera_glass",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.05,
+      0.0,
+      -0.01
+     ],
+     "description": "Tiny acoustic inlet on the lower temple surface for voice pickup.",
+     "individualGlb": "part_assets/glb/Vision/047_left_beamforming_microphone_port_2.glb",
+     "image": "part_assets/images/Vision/047_left_beamforming_microphone_port_2.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Beamforming Microphone Port 3": {
+     "id": "048",
+     "role": "microphone",
+     "category": "Audio",
+     "material": "camera_glass",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.05,
+      0.0,
+      -0.01
+     ],
+     "description": "Tiny acoustic inlet on the lower temple surface for voice pickup.",
+     "individualGlb": "part_assets/glb/Vision/048_left_beamforming_microphone_port_3.glb",
+     "image": "part_assets/images/Vision/048_left_beamforming_microphone_port_3.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Tactile Temple Control 1": {
+     "id": "049",
+     "role": "button",
+     "category": "Controls",
+     "material": "gunmetal",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.03,
+      0.0
+     ],
+     "description": "Low-profile multifunction touch/control surface on the outer temple.",
+     "individualGlb": "part_assets/glb/Vision/049_left_tactile_temple_control_1.glb",
+     "image": "part_assets/images/Vision/049_left_tactile_temple_control_1.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Tactile Temple Control 2": {
+     "id": "050",
+     "role": "button",
+     "category": "Controls",
+     "material": "gunmetal",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.03,
+      0.0
+     ],
+     "description": "Low-profile multifunction touch/control surface on the outer temple.",
+     "individualGlb": "part_assets/glb/Vision/050_left_tactile_temple_control_2.glb",
+     "image": "part_assets/images/Vision/050_left_tactile_temple_control_2.png",
+     "location": "Left temple (side arm)"
+    },
+    "Left Temple Status LED": {
+     "id": "051",
+     "role": "status_led",
+     "category": "Controls",
+     "material": "led_amber",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      0.042,
+      0.0
+     ],
+     "description": "Small low-current status indicator flush with the temple side.",
+     "individualGlb": "part_assets/glb/Vision/051_left_temple_status_led.glb",
+     "image": "part_assets/images/Vision/051_left_temple_status_led.png",
+     "location": "Left temple (side arm)"
+    },
+    "Right Gloss-Black Temple Outer Housing": {
+     "id": "052",
+     "role": "temple_shell",
+     "category": "Temple housing",
+     "material": "piano_black",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.0,
+      0.0
+     ],
+     "description": "Smooth tapered temple arm with integrated electronics cavity and ergonomic ear bend.",
+     "individualGlb": "part_assets/glb/Vision/052_right_gloss_black_temple_outer_housing.glb",
+     "image": "part_assets/images/Vision/052_right_gloss_black_temple_outer_housing.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Internal Temple Carrier Rail": {
+     "id": "053",
+     "role": "chassis",
+     "category": "Internal structure",
+     "material": "satin_black",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.046,
+      0.0
+     ],
+     "description": "Lightweight internal structural rail supporting the battery, PCB, speaker and charging assembly.",
+     "individualGlb": "part_assets/glb/Vision/053_right_internal_temple_carrier_rail.glb",
+     "image": "part_assets/images/Vision/053_right_internal_temple_carrier_rail.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Inner Temple Service Cover": {
+     "id": "054",
+     "role": "service_cover",
+     "category": "Temple housing",
+     "material": "black_acetate",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.014,
+      0.0,
+      0.0
+     ],
+     "description": "Slim removable inner-side service panel covering the internal electronics channel.",
+     "individualGlb": "part_assets/glb/Vision/054_right_inner_temple_service_cover.glb",
+     "image": "part_assets/images/Vision/054_right_inner_temple_service_cover.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Soft-Touch Ear Tip": {
+     "id": "055",
+     "role": "ear_tip",
+     "category": "Fit hardware",
+     "material": "soft_touch",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.0,
+      0.04
+     ],
+     "description": "Elastomerized tapered terminal section for comfort behind the ear.",
+     "individualGlb": "part_assets/glb/Vision/055_right_soft_touch_ear_tip.glb",
+     "image": "part_assets/images/Vision/055_right_soft_touch_ear_tip.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Main Temple PCB": {
+     "id": "056",
+     "role": "pcb",
+     "category": "Electronics",
+     "material": "pcb",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.034,
+      0.01
+     ],
+     "description": "Compact elongated multilayer PCB mounted along the temple carrier rail.",
+     "individualGlb": "part_assets/glb/Vision/056_right_main_temple_pcb.glb",
+     "image": "part_assets/images/Vision/056_right_main_temple_pcb.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right PCB Gold Contact 1": {
+     "id": "057",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Vision/057_right_pcb_gold_contact_1.glb",
+     "image": "part_assets/images/Vision/057_right_pcb_gold_contact_1.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right PCB Gold Contact 2": {
+     "id": "058",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Vision/058_right_pcb_gold_contact_2.glb",
+     "image": "part_assets/images/Vision/058_right_pcb_gold_contact_2.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right PCB Gold Contact 3": {
+     "id": "059",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Vision/059_right_pcb_gold_contact_3.glb",
+     "image": "part_assets/images/Vision/059_right_pcb_gold_contact_3.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right PCB Gold Contact 4": {
+     "id": "060",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Vision/060_right_pcb_gold_contact_4.glb",
+     "image": "part_assets/images/Vision/060_right_pcb_gold_contact_4.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right PCB Gold Contact 5": {
+     "id": "061",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Vision/061_right_pcb_gold_contact_5.glb",
+     "image": "part_assets/images/Vision/061_right_pcb_gold_contact_5.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right PCB Gold Contact 6": {
+     "id": "062",
+     "role": "pcb_contact",
+     "category": "Electronics",
+     "material": "pcb_gold",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.046,
+      0.01
+     ],
+     "description": "Gold-plated contact / test pad on the temple control board.",
+     "individualGlb": "part_assets/glb/Vision/062_right_pcb_gold_contact_6.glb",
+     "image": "part_assets/images/Vision/062_right_pcb_gold_contact_6.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Main Processing SoC Package": {
+     "id": "063",
+     "role": "processor",
+     "category": "Electronics",
+     "material": "chip",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.022,
+      0.046,
+      0.01
+     ],
+     "description": "Illustrative processor package mounted on the main temple PCB.",
+     "individualGlb": "part_assets/glb/Vision/063_right_main_processing_soc_package.glb",
+     "image": "part_assets/images/Vision/063_right_main_processing_soc_package.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Power Management IC": {
+     "id": "064",
+     "role": "pmic",
+     "category": "Electronics",
+     "material": "chip",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.022,
+      0.04,
+      0.01
+     ],
+     "description": "Power-management integrated circuit package on the PCB.",
+     "individualGlb": "part_assets/glb/Vision/064_right_power_management_ic.glb",
+     "image": "part_assets/images/Vision/064_right_power_management_ic.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Wireless RF Module": {
+     "id": "065",
+     "role": "rf_module",
+     "category": "Electronics",
+     "material": "chip",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.022,
+      0.052,
+      0.01
+     ],
+     "description": "Shielded wireless connectivity module on the temple PCB.",
+     "individualGlb": "part_assets/glb/Vision/065_right_wireless_rf_module.glb",
+     "image": "part_assets/images/Vision/065_right_wireless_rf_module.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right RF Shield Can": {
+     "id": "066",
+     "role": "rf_shield",
+     "category": "Electronics",
+     "material": "gunmetal",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.012,
+      0.06,
+      0.01
+     ],
+     "description": "Thin metal RF shield covering the wireless circuit section.",
+     "individualGlb": "part_assets/glb/Vision/066_right_rf_shield_can.glb",
+     "image": "part_assets/images/Vision/066_right_rf_shield_can.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Rechargeable Lithium Battery Cell": {
+     "id": "067",
+     "role": "battery",
+     "category": "Power",
+     "material": "battery",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.034,
+      0.0
+     ],
+     "description": "Flat protected lithium battery pack housed lengthwise in the temple; chemistry and capacity remain to be selected.",
+     "individualGlb": "part_assets/glb/Vision/067_right_rechargeable_lithium_battery_cell.glb",
+     "image": "part_assets/images/Vision/067_right_rechargeable_lithium_battery_cell.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Battery Terminal Tab": {
+     "id": "068",
+     "role": "battery_tab",
+     "category": "Power",
+     "material": "battery_foil",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.034,
+      0.014
+     ],
+     "description": "Metal battery terminal tab connecting the cell to the power-management board.",
+     "individualGlb": "part_assets/glb/Vision/068_right_battery_terminal_tab.glb",
+     "image": "part_assets/images/Vision/068_right_battery_terminal_tab.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Flexible Battery Interconnect": {
+     "id": "069",
+     "role": "flex_cable",
+     "category": "Power",
+     "material": "battery_foil",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.046,
+      0.008
+     ],
+     "description": "Thin flexible interconnect between the cell terminal and temple PCB.",
+     "individualGlb": "part_assets/glb/Vision/069_right_flexible_battery_interconnect.glb",
+     "image": "part_assets/images/Vision/069_right_flexible_battery_interconnect.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Open-Ear Speaker Driver": {
+     "id": "070",
+     "role": "speaker",
+     "category": "Audio",
+     "material": "steel_dark",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.058,
+      0.0,
+      0.0
+     ],
+     "description": "Miniature acoustic transducer positioned in the rear temple near the ear.",
+     "individualGlb": "part_assets/glb/Vision/070_right_open_ear_speaker_driver.glb",
+     "image": "part_assets/images/Vision/070_right_open_ear_speaker_driver.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Acoustic Outlet Grille": {
+     "id": "071",
+     "role": "speaker_grille",
+     "category": "Audio",
+     "material": "gunmetal",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.072,
+      0.0,
+      0.0
+     ],
+     "description": "Perforated-look metal acoustic outlet cover over the speaker chamber.",
+     "individualGlb": "part_assets/glb/Vision/071_right_acoustic_outlet_grille.glb",
+     "image": "part_assets/images/Vision/071_right_acoustic_outlet_grille.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Beamforming Microphone Port 1": {
+     "id": "072",
+     "role": "microphone",
+     "category": "Audio",
+     "material": "camera_glass",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.05,
+      0.0,
+      -0.01
+     ],
+     "description": "Tiny acoustic inlet on the lower temple surface for voice pickup.",
+     "individualGlb": "part_assets/glb/Vision/072_right_beamforming_microphone_port_1.glb",
+     "image": "part_assets/images/Vision/072_right_beamforming_microphone_port_1.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Beamforming Microphone Port 2": {
+     "id": "073",
+     "role": "microphone",
+     "category": "Audio",
+     "material": "camera_glass",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.05,
+      0.0,
+      -0.01
+     ],
+     "description": "Tiny acoustic inlet on the lower temple surface for voice pickup.",
+     "individualGlb": "part_assets/glb/Vision/073_right_beamforming_microphone_port_2.glb",
+     "image": "part_assets/images/Vision/073_right_beamforming_microphone_port_2.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Beamforming Microphone Port 3": {
+     "id": "074",
+     "role": "microphone",
+     "category": "Audio",
+     "material": "camera_glass",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.05,
+      0.0,
+      -0.01
+     ],
+     "description": "Tiny acoustic inlet on the lower temple surface for voice pickup.",
+     "individualGlb": "part_assets/glb/Vision/074_right_beamforming_microphone_port_3.glb",
+     "image": "part_assets/images/Vision/074_right_beamforming_microphone_port_3.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Tactile Temple Control 1": {
+     "id": "075",
+     "role": "button",
+     "category": "Controls",
+     "material": "gunmetal",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.03,
+      0.0
+     ],
+     "description": "Low-profile multifunction touch/control surface on the outer temple.",
+     "individualGlb": "part_assets/glb/Vision/075_right_tactile_temple_control_1.glb",
+     "image": "part_assets/images/Vision/075_right_tactile_temple_control_1.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Tactile Temple Control 2": {
+     "id": "076",
+     "role": "button",
+     "category": "Controls",
+     "material": "gunmetal",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.03,
+      0.0
+     ],
+     "description": "Low-profile multifunction touch/control surface on the outer temple.",
+     "individualGlb": "part_assets/glb/Vision/076_right_tactile_temple_control_2.glb",
+     "image": "part_assets/images/Vision/076_right_tactile_temple_control_2.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Temple Status LED": {
+     "id": "077",
+     "role": "status_led",
+     "category": "Controls",
+     "material": "led_amber",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      0.042,
+      0.0
+     ],
+     "description": "Small low-current status indicator flush with the temple side.",
+     "individualGlb": "part_assets/glb/Vision/077_right_temple_status_led.glb",
+     "image": "part_assets/images/Vision/077_right_temple_status_led.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right USB-C External Metal Bezel": {
+     "id": "078",
+     "role": "usb_bezel",
+     "category": "Power / I-O",
+     "material": "titanium",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.044,
+      0.01
+     ],
+     "description": "Externally accessible polished metal bezel seated flush-to-proud on the underside temple surface; port mouth faces outward for cable insertion.",
+     "individualGlb": "part_assets/glb/Vision/078_right_usb_c_external_metal_bezel.glb",
+     "image": "part_assets/images/Vision/078_right_usb_c_external_metal_bezel.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right USB-C Inner Metal Receptacle Shell": {
+     "id": "079",
+     "role": "usb_inner_shell",
+     "category": "Power / I-O",
+     "material": "silver",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.056,
+      0.01
+     ],
+     "description": "Thin metal Type-C female shell visible within the outer bezel and surrounding the cable-entry cavity.",
+     "individualGlb": "part_assets/glb/Vision/079_right_usb_c_inner_metal_receptacle_shell.glb",
+     "image": "part_assets/images/Vision/079_right_usb_c_inner_metal_receptacle_shell.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right USB-C Female Receptacle Opening": {
+     "id": "080",
+     "role": "usb_receptacle",
+     "category": "Power / I-O",
+     "material": "camera_glass",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.068,
+      0.01
+     ],
+     "description": "Dark female Type-C receptacle cavity set behind the exposed metal shell. Conceptual scale pending connector datasheet.",
+     "individualGlb": "part_assets/glb/Vision/080_right_usb_c_female_receptacle_opening.glb",
+     "image": "part_assets/images/Vision/080_right_usb_c_female_receptacle_opening.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right USB-C Inner Tongue": {
+     "id": "081",
+     "role": "usb_tongue",
+     "category": "Power / I-O",
+     "material": "silver",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.08,
+      0.01
+     ],
+     "description": "Centered metal tongue recessed within the Type-C receptacle opening.",
+     "individualGlb": "part_assets/glb/Vision/081_right_usb_c_inner_tongue.glb",
+     "image": "part_assets/images/Vision/081_right_usb_c_inner_tongue.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Temple Service Fastener 1": {
+     "id": "082",
+     "role": "screw",
+     "category": "Mechanical",
+     "material": "titanium",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.05,
+      0.0
+     ],
+     "description": "Small metallic service screw adjacent to the charging and electronics access zone.",
+     "individualGlb": "part_assets/glb/Vision/082_right_temple_service_fastener_1.glb",
+     "image": "part_assets/images/Vision/082_right_temple_service_fastener_1.png",
+     "location": "Right temple (side arm)"
+    },
+    "Right Temple Service Fastener 2": {
+     "id": "083",
+     "role": "screw",
+     "category": "Mechanical",
+     "material": "titanium",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.034,
+      -0.05,
+      0.0
+     ],
+     "description": "Small metallic service screw adjacent to the charging and electronics access zone.",
+     "individualGlb": "part_assets/glb/Vision/083_right_temple_service_fastener_2.glb",
+     "image": "part_assets/images/Vision/083_right_temple_service_fastener_2.png",
+     "location": "Right temple (side arm)"
+    },
+    "Left Front Beamforming Microphone Port": {
+     "id": "084",
+     "role": "microphone",
+     "category": "Audio",
+     "material": "camera_glass",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0,
+      0.04,
+      -0.024
+     ],
+     "description": "Front-facing acoustic inlet for the multi-microphone voice array.",
+     "individualGlb": "part_assets/glb/Vision/084_left_front_beamforming_microphone_port.glb",
+     "image": "part_assets/images/Vision/084_left_front_beamforming_microphone_port.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "Right Front Beamforming Microphone Port": {
+     "id": "085",
+     "role": "microphone",
+     "category": "Audio",
+     "material": "camera_glass",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0,
+      0.04,
+      -0.024
+     ],
+     "description": "Front-facing acoustic inlet for the multi-microphone voice array.",
+     "individualGlb": "part_assets/glb/Vision/085_right_front_beamforming_microphone_port.glb",
+     "image": "part_assets/images/Vision/085_right_front_beamforming_microphone_port.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "Left Stereo Camera Outer Bezel": {
+     "id": "086",
+     "role": "stereo_bezel",
+     "category": "Vision sensors",
+     "material": "titanium",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.016,
+      0.034,
+      -0.046
+     ],
+     "description": "Precision metal ring for the paired outward-facing stereo scene cameras.",
+     "individualGlb": "part_assets/glb/Vision/086_left_stereo_camera_outer_bezel.glb",
+     "image": "part_assets/images/Vision/086_left_stereo_camera_outer_bezel.png",
+     "location": "Front frame, left side"
+    },
+    "Left Stereo Camera Lens": {
+     "id": "087",
+     "role": "stereo_lens",
+     "category": "Vision sensors",
+     "material": "camera_blue",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.016,
+      0.034,
+      -0.026
+     ],
+     "description": "Wide-angle optical lens for front-facing environmental scene capture.",
+     "individualGlb": "part_assets/glb/Vision/087_left_stereo_camera_lens.glb",
+     "image": "part_assets/images/Vision/087_left_stereo_camera_lens.png",
+     "location": "Front frame, left side"
+    },
+    "Right Stereo Camera Outer Bezel": {
+     "id": "088",
+     "role": "stereo_bezel",
+     "category": "Vision sensors",
+     "material": "titanium",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.016,
+      0.034,
+      -0.046
+     ],
+     "description": "Precision metal ring for the paired outward-facing stereo scene cameras.",
+     "individualGlb": "part_assets/glb/Vision/088_right_stereo_camera_outer_bezel.glb",
+     "image": "part_assets/images/Vision/088_right_stereo_camera_outer_bezel.png",
+     "location": "Front frame, right side"
+    },
+    "Right Stereo Camera Lens": {
+     "id": "089",
+     "role": "stereo_lens",
+     "category": "Vision sensors",
+     "material": "camera_blue",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.016,
+      0.034,
+      -0.026
+     ],
+     "description": "Wide-angle optical lens for front-facing environmental scene capture.",
+     "individualGlb": "part_assets/glb/Vision/089_right_stereo_camera_lens.glb",
+     "image": "part_assets/images/Vision/089_right_stereo_camera_lens.png",
+     "location": "Front frame, right side"
+    },
+    "Central Time-of-Flight Sensor Housing": {
+     "id": "090",
+     "role": "tof_housing",
+     "category": "Vision sensors",
+     "material": "black_acetate",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0,
+      0.052,
+      -0.012
+     ],
+     "description": "Compact depth sensor housing mounted centrally beneath the dual-camera bridge pod.",
+     "individualGlb": "part_assets/glb/Vision/090_central_time_of_flight_sensor_housing.glb",
+     "image": "part_assets/images/Vision/090_central_time_of_flight_sensor_housing.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "Time-of-Flight Optical Window": {
+     "id": "091",
+     "role": "tof_window",
+     "category": "Vision sensors",
+     "material": "optical_glass",
+     "side": 0,
+     "explodedOffsetMeters": [
+      0.0,
+      0.052,
+      -0.03
+     ],
+     "description": "Dark optical window for near-field depth sensing.",
+     "individualGlb": "part_assets/glb/Vision/091_time_of_flight_optical_window.glb",
+     "image": "part_assets/images/Vision/091_time_of_flight_optical_window.png",
+     "location": "Front frame, centre / nose bridge"
+    },
+    "Left Temple Haptic Feedback Motor": {
+     "id": "092",
+     "role": "haptic_motor",
+     "category": "Haptics",
+     "material": "gunmetal",
+     "side": -1,
+     "explodedOffsetMeters": [
+      -0.034,
+      -0.034,
+      0.0
+     ],
+     "description": "Miniature vibration motor secured inside the left temple for non-audio environmental alerts.",
+     "individualGlb": "part_assets/glb/Vision/092_left_temple_haptic_feedback_motor.glb",
+     "image": "part_assets/images/Vision/092_left_temple_haptic_feedback_motor.png",
+     "location": "Left temple (side arm)"
+    },
+    "Inertial Measurement Unit": {
+     "id": "093",
+     "role": "imu",
+     "category": "Sensors",
+     "material": "chip",
+     "side": 1,
+     "explodedOffsetMeters": [
+      -0.022,
+      -0.046,
+      -0.012
+     ],
+     "description": "Illustrative accelerometer and gyroscope package for head-motion context.",
+     "individualGlb": "part_assets/glb/Vision/093_inertial_measurement_unit.glb",
+     "image": "part_assets/images/Vision/093_inertial_measurement_unit.png",
+     "location": "Right temple (side arm)"
+    },
+    "Vision Model Identity Detail": {
+     "id": "094",
+     "role": "brand_detail",
+     "category": "Brand detail",
+     "material": "amber_accent",
+     "side": 1,
+     "explodedOffsetMeters": [
+      0.006,
+      0.052,
+      -0.014
+     ],
+     "description": "Subtle amber identity inlay along the upper right brow.",
+     "individualGlb": "part_assets/glb/Vision/094_vision_model_identity_detail.glb",
+     "image": "part_assets/images/Vision/094_vision_model_identity_detail.png",
+     "location": "Front frame, right side"
+    }
+   }
+  }
+ }
+}
