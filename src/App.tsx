@@ -306,8 +306,8 @@ function Explorer({
               role="tab"
               aria-selected={item.key === product.key}
               key={item.key}
+              className={`product-tab ${item.key === product.key ? 'active' : ''}`}
               onClick={() => dispatch({ type: 'product', key: item.key })}
-              style={{ backgroundColor: 'transparent' }}
             >
               {PRODUCT_NAMES[item.key]}
             </button>
