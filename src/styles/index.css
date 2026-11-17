@@ -82,17 +82,25 @@ a { color: inherit; }
 .summary-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.1rem; margin-top: 2rem; }
 .summary-card { display: flex; min-width: 0; flex-direction: column; gap: .5rem; border: 1px solid var(--line); border-top: 4px solid var(--accent); border-radius: 14px; padding: 1.3rem; background: var(--ink-2); }
 .summary-card > small { color: var(--muted); }
+.market-price-label { margin-top: .35rem; color: var(--accent); font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .summary-amount { font: 700 2.1rem 'Bricolage Grotesque', sans-serif; font-variant-numeric: tabular-nums; }
 .summary-cost-label { color: var(--muted); font-size: .78rem; line-height: 1.35; }
 .summary-card dl { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .25rem .8rem; margin: .3rem 0; font-size: .9rem; }
 .summary-card dt { color: var(--muted); }
 .summary-card dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; }
 .summary-card .button { margin-top: auto; }
+.market-price-notice { display: grid; gap: .45rem; margin-top: .9rem; border: 1px solid #6aa8ff45; border-radius: 10px; padding: .8rem 1rem; background: #6aa8ff0d; color: #b8c6dc; font-size: .83rem; }
+.market-price-notice p { margin: 0; }
+.market-price-notice b { color: var(--text); }
 .note { margin-top: 1.4rem; border: 1px solid #ffb54a55; border-radius: 10px; padding: .8rem 1rem; background: #ffb54a14; color: #ffd9a1; font-size: .9rem; }
 
 .product-tabs { display: flex; gap: .5rem; flex-wrap: wrap; margin: 1.4rem 0 .9rem; }
 .product-tab { display: inline-flex; min-height: 40px; align-items: center; justify-content: center; border: 1px solid var(--line); border-radius: 99px; padding: .4rem 1rem; background: #ffffff0d; color: var(--text); cursor: pointer; font-size: .88rem; font-weight: 600; }
 .product-tab[aria-selected='true'], .product-tab.active { border-color: var(--accent); background: var(--accent); color: #07101f; }
+.light-section .product-tab { border-color: #0f183033; background: #fff; color: var(--dark); }
+.light-section .product-tab:hover { border-color: var(--dark); background: #e7edf6; color: var(--dark); }
+.light-section .product-tab[aria-selected='true'], .light-section .product-tab.active { border-color: var(--dark); background: var(--dark); color: #fff; }
+.light-section .product-tab[aria-selected='true']:hover, .light-section .product-tab.active:hover { background: #1a2a46; color: #fff; }
 .explorer-layout { display: grid; grid-template-columns: minmax(0, 1.75fr) minmax(300px, 1fr); gap: 1rem; }
 .viewer-column, .side-panel { min-width: 0; }
 .viewer-frame { position: relative; overflow: hidden; height: min(74vh, 700px); min-height: 460px; border: 1px solid var(--line); border-radius: 14px; background: radial-gradient(70% 70% at 50% 45%, #22345a, #0b1322); }
@@ -137,6 +145,13 @@ a { color: inherit; }
 .cost-panel > span { max-width: 100%; color: var(--muted); font-size: .85rem; }
 .cost-panel strong { font: 700 1.6rem 'Bricolage Grotesque', sans-serif; font-variant-numeric: tabular-nums; }
 .cost-panel small { width: 100%; color: var(--muted); font-size: .82rem; }
+.cost-panel .estimated-market-label { color: var(--accent); font-weight: 700; }
+.cost-panel .estimated-market-value { font-size: 1.85rem; }
+.cost-panel .market-price-calculation { margin-top: -.25rem; }
+.prototype-cost-summary { display: grid; width: 100%; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; gap: .3rem .8rem; margin-top: .55rem; border-top: 1px solid var(--line); padding-top: .65rem; }
+.prototype-cost-summary > span { color: var(--muted); font-size: .8rem; }
+.prototype-cost-summary > strong { font-size: 1.15rem; }
+.prototype-cost-summary > small { grid-column: 1 / -1; }
 .part-card { display: flex; flex-direction: column; gap: .6rem; }
 .empty-part { min-height: 142px; }
 .empty-part p { margin-top: .4rem; color: var(--muted); }
@@ -151,6 +166,7 @@ a { color: inherit; }
 .tag { display: inline-block; border-radius: 5px; padding: .05rem .45rem; background: var(--accent); color: #07101f; font: 700 .7rem 'Instrument Sans', sans-serif; vertical-align: .15em; }
 .tag.Q { background: #ffb54a; }
 .tag.E { background: #b7c3da; }
+.tag.I { background: #b58cff; }
 .part-meta { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: .25rem .8rem; margin: .2rem 0 0; font-size: .88rem; }
 .part-meta dt { color: var(--muted); }
 .part-meta dd { margin: 0; overflow-wrap: anywhere; }
@@ -175,7 +191,12 @@ a { color: inherit; }
 .export-button { color: var(--dark); border-color: #0f183033; background: #fff; }
 .table-wrap { width: 100%; max-height: 620px; overflow: auto; margin-top: 1rem; border-radius: 14px; background: #fff; overscroll-behavior-x: contain; }
 .breakdown-wrap { margin-top: 1.4rem; }
-table { width: 100%; min-width: 760px; border-collapse: collapse; font-size: .9rem; }
+.market-comparison-title, .prototype-breakdown-title { margin-top: 1.3rem; }
+.market-comparison-wrap { margin-top: .8rem; }
+.market-price-source-note, .part-price-verification { margin-top: .7rem; color: var(--dark-muted); font-size: .82rem; }
+.prototype-breakdown-title + .lead { margin-top: .45rem; }
+table { width: 100%; min-width: 760px; border-collapse: collapse; font-size: .9rem;   .cost-panel .estimated-market-value { font-size: 1.6rem; }
+}
 th, td { padding: .65rem .9rem; border-bottom: 1px solid #0f183014; color: var(--dark-muted); text-align: left; vertical-align: top; }
 th { position: sticky; z-index: 1; top: 0; background: #fff; color: var(--dark); white-space: nowrap; }
 .numeric { text-align: right; font-variant-numeric: tabular-nums; }
