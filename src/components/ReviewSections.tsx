@@ -1,9 +1,16 @@
 import { useMemo } from 'react';
 import type { CSSProperties } from 'react';
+import { PART_PRICE_VERIFICATION_NOTICE, PRICE_TYPE_LABELS } from '../data/signlinkData';
 import type { Product, ProductKey } from '../data/signlinkData';
 import { COST_LABEL } from '../lib/costLabel';
-import { formatMoney } from '../lib/format';
-import { calculateCosts } from '../lib/pricing';
+import { formatMoney, formatWholePeso } from '../lib/format';
+import {
+  calculateCosts,
+  calculateEstimatedMarketPrice,
+  MARKET_PRICE_DISCLAIMER,
+  MARKET_PRICE_MISSING_COMPONENTS_NOTE,
+  MARKET_PRICE_SOURCE,
+} from '../lib/pricing';
 
 const PRODUCT_NAMES: Record<ProductKey, string> = {
   Smart: 'SIGNLINK Smart',
@@ -32,35 +39,50 @@ interface SummaryCardsProps {
 
 export function SummaryCards({ products, onExplore }: SummaryCardsProps) {
   return (
-    <div className="summary-cards">
-      {products.map((product) => {
-        const costs = calculateCosts(product);
-        const quotes = product.parts.filter((part) => part.price === null).length;
-        return (
-          <article
-            className="summary-card"
-            key={product.key}
-            style={{ '--accent': ACCENTS[product.key] } as CSSProperties}
-          >
-            <h3>{PRODUCT_NAMES[product.key]}</h3>
-            <small>{PRODUCT_USERS[product.key]}</small>
-            <div className="summary-amount">{formatMoney(costs.total)}</div>
-            <span className="summary-cost-label">{COST_LABEL}</span>
-            <small>Estimated prototype cost incl. 20% contingency</small>
-            <dl>
-              <dt>Components modelled</dt><dd>{product.parts.length}</dd>
-              <dt>Priced line items</dt><dd>{product.buckets.length}</dd>
-              <dt>Subtotal</dt><dd>{formatMoney(costs.subtotal)}</dd>
-              <dt>Contingency (20%)</dt><dd>{formatMoney(costs.contingency)}</dd>
-              <dt>Quote-only parts</dt><dd>{quotes}</dd>
-            </dl>
-            <button type="button" className="button button-outline" onClick={() => onExplore(product.key)}>
-              Open in 3D explorer
-            </button>
-          </article>
-        );
-      })}
-    </div>
+    <>
+      <div className="summary-cards">
+        {products.map((product) => {
+          const costs = calculateCosts(product);
+          const marketPrice = calculateEstimatedMarketPrice(product.key);
+          const quotes = product.parts.filter((part) => part.price === null).length;
+          return (
+            <article
+              className="summary-card"
+              key={product.key}
+              style={{ '--accent': ACCENTS[product.key] } as CSSProperties}
+            >
+              <h3>{PRODUCT_NAMES[product.key]}</h3>
+              <small>{PRODUCT_USERS[product.key]}</small>
+              <span className="market-price-label">Estimated Market Price</span>
+              <div className="summary-amount">{formatWholePeso(marketPrice.estimatedMarketPrice)}</div>
+              <span className="summary-cost-label">
+                {formatMoney(marketPrice.modeledPartsCost)} modeled parts · {Math.round(marketPrice.pricingAllowance * 100)}% estimated pricing allowance
+              </span>
+              <dl>
+                <dt>Components modelled</dt><dd>{product.parts.length}</dd>
+                <dt>Priced line items</dt><dd>{product.buckets.length}</dd>
+                <dt>{COST_LABEL}</dt><dd>{formatMoney(costs.total)}</dd>
+                <dt>Quote-only parts</dt><dd>{quotes}</dd>
+              </dl>
+              <button type="button" className="button button-outline" onClick={() => onExplore(product.key)}>
+                Open in 3D explorer
+              </button>
+            </article>
+          );
+        })}
+      </div>
+      <MarketPricingNotice />
+    </>
+  );
+}
+
+export function MarketPricingNotice() {
+  return (
+    <aside className="market-price-notice" aria-label="Estimated market price basis">
+      <p>{MARKET_PRICE_DISCLAIMER}</p>
+      <p><b>Source:</b> {MARKET_PRICE_SOURCE}</p>
+      <p>{MARKET_PRICE_MISSING_COMPONENTS_NOTE}</p>
+    </aside>
   );
 }
 
@@ -199,7 +221,11 @@ export function PartsTable({
                     <td>{part.category}</td>
                     <td>
                       {bucket?.label ?? 'No catalog price'}{' '}
-                      <span className={`tag ${part.priceType}`}>
+                      <span
+                        className={`tag ${part.priceType}`}
+                        title={PRICE_TYPE_LABELS[part.priceType]}
+                        aria-label={PRICE_TYPE_LABELS[part.priceType]}
+                      >
                         {part.priceType === 'Q' ? 'Quote' : part.priceType}
                       </span>
                     </td>
@@ -220,6 +246,7 @@ export function PartsTable({
             </tfoot>
           </table>
         </div>
+        <p className="part-price-verification">{PART_PRICE_VERIFICATION_NOTICE}</p>
       </div>
     </section>
   );
@@ -238,8 +265,51 @@ export function CostBreakdown({ products }: CostBreakdownProps) {
     <section className="section" id="cost">
       <div className="wrap">
         <h2>Cost breakdown</h2>
+        <h3 className="market-comparison-title">Estimated market price comparison</h3>
+        <div className="table-wrap market-comparison-wrap">
+          <table className="breakdown-table">
+            <thead>
+              <tr>
+                <th>Pricing estimate</th>
+                {products.map((product) => (
+                  <th className="numeric" key={product.key}>{PRODUCT_NAMES[product.key]}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Total Cost of Modeled Parts</td>
+                {products.map((product) => (
+                  <td className="numeric" key={product.key}>
+                    {formatMoney(calculateEstimatedMarketPrice(product.key).modeledPartsCost)}
+                  </td>
+                ))}
+              </tr>
+              <tr>
+                <td>Estimated Pricing Allowance</td>
+                {products.map((product) => (
+                  <td className="numeric" key={product.key}>
+                    {Math.round(calculateEstimatedMarketPrice(product.key).pricingAllowance * 100)}%
+                  </td>
+                ))}
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>Estimated Market Price</td>
+                {products.map((product) => (
+                  <td className="numeric" key={product.key}>
+                    {formatWholePeso(calculateEstimatedMarketPrice(product.key).estimatedMarketPrice)}
+                  </td>
+                ))}
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <p className="market-price-source-note">{MARKET_PRICE_SOURCE} {MARKET_PRICE_MISSING_COMPONENTS_NOTE}</p>
+        <h3 className="prototype-breakdown-title">Prototype build budget</h3>
         <p className="lead">
-          Where the prototype budget goes, per cost item and per product. Each product’s {COST_LABEL} is built from catalog line items plus the same 20% planning contingency used in the catalog.
+          Separate from estimated market prices, this shows the development stand-in budget for each product. Each {COST_LABEL} is built from its prototype cost buckets plus the same 20% planning contingency; it is not used in the estimated market price formula.
         </p>
         <div className="table-wrap breakdown-wrap">
           <table className="breakdown-table">
@@ -294,7 +364,7 @@ export function CostBreakdown({ products }: CostBreakdownProps) {
           })}
         </div>
         <p className="note">
-          For reference, the catalog&apos;s three demonstration budgets are ₱4,452 (Plan A, mobile/bench), ₱37,246 (Plan B, electronics bench) and ₱88,114 (Plan C, AR development). They describe different demonstrations, so they do not equal the per-product totals above.
+          For reference, the catalog&apos;s three demonstration budgets are ₱4,452 (Plan A, mobile/bench), ₱37,246 (Plan B, electronics bench) and ₱88,114 (Plan C, AR development). They describe different demonstrations, so they do not equal the per-product prototype build costs above.
         </p>
       </div>
     </section>
@@ -312,16 +382,18 @@ export function BasisNotes() {
             <ul>
               <li>Each product is priced from catalog line items (the camera module, the ESP32-S3 board, microphone, audio, frame and so on).</li>
               <li>A line item&apos;s price is shared across the 3D parts that belong to it. Heavier parts such as the frame take a larger share. This is an allocation, not a price quoted for that piece.</li>
-              <li>Price types: <b>S</b> public supplier listing, <b>E</b> planning estimate or plan value from the catalog, <b>Quote</b> no catalog price (needs a supplier quotation).</li>
+              <li>Price types: <b>S</b> public supplier listing price, <b>E</b> planning estimate, <b>I</b> included in another priced assembly, <b>Q</b> quote required.</li>
               <li>{COST_LABEL} is the cost of assembling a demonstration prototype from off-the-shelf development parts, not the cost of manufacturing a production unit.</li>
+              <li>{PART_PRICE_VERIFICATION_NOTICE}</li>
             </ul>
           </article>
           <article className="basis-card">
             <h3>What is not included</h3>
             <ul>
               <li>Lenses and lens bezels: prescription-lens integration is quotation-only, so these parts are marked Quote and add ₱0 to the total.</li>
-              <li>Custom waveguide, optical engine, SoC, PCB, battery pack, tooling, certification, labor, software and AI service costs.</li>
-              <li>Connect uses the XREAL AR glasses and adapters as a development stand-in for the 3D AR parts, as in the catalog&apos;s Plan C.</li>
+              <li>Software requirements, additional development hardware, tooling, certification, labor, software and AI service costs are not finalized and are not represented as a separate pricing line item.</li>
+              <li>The CONNECT optical module and other missing or quote-required electronics may affect the final price.</li>
+              <li>Connect uses the XREAL AR glasses and adapters as a development stand-in for the 3D AR parts, as in the prototype catalog&apos;s Plan C.</li>
               <li>The model has more parts than a prototype would buy; extra parts share the line item that covers them.</li>
             </ul>
           </article>
@@ -329,8 +401,8 @@ export function BasisNotes() {
             <h3>Limits</h3>
             <ul>
               <li>Concept models only: not manufacturing CAD, and no proof of working electronics, optics, AI accuracy, sign-language translation, hazard detection, battery safety or comfort.</li>
-              <li>No validated per-unit bill of materials, selling price, margin or profit exists in the team&apos;s documents. The ₱29,000 figure in the market-size activity is a provisional modeled price, not a cost-based price.</li>
-              <li>Supplier prices are from the catalog dated 26 October 2026 and may have changed. Part prices are maintained in the app&apos;s source data.</li>
+              <li>Estimated market prices are preliminary planning estimates, not confirmed production costs, supplier quotations or final selling prices. Actual production costs and final selling prices may change.</li>
+              <li>{MARKET_PRICE_SOURCE} The product-level modeled-parts totals and allowances provided for this update do not include a complete updated component-level price breakdown.</li>
             </ul>
           </article>
         </div>
