@@ -19,12 +19,13 @@ import {
 } from './components/ReviewSections';
 import type { SortColumn } from './components/ReviewSections';
 import { getProducts } from './data/signlinkData';
+import { PRICE_TYPE_LABELS } from './data/signlinkData';
 import type { Part, Product, ProductKey } from './data/signlinkData';
 import { BASE } from './lib/assets';
 import { COST_LABEL } from './lib/costLabel';
 import { buildPartsCsv } from './lib/csv';
-import { formatMoney } from './lib/format';
-import { calculateCosts } from './lib/pricing';
+import { formatMoney, formatWholePeso } from './lib/format';
+import { calculateCosts, calculateEstimatedMarketPrice } from './lib/pricing';
 import type { LabelMode } from './three/Viewer';
 import type { ExplorerViewerHandle } from './components/ExplorerViewer';
 import './styles/index.css';
@@ -222,7 +223,13 @@ function PartCard({ product, part, onDeselect }: PartCardProps) {
       <p className="part-description">{part.description}</p>
       <div className="part-price">
         {part.price === null ? 'Quote needed' : formatMoney(part.price)}
-        <span className={`tag ${part.priceType}`}>{part.priceType === 'Q' ? 'Quote' : part.priceType}</span>
+        <span
+          className={`tag ${part.priceType}`}
+          title={PRICE_TYPE_LABELS[part.priceType]}
+          aria-label={PRICE_TYPE_LABELS[part.priceType]}
+        >
+          {part.priceType === 'Q' ? 'Quote' : part.priceType}
+        </span>
       </div>
       <dl className="part-meta">
         <dt>Category</dt><dd>{part.category}</dd>
@@ -252,6 +259,7 @@ function Explorer({
 }: ExplorerProps) {
   const sectionRef = useRef<HTMLElement>(null);
   const costs = calculateCosts(product);
+  const marketPrice = calculateEstimatedMarketPrice(product.key);
   const categories = [...new Set(product.parts.map((part) => part.category))].sort();
   const filteredParts = product.parts.filter((part) => {
     const filter = state.search.trim().toLocaleLowerCase();
@@ -426,10 +434,17 @@ function Explorer({
 
           <aside className="side-panel">
             <div className="panel cost-panel">
-              <span>{COST_LABEL}</span>
-              <strong>{formatMoney(costs.total)}</strong>
-              <small>{formatMoney(costs.subtotal)} subtotal + {formatMoney(costs.contingency)} contingency · {product.parts.filter((part) => part.price === null).length} quote-only parts · estimate</small>
-            </div>
+                <span className="estimated-market-label">Estimated Market Price</span>
+                <strong className="estimated-market-value">{formatWholePeso(marketPrice.estimatedMarketPrice)}</strong>
+                <small className="market-price-calculation">
+                  {formatMoney(marketPrice.modeledPartsCost)} modeled parts × {1 + marketPrice.pricingAllowance} ({Math.round(marketPrice.pricingAllowance * 100)}% estimated pricing allowance)
+                </small>
+                <div className="prototype-cost-summary">
+                  <span>{COST_LABEL}</span>
+                  <strong>{formatMoney(costs.total)}</strong>
+                  <small>{formatMoney(costs.subtotal)} prototype subtotal + {formatMoney(costs.contingency)} planning contingency · {product.parts.filter((part) => part.price === null).length} quote-only parts · prototype estimate</small>
+                </div>
+              </div>
             <PartCard product={product} part={selectedPart} onDeselect={() => dispatch({ type: 'selectedPart', name: null })} />
             <div className="panel parts-filter-panel">
               <input
@@ -512,11 +527,11 @@ export default function App() {
         <div className="wrap">
           <h1>SIGNLINK prototype review</h1>
           <p className="lead">
-            Three smart-glasses concepts, 295 modelled components, and what the prototype build would cost. Rotate the models, break them apart, and see the price assigned to every part.
+            Three smart-glasses concepts, 295 modelled components, product-specific estimated market prices, and a separate prototype build budget. Rotate the models, break them apart, and see the price assigned to every part.
           </p>
           <div id="summary"><SummaryCards products={products} onExplore={activateProduct} /></div>
           <p className="note">
-            <b>Read this first.</b> These are concept 3D models and planning estimates built from the team&apos;s Resource &amp; Cost Catalog. They are prototype-build costs using development stand-ins, not validated manufacturing costs, a supplier quotation, a selling price or a profit forecast.
+            <b>Read this first.</b> These are concept 3D models and planning estimates built from the team&apos;s Resource &amp; Price Catalog. Prototype build costs use development stand-ins and are only for demonstration budgeting, not validated manufacturing costs, supplier quotations, selling prices or a profit forecast. Estimated market prices are separate preliminary planning estimates, not confirmed production costs or final selling prices.
           </p>
         </div>
       </header>
