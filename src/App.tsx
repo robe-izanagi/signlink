@@ -307,6 +307,7 @@ function Explorer({
               aria-selected={item.key === product.key}
               key={item.key}
               onClick={() => dispatch({ type: 'product', key: item.key })}
+              style={{ backgroundColor: 'transparent' }}
             >
               {PRODUCT_NAMES[item.key]}
             </button>
